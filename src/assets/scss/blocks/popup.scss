@@ -1,0 +1,641 @@
+.modal-wrapper {
+  position: fixed;
+  width: 100%;
+  // height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #00000062;
+  z-index: 100;
+  display: flex;
+  visibility: hidden;
+}
+
+.modal-wrapper.visibility-modal {
+  visibility: visible;
+}
+
+@include breakpoint($xl-bp) {}
+
+@include breakpoint($sm-bp) {}
+
+.modal {
+  background-color: #fff;
+}
+
+@include breakpoint($xl-bp) {}
+
+@include breakpoint($sm-bp) {}
+
+#modalLike {
+  justify-content: flex-end;
+
+
+  &.visibility-modal {
+    .modal {
+      transform: translateX(0);
+    }
+
+  }
+
+  .modal {
+    width: 48.8rem;
+    height: 100%;
+    overflow: hidden;
+    overflow-y: auto;
+
+    padding: 3.3rem 5rem 3.3rem 3.3rem;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+
+
+
+
+
+
+    &__close {
+
+
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+
+      border: 0.1rem solid #000000;
+      padding: 1rem 1.6rem 1.2rem 1.6rem;
+      border-radius: 0.8rem;
+
+
+      font-size: 1.2rem;
+      font-weight: 500;
+
+
+      margin-bottom: 2.2rem;
+
+
+
+      svg {
+        width: 1.1rem;
+        height: 1.1rem;
+        stroke: #000;
+      }
+
+
+
+
+    }
+
+    &__title {
+
+      font-size: 2.6rem;
+      font-weight: 500;
+      margin-bottom: 4.5rem;
+
+
+    }
+
+    &__content {
+      display: flex;
+      flex-direction: column;
+      gap: 3rem;
+      margin-bottom: 3rem;
+    }
+  }
+
+}
+
+@include breakpoint($xl-bp) {}
+
+@include breakpoint($sm-bp) {}
+
+#modalCatalog {
+
+  justify-content: center;
+  background-color: transparent;
+
+  @include breakpoint($sm-bp) {}
+
+
+  &.visibility-modal .modal {
+
+    transform: translateY(0);
+    opacity: 1;
+
+    @include breakpoint($sm-bp) {
+      transform: translateX(0);
+
+    }
+  }
+
+
+  .modal {
+    overflow-y: auto;
+    height: min-content;
+    max-height: 80%;
+    border-radius: 2rem;
+    padding: 4rem;
+    width: 100%;
+
+    margin: 0 5rem;
+
+    margin-top: 12rem;
+    position: relative;
+
+    transform: translateY(10%);
+    opacity: 0;
+    transition: transform 0.3s, opacity 0.2s;
+
+
+    @include breakpoint($xl-bp) {
+      margin: 0 2rem;
+      margin-top: 12rem;
+      padding: 3rem;
+    }
+
+    @include breakpoint($sm-bp) {
+      margin: 0;
+      max-height: 100%;
+      border-radius: 0;
+      padding-bottom: 20rem;
+      transform: translateX(100%);
+      opacity: 1;
+    }
+
+    &__close {
+      position: absolute;
+      right: 2rem;
+      top: 2rem;
+
+
+      svg {
+        width: 3rem;
+        height: 3rem;
+        stroke: #000;
+      }
+    }
+  }
+
+
+
+
+  .modal-catalog {
+
+
+
+    &__content {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8rem;
+      row-gap: 8rem;
+
+
+      @include breakpoint($xl-bp) {
+        display: block;
+        gap: 0;
+        row-gap: 0;
+        columns: 3;
+        column-gap: 7.1rem;
+
+      }
+
+      @include breakpoint($sm-bp) {
+        columns: 2;
+        margin-top: 4.6rem;
+        column-gap: 5.8rem;
+      }
+
+
+    }
+
+    &__el {
+      break-inside: avoid;
+      width: 18.6rem;
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      height: auto;
+      margin-bottom: 4rem;
+
+
+      &>a {
+
+
+        font-size: 2rem;
+        font-weight: 700;
+        color: var(--black);
+
+
+      }
+
+      ul {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+
+        li {
+
+          a {
+
+            font-size: 1.4rem;
+            font-weight: 500;
+
+            color: var(--grey);
+
+            &:hover {
+              color: var(--black);
+              transition: color 0.2s;
+
+              @include breakpoint($xl-bp) {
+                color: var(--grey);
+              }
+
+              @include breakpoint($sm-bp) {}
+
+
+            }
+
+          }
+        }
+      }
+    }
+
+
+
+  }
+
+
+
+}
+
+
+
+#modalSearch {
+
+  background-color: #000000b3;
+
+  &.visibility-modal .modal {
+
+    transform: translateY(0);
+    opacity: 1;
+
+    @include breakpoint($sm-bp) {
+      transform: translateX(0);
+    }
+  }
+
+  .modal {
+
+    background-color: transparent;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    margin-top: 12rem;
+    width: 100%;
+    height: fit-content;
+
+    transform: translate(0, 20%);
+    opacity: 0;
+    transition: transform 0.4s, opacity 0.2s;
+
+    @include breakpoint($xl-bp) {
+      margin-left: 2rem;
+      margin-right: 2rem;
+    }
+
+    @include breakpoint($sm-bp) {
+      transform: translate(100%);
+    }
+
+
+    &__close {
+
+      @include breakpoint($xl-bp) {}
+
+      @include breakpoint($sm-bp) {
+        position: absolute;
+        top: -6rem;
+        left: 50%;
+        transform: translate(-50%);
+
+
+
+      }
+
+      svg {
+        width: 3rem;
+        height: 3rem;
+        stroke: #000;
+
+        @include breakpoint($sm-bp) {
+          stroke: #fff;
+          stroke-width: 0.2rem;
+        }
+      }
+
+    }
+  }
+
+  .form-search {
+    width: 100%;
+    height: 6.6rem;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    background-color: #fff;
+    padding: 1rem 2.3rem;
+    border-radius: 1.5rem;
+    margin-bottom: 2rem;
+
+    @include breakpoint($xl-bp) {}
+
+    @include breakpoint($sm-bp) {
+      position: relative;
+      gap: 1.3rem;
+      height: auto;
+    }
+
+    &__i {
+      width: 100%;
+
+
+      font-size: 1.6rem;
+      font-weight: 500;
+
+      color: var(--black);
+
+      @include breakpoint($sm-bp) {
+        height: 5rem;
+
+      }
+
+
+    }
+
+    &__i::-webkit-input-placeholder {
+
+      @include breakpoint($sm-bp) {
+        position: absolute;
+
+        top: 0.3rem;
+        white-space: pre-wrap;
+      }
+
+
+
+    }
+
+    &__close-text {
+      display: none;
+      width: 1.6rem;
+      height: 1.6rem;
+      position: relative;
+      background-color: var(--grey);
+      border-radius: 50%;
+      overflow: hidden;
+      flex: none;
+
+      &:hover {
+        background-color: var(--black);
+
+        @include breakpoint($xl-bp) {
+          background-color: var(--grey);
+
+        }
+      }
+
+      &.active {
+        display: block;
+      }
+
+      div {
+        position: absolute;
+
+        width: 1rem;
+        height: 0.2rem;
+        background-color: #fff;
+        border-radius: 0.5rem;
+        top: calc(50% - 0.1rem);
+        left: calc(50% - 0.5rem);
+
+
+
+      }
+
+      & div:first-child {
+        transform: rotate(45deg);
+      }
+
+      & div:last-child {
+        transform: rotate(-45deg);
+      }
+    }
+
+    .btn-black {
+      display: none;
+      padding: 1.4rem 2rem;
+
+      @include breakpoint($sm-bp) {
+        display: block;
+      }
+
+      &.active {
+        display: block;
+      }
+    }
+  }
+
+
+
+
+}
+
+
+@include breakpoint($xl-bp) {}
+
+@include breakpoint($sm-bp) {}
+
+#modalSelectionCity {
+
+
+  align-items: center;
+  justify-content: center;
+
+  @include breakpoint($xl-bp) {
+
+    align-items: normal;
+  }
+
+  @include breakpoint($sm-bp) {}
+
+  .modal {
+    width: 41rem;
+    height: 17.4rem;
+    background-color: #fff;
+    border-radius: 2rem;
+    padding: 3rem;
+    position: relative;
+
+    @include breakpoint($xl-bp) {
+      margin-top: 10rem;
+    }
+
+    @include breakpoint($xl-bp) {
+      margin-top: 18rem;
+    }
+
+    &__close {
+      position: absolute;
+      right: -5.5rem;
+      top: 0;
+      background-color: #000;
+      width: 4.5rem;
+      height: 4.5rem;
+      border-radius: 1rem;
+
+      @include breakpoint($sm-bp) {
+
+        right: 50%;
+
+        transform: translate(50%);
+
+        top: -7.5rem;
+      }
+
+      svg {
+        width: 2rem;
+        height: 2rem;
+        stroke: #fff;
+        stroke-width: 0.3rem;
+      }
+    }
+  }
+
+  .modal-title {
+    margin-bottom: 4rem;
+  }
+
+
+
+
+}
+
+
+
+
+
+.modal-title {
+  font-size: 2.4rem;
+  font-weight: 500;
+  color: var(--black);
+}
+
+.city-form {
+  position: relative;
+  width: 100%;
+  height: 5rem;
+  border: 0.1rem solid #E6E6E6;
+
+  border-radius: 1rem;
+  padding: 1.7rem 2rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &__label {
+
+    visibility: hidden;
+    position: absolute;
+
+    font-size: 1rem;
+    font-weight: 500;
+
+    color: var(--grey);
+    top: 0.5rem;
+    left: 2.2rem;
+
+
+    &.active {
+      visibility: visible;
+    }
+
+  }
+
+  &__i {
+
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: var(--black);
+    width: 100%;
+
+  }
+
+  &__close-text {
+
+    display: none;
+
+
+    &.active {
+      display: block;
+    }
+
+
+    svg {
+      width: 2rem;
+      height: 2rem;
+      stroke: #000;
+      stroke-width: 0.2rem;
+    }
+
+
+  }
+}
+
+.selection-city-res {
+  display: none;
+
+  position: absolute;
+
+  background-color: #fff;
+  border: 0.1rem solid #E6E6E6;
+  border-radius: 1rem;
+  padding: 2rem;
+  box-shadow: 0px 0px 3rem 0px #0000001A;
+
+
+  top: calc(100% - 2rem);
+  left: 3rem;
+  right: 3rem;
+
+  &.active {
+    display: block;
+  }
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    max-height: 23.5rem;
+    overflow-y: auto;
+
+    li {
+
+
+      font-size: 1.4rem;
+      font-weight: 400;
+
+
+
+      a {
+
+        color: var(--black);
+
+
+        span {
+
+          color: var(--grey);
+        }
+      }
+    }
+  }
+
+}

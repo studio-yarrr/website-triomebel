@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="robots" content="index, follow">
+  <meta name="description" content="">
+  <title>triomebel</title>
+  
+  <!-- CSS only -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+  
+  
+  
+  
+  
+  <link rel="stylesheet" href="assets/css/style.min.css">
+  <style>
+    .link-title {
+      font-family: Roboto;
+      font-size: 2.5rem;
+      border-radius: 0.6rem;
+      background: #cccc70;
+      padding: 0.8rem 1.5rem;
+      display: inline-block;
+      margin-bottom: 0.8rem;
+    }
+
+    ._progress {
+      min-height: 100vh;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      padding-top: 10rem;
+      background: #F7F7F7;
+
+    }
+
+    ._progress ol {
+      list-style-type: decimal;
+      list-style-position: inside;
+      list-style: none;
+      counter-reset: my-awesome-counter;
+      columns: 1;
+      margin-bottom: 5rem;
+
+
+
+    }
+
+
+
+    ._progress ol li {
+
+      font-family: Roboto;
+      font-size: 2.5rem;
+
+      background: #0C7F98;
+      padding: 1rem 1.5rem;
+      margin-bottom: 1rem;
+      border-radius: 0.6rem;
+      transition: all 0.3s;
+      counter-increment: my-awesome-counter;
+      position: relative;
+      z-index: 5;
+      margin-left: 5rem;
+    }
+
+
+    ._progress ol li::before {
+      content: counter(my-awesome-counter) ". ";
+      color: black;
+      position: absolute;
+      left: -4rem;
+      border-radius: 0.5rem 0 0 0.5rem;
+      z-index: 1;
+      transition: all 0.3s ease-in-out;
+    }
+
+    .red {
+      background: #fa7c7c !important;
+    }
+
+
+
+    ._progress ol li:hover {
+      transform: scale(1.05);
+      box-shadow: 0px 0.9rem 0.8rem 0px #8686866e;
+    }
+
+    ._progress__link {
+      width: 100%;
+      display: inline-block;
+      font-size: 2.5rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      color: #fff;
+      transition: opacity 0.5s;
+      position: relative;
+      z-index: 30;
+    }
+
+    ._progress__title {
+      font-family: Ubuntu;
+      font-size: 2.5rem;
+      text-transform: uppercase;
+      color: #000;
+      margin-bottom: 7rem;
+
+    }
+
+    ._progress__link-title {
+      font-family: Ubuntu;
+      font-size: 2.5rem;
+      text-transform: uppercase;
+      color: #000;
+      margin-bottom: 1.2rem;
+    }
+
+    @media (max-width:1024px) {
+
+      .link-title {
+        font-size: 1.5rem;
+      }
+
+      ._progress {
+        padding-top: 2rem;
+      }
+
+      ._progress ol li {
+        font-size: 1.5rem;
+        margin-left: 0;
+      }
+
+      ._progress ol {
+        columns: 1;
+      }
+
+      ._progress__link {
+        font-size: 1.2rem;
+        line-height: normal;
+      }
+
+      ._progress__title {
+        margin-bottom: 2rem;
+      }
+
+      ._progress ol li::before {
+
+        left: -2.5rem;
+
+        width: 1.5rem;
+
+      }
+
+
+
+    }
+  </style>
+</head>
+
+<body>
+
+
+  <main>
+
+    <div class="_progress">
+      <div class="_progress__inner">
+        <p class="_progress__title">Содержание:</p>
+        <ol>
+
+          
+          <li><a href="main.html" class="_progress__link" target="_blank">Главная</a></li>
+
+        </ol>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- JS -->
+</body>
+
+</html>

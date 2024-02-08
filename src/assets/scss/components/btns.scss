@@ -1,0 +1,105 @@
+.close {}
+
+.burger {
+
+  display: none;
+
+
+
+
+
+  @include breakpoint($sm-bp) {
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    margin: 2.2rem;
+    flex: none;
+    position: relative;
+  }
+
+
+  div {
+    display: block;
+    width: 2rem;
+    height: 2px;
+    background: #000;
+  }
+
+
+  & div:last-child {
+    position: absolute;
+    top: 0.3rem;
+  }
+
+  & div:first-child {
+    position: absolute;
+    bottom: 0.3rem;
+  }
+}
+
+.dropdown-btn {
+  a {
+    @include breakpoint($xl-bp) {
+      pointer-events: none;
+    }
+
+  }
+}
+
+
+.btn-like {
+  position: relative;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 1rem;
+  background: #fff;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+
+  svg {
+    width: 2rem;
+    height: 2rem;
+    fill: transparent;
+    position: relative;
+    z-index: 1;
+    stroke: rgb(97, 21, 219);
+
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border: 0.1rem linear-gradient(259.43deg, #0057FF 2.5%, #5200FF 46.09%, #DB00FF 173.66%) solid transparent;
+    background: linear-gradient(259.43deg, #0057FF 2.5%, #5200FF 46.09%, #DB00FF 173.66%) border-box;
+    -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+    // mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: destination-out;
+    mask-composite: exclude;
+    border-radius: 1rem;
+
+  }
+}
+
+.btn-black {
+  display: block;
+
+  font-size: 1.4rem;
+  font-weight: 500;
+  text-align: center;
+
+  color: var(--white);
+
+  background-color: #000;
+  border-radius: 1rem;
+  padding: 1.7rem 1rem;
+
+}

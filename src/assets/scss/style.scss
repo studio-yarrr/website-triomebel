@@ -1,0 +1,115 @@
+@import "./vendor/fonts";
+@import "./vendor/vars";
+@import "./vendor/mixins";
+@import './vendor/setting.scss';
+
+html {
+  scroll-behavior: smooth;
+  font-size: calc(100vw / 1440 * 10);
+
+  @include breakpoint($xl-bp) {
+    font-size: calc(100vw / 834 * 10);
+  }
+
+  @include breakpoint($sm-bp) {
+    font-size: calc(100vw / 430 * 10);
+  }
+}
+
+body {
+  font-family: "HelveticaNeueCyr", sans-serif;
+  letter-spacing: 0%;
+  text-align: left;
+  line-height: normal;
+  background-color: var(--background);
+}
+
+.container {
+  width: 100%;
+  max-width: 134rem;
+  margin: 0 auto;
+
+  @include breakpoint($xl-bp) {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  @include breakpoint($sm-bp) {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
+
+}
+
+.content {
+  overflow: hidden;
+
+
+}
+
+
+h1 {
+  @include breakpoint($xl-bp) {}
+
+  @include breakpoint($sm-bp) {}
+}
+
+h2 {
+  @include breakpoint($xl-bp) {}
+
+  @include breakpoint($sm-bp) {}
+}
+
+h3 {
+  @include breakpoint($xl-bp) {}
+
+  @include breakpoint($sm-bp) {}
+}
+
+input::-webkit-input-placeholder {}
+
+input::-moz-placeholder {}
+
+a {}
+
+
+
+.scroll-lock {
+  overflow: hidden !important;
+  height: 100%;
+  width: 100%;
+  position: relative;
+
+
+  // scrollbar-gutter: stable !important;
+  // overscroll-behavior-y: none !important;
+  // touch-action: none;
+
+  // @include breakpoint($sm-bp) {
+  //   scrollbar-gutter: auto !important;
+
+  // }
+
+
+
+}
+
+
+/*---------components------------*/
+@import './components/btns.scss';
+@import './components/product.scss';
+
+
+/*--------- blocks -------------*/
+
+@import './blocks/header.scss';
+@import './blocks/popup.scss';
+@import './blocks/footer.scss';
+@import './blocks/animation.scss';
+
+
+
+/*------page------*/
+
+@import './page/main.scss';

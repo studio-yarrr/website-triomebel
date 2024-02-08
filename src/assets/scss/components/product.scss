@@ -1,0 +1,203 @@
+.modal-el {
+  width: 100%;
+  padding-bottom: 2rem;
+  border-bottom: 0.1rem solid #a5a5a52c;
+
+  &__head {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+  }
+
+  &__img {
+    width: 6rem;
+    height: 6rem;
+    overflow: hidden;
+    border-radius: 1rem;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+
+  &__title {
+
+    font-size: 1.8rem;
+    font-weight: 500;
+    margin-bottom: 1.2rem;
+
+  }
+
+  &__choice {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1.45rem;
+
+  }
+
+  &__characteristics {}
+
+  &__characteristics-btn {
+
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: var(--grey);
+    display: flex;
+    align-items: center;
+    gap: 0.9rem;
+
+
+
+    svg {
+      width: 0.8rem;
+      height: 0.8rem;
+    }
+  }
+
+  &__model {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+  }
+
+  &__model-btn {
+    width: 1.7rem;
+    height: 1.7rem;
+    overflow: hidden;
+    border: 50%;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+
+  &__res {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+
+
+    font-size: 1.8rem;
+    font-weight: 500;
+
+    color: var(--black);
+
+    p+p {
+      color: var(--grey);
+      text-decoration: line-through;
+    }
+
+  }
+}
+
+
+
+
+.search-res {
+
+  display: none;
+  width: 100%;
+  overflow: hidden;
+  background-color: #fff;
+  border-radius: 2rem;
+  padding: 4rem;
+
+  @include breakpoint($xl-bp) {
+    padding: 3rem;
+  }
+
+  @include breakpoint($sm-bp) {
+    padding: 2rem;
+  }
+
+  &.active {
+    display: block;
+  }
+
+
+  &__wrap {
+    width: 100%;
+    display: flex;
+    height: min-content;
+    max-height: 38rem;
+    flex-direction: column;
+    gap: 4rem;
+    overflow-y: auto;
+  }
+
+  &__el {
+    display: flex;
+    gap: 2rem;
+    color: var(--black);
+
+
+
+  }
+
+  &__el-img {
+    width: 6.4rem;
+    height: 6.4rem;
+    overflow: hidden;
+    border-radius: 1rem;
+    flex: none;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+
+  &__el-desc {
+    width: 22rem;
+
+    @include breakpoint($sm-bp) {
+      width: 100%;
+    }
+
+
+
+
+  }
+
+  &__el-title {
+    font-size: 1.8rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+  }
+
+  &__el-characteristics {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+
+
+    p {
+      font-size: 1.2rem;
+      font-weight: 500;
+
+      color: var(--black);
+
+      & span:first-child {
+        color: var(--grey);
+      }
+    }
+
+  }
+
+  &__el-price {
+
+    font-size: 1.8rem;
+    font-weight: 500;
+
+    flex: none;
+
+  }
+}

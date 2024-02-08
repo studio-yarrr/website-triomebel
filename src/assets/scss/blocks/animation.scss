@@ -1,0 +1,44 @@
+@media (min-width:1024px) {
+  .element-animation-left {
+    opacity: 0;
+    transform: translateX(-40%);
+    transition-duration: 1s;
+  }
+
+  .element-animation-right {
+    opacity: 0;
+    transform: translateX(40%);
+    transition-duration: 1s;
+  }
+
+  .element-animation-left.element-show,
+  .element-animation-right.element-show {
+    opacity: 1;
+    transform: translateX(0);
+    transition-duration: 1s;
+  }
+
+  .element-animation {
+    transform: translateY(5rem);
+    opacity: 0;
+    transition-duration: 1s;
+  }
+
+  .element-animation.element-show {
+    transform: translateY(0);
+    opacity: 1;
+    transition-duration: 1s;
+  }
+
+  .element-animation-opacity {
+    opacity: 0;
+    transition: all 2s;
+  }
+
+  .element-animation-opacity.element-show {
+    opacity: 1;
+    transition: all 2s;
+  }
+}
+
+@media (max-width:1024px) {}

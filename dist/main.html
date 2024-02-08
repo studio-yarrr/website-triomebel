@@ -1,0 +1,850 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="robots" content="index, follow">
+  <meta name="description" content="">
+  <title>triomebel</title>
+  
+  <!-- CSS only -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+  
+  
+  
+  
+  
+  <link rel="stylesheet" href="assets/css/style.min.css"></head>
+
+<body>
+  <!-- Header -->
+  <header class="header">
+  
+    <div class="header-top">
+      <div class="header-top__wrapper container">
+  
+        <div class="header__choice">
+  
+  
+          <svg viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M0.904169 0.235209C0.488988 0.0898957 0.0898962 0.488988 0.235209 0.904169L3.72504 10.8751C3.88212 11.3239 4.50721 11.3494 4.70032 10.9149L6.53049 6.79702C6.58328 6.67825 6.67825 6.58328 6.79702 6.53049L10.9149 4.70032C11.3494 4.50721 11.3239 3.88212 10.8751 3.72504L0.904169 0.235209Z"
+              fill="url(#paint0_linear_300_427)" />
+            <defs>
+              <linearGradient id="paint0_linear_300_427" x1="-0.125" y1="1.82387" x2="13.883" y2="4.25179"
+                gradientUnits="userSpaceOnUse">
+                <stop stop-color="#FFB800" />
+                <stop offset="1" stop-color="#FF7A00" />
+              </linearGradient>
+            </defs>
+  
+  
+  
+          </svg>
+          <span>Выберите город:</span> <button class="header__choice-btn"
+            onclick="showModal('modalSelectionCity')">Иваново</button>
+        </div>
+  
+        <nav class="header-top__nav">
+          <ul>
+            <li><a href="#">Магазины</a></li>
+            <li><a href="#">Доставка</a></li>
+            <li><a href="#">О магазине</a></li>
+            <li><a href="#">Оплата</a></li>
+            <li><a href="#">Возврат и обмен</a></li>
+            <li class="list--hidden"><a href="#">Гарантии</a></li>
+            <li class="list--hidden"><a href="#">Новости</a></li>
+            <li class="list--hidden"><a href="#">Контакты</a></li>
+          </ul>
+  
+  
+          <div class="header-top__dropdown-more dropdown">
+            <button class="header-top__dropdown-btn dropdown-btn">Еще</button>
+            <!-- w = 834px выпадающий список -->
+            <div class="header-top__dropdown-panel dropdown-panel">
+              <ul></ul>
+            </div>
+          </div>
+  
+        </nav>
+  
+        <div href="#" class="header-sms__dropdown dropdown">
+          <button class="header-sms__dropdown-btn dropdown-btn">
+            <svg viewBox="0 0 12 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M9.96956 0.136128C10.0957 0.0830401 10.2337 0.0647304 10.3694 0.0831045C10.505 0.101479 10.6332 0.155865 10.7406 0.240603C10.8481 0.325341 10.9309 0.437332 10.9804 0.56492C11.0299 0.692509 11.0442 0.83103 11.022 0.966066L9.86441 7.98787C9.75212 8.66519 9.00895 9.05362 8.38778 8.71623C7.86817 8.43397 7.09642 7.9991 6.40226 7.54534C6.05517 7.3182 4.99197 6.59086 5.12264 6.0733C5.23493 5.63076 7.02139 3.96783 8.04222 2.97915C8.4429 2.59072 8.26017 2.36665 7.78702 2.72394C6.61204 3.61104 4.72554 4.96008 4.10181 5.33983C3.55158 5.67466 3.26472 5.73183 2.92172 5.67466C2.29595 5.57053 1.71561 5.40924 1.24194 5.21273C0.60188 4.94732 0.633016 4.06736 1.24143 3.81113L9.96956 0.136128Z"
+                fill="url(#paint0_linear_309_11565)" />
+              <defs>
+                <linearGradient id="paint0_linear_309_11565" x1="11.0322" y1="1.47042" x2="-0.573449" y2="3.82509"
+                  gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#FFB800" />
+                  <stop offset="1" stop-color="#FF7A00" />
+                </linearGradient>
+              </defs>
+            </svg>
+            <span>Написать нам</span>
+          </button>
+  
+          <div class="header-sms__dropdown-panel dropdown-panel">
+  
+            <ul>
+              <li>
+                <a href="#">
+                  <svg>
+                    <use xlink:href="assets/images/sprite/sprite-icons.svg#iconTG"></use>
+                  </svg>
+                  <span>Telegram</span>
+  
+                </a>
+              </li>
+              <li>
+                <a href="#">
+  
+                  <svg>
+                    <use xlink:href="assets/images/sprite/sprite-icons.svg#iconWhatsApp"></use>
+                  </svg>
+                  <span>WhatsApp</span>
+  
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="assets/images/icon/email.png" alt="#">
+                  <span>Email</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <a href="tel:8800234588" class="header-top__tel">8 800 2345 88</a>
+      </div>
+  
+  
+    </div>
+    <div class="header-bottom">
+  
+      <div class="header-bottom__wrapper  container">
+        <a href="main.html" class="header__logo">
+          <img src="assets/images/logo/logo.png" alt="#">
+        </a>
+  
+        <div class="header__catalog">
+  
+          <button class="header__catalog-btn" onclick="showModal('modalCatalog')">
+            <svg>
+              <use xlink:href="assets/images/sprite/sprite-icons.svg#iconCatalog"></use>
+            </svg>
+  
+            <span>Каталог</span>
+          </button>
+  
+          <div class="header__catalog-panel">
+            <div class="header__catalog-wrap">
+              <div class="close">
+                <span></span>
+                <span></span>
+              </div>
+            </div>
+  
+            <div class="header__catalog-el">
+  
+              <a href="#" class="header__catalog-el-link">Кухни</a>
+  
+              <ul>
+                <li><a href="#">Кухни прямые</a></li>
+                <li><a href="#">Кухни угловые</a></li>
+                <li><a href="#">Кухни эконом</a></li>
+                <li><a href="#">Стеновые панели</a></li>
+                <li><a href="#">Кухонные уголки</a></li>
+              </ul>
+  
+            </div>
+  
+  
+            <div class="header__catalog-el">
+  
+              <a href="#" class="header__catalog-el-link">Корпусная мебель</a>
+  
+              <ul>
+                <li><a href="#">Комоды</a></li>
+                <li><a href="#">Полки</a></li>
+                <li><a href="#">Прихожие</a></li>
+                <li><a href="#">Серия мебели Дуэт</a></li>
+                <li><a href="#">Стеллажи</a></li>
+                <li><a href="#">Тумбы</a></li>
+                <li><a href="#">Шкафы</a></li>
+                <li><a href="#">Шкафы-купе</a></li>
+              </ul>
+  
+            </div>
+  
+  
+            <div class="header__catalog-el">
+  
+              <a href="#" class="header__catalog-el-link">Спальни</a>
+  
+              <ul>
+                <li><a href="#">Кровати</a></li>
+                <li><a href="#">Матрасы</a></li>
+                <li><a href="#">Модульные спальни</a></li>
+              </ul>
+  
+            </div>
+  
+            <div class="header__catalog-el">
+  
+              <a href="#" class="header__catalog-el-link">Мягкая мебель</a>
+  
+              <ul>
+                <li><a href="#">Прямые</a></li>
+                <li><a href="#">Угловые</a></li>
+                <li><a href="#">Кресла</a></li>
+                <li><a href="#">Детские диваны</a></li>
+              </ul>
+  
+            </div>
+  
+  
+            <div class="header__catalog-el">
+              <a href="#" class="header__catalog-el-link">Детские</a>
+            </div>
+  
+            <div class="header__catalog-el">
+  
+              <a href="#" class="header__catalog-el-link">Столы</a>
+  
+              <ul>
+                <li><a href="#">Кухни прямые</a></li>
+                <li><a href="#">Кухни угловые</a></li>
+                <li><a href="#">Кухни эконом</a></li>
+                <li><a href="#">Стеновые панели</a></li>
+                <li><a href="#">Кухонные уголки</a></li>
+              </ul>
+  
+            </div>
+  
+  
+            <div class="header__catalog-el">
+  
+              <a href="#" class="header__catalog-el-link">Гостиные</a>
+  
+              <ul>
+                <li><a href="#">Кухни прямые</a></li>
+                <li><a href="#">Кухни угловые</a></li>
+                <li><a href="#">Кухни эконом</a></li>
+                <li><a href="#">Стеновые панели</a></li>
+                <li><a href="#">Кухонные уголки</a></li>
+              </ul>
+  
+            </div>
+  
+  
+          </div>
+  
+  
+        </div>
+  
+        <div class="header__search">
+  
+          <button onclick="showModal('modalSearch')">
+            <svg>
+              <use xlink:href="assets/images/sprite/sprite-icons.svg#iconSearch"></use>
+            </svg>
+          </button>
+  
+  
+  
+  
+  
+        </div>
+  
+        <nav class="header-bottom__nav">
+  
+          <ul class="header-bottom__nav-list">
+            <li class="header-bottom__nav-dropdown">
+              <button class="header-bottom__nav-btn">
+                <a class="header-bottom__nav-btn" href="#">Акции</a>
+              </button>
+            </li>
+  
+            <li class="header-bottom__nav-dropdown dropdown">
+              <button class="header-bottom__nav-btn dropdown-btn">
+                <a href="#">Кухни</a>
+              </button>
+  
+              <div class="header-bottom__nav-panel dropdown-panel">
+                <ul>
+                  <li><a href="#">Кухни угловые</a></li>
+                  <li><a href="#">Кухни прямые</a></li>
+                  <li><a href="#">Кухни эконом</a></li>
+                  <li><a href="#">Стеновые панели</a></li>
+                  <li><a href="#">Кухонные уголки</a></li>
+                </ul>
+              </div>
+            </li>
+  
+  
+            <li class="header-bottom__nav-dropdown dropdown">
+              <button class="header-bottom__nav-btn dropdown-btn">
+                <a href="#">Корпусная мебель</a>
+              </button>
+  
+              <div class="header-bottom__nav-panel dropdown-panel">
+                <ul>
+                  <li><a href="#">Комоды</a></li>
+                  <li><a href="#">Полки</a></li>
+                  <li><a href="#">Прихожие</a></li>
+                  <li><a href="#">Серия мебели Дуэт</a></li>
+                  <li><a href="#">Стеллажи</a></li>
+                  <li><a href="#">Тумбы</a></li>
+                  <li><a href="#">Шкафы</a></li>
+                  <li><a href="#">Шкафы-купе</a></li>
+                </ul>
+              </div>
+            </li>
+  
+  
+            <li class="header-bottom__nav-dropdown dropdown list--hidden">
+              <button class="header-bottom__nav-btn dropdown-btn">
+                <a href="#">Спальни</a>
+              </button>
+  
+              <div class="header-bottom__nav-panel dropdown-panel">
+                <ul>
+                  <li><a href="#">Кровати</a></li>
+                  <li><a href="#">Матрасы</a></li>
+                  <li><a href="#">Модульные спальни</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="header-bottom__nav-dropdown dropdown list--hidden">
+              <button class="header-bottom__nav-btn dropdown-btn">
+                <a href="#">Мягкая мебель</a>
+              </button>
+  
+              <div class="header-bottom__nav-panel dropdown-panel">
+                <ul>
+                  <li><a href="#">Прямые</a></li>
+                  <li><a href="#">Угловые</a></li>
+                  <li><a href="#">Кресла</a></li>
+                  <li><a href="#">Детские диваны</a></li>
+                </ul>
+              </div>
+            </li>
+  
+  
+  
+            <li class="header-bottom__nav-dropdown dropdown list--hidden">
+              <button class="header-bottom__nav-btn dropdown-btn">
+                <a href="#">Столы</a>
+              </button>
+  
+              <div class="header-bottom__nav-panel dropdown-panel">
+                <ul>
+                  <li><a href="#">Журнальные</a></li>
+                  <li><a href="#">Обеденные</a></li>
+                  <li><a href="#">Письменные</a></li>
+                  <li><a href="#">С фотопечатью</a></li>
+  
+                  <li><a href="#">Столы компьютерные</a></li>
+                  <li><a href="#">Туалетные</a></li>
+                </ul>
+              </div>
+            </li>
+  
+  
+            <li class="header-bottom__nav-dropdown dropdown list--hidden">
+              <button class="header-bottom__nav-btn dropdown-btn">
+                <a href="#">Гостиные</a>
+              </button>
+  
+              <div class="header-bottom__nav-panel dropdown-panel">
+                <ul>
+                  <li><a href="#">Мини стенки</a></li>
+                  <li><a href="#">Модульные гостиные</a></li>
+                  <li><a href="#">Стенки в гостиную</a></li>
+                </ul>
+              </div>
+            </li>
+  
+            <li class="header-bottom__nav-dropdown list--hidden">
+              <button class="header-bottom__nav-btn">
+                <a href="#">Детские</a>
+              </button>
+            </li>
+  
+          </ul>
+  
+          <div class="header-bottom__dropdown-more dropdown">
+            <button class="header-bottom__dropdown-btn dropdown-btn">Еще</button>
+            <!-- w = 834px выпадающий список -->
+            <div class="header-bottom__dropdown-panel dropdown-panel">
+              <ul></ul>
+            </div>
+          </div>
+  
+        </nav>
+  
+  
+        <div class="header-bottom__like">
+  
+          <button class="header-bottom__like-btn" onclick="showModal('modalLike')">
+            <svg>
+              <use xlink:href="assets/images/sprite/sprite-icons.svg#iconLike"></use>
+            </svg>
+          </button>
+  
+        </div>
+  
+        <div class="header-bottom__basket">
+  
+          <a href="#" class="header-bottom__basket-link">
+            <svg>
+              <use xlink:href="assets/images/sprite/sprite-icons.svg#iconBasket"></use>
+            </svg>
+          </a>
+  
+        </div>
+  
+        <button class="burger">
+          <div></div>
+          <div></div>
+          <div></div>
+        </button>
+  
+  
+  
+      </div>
+  
+    </div>
+  
+  
+  </header>
+  <!-- Main content -->
+  <main class="main-page content">
+  
+  
+  
+  
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    footer
+  </footer>
+  <!-- popup -->
+  <div id="modalLike" class="modal-wrapper">
+    <div class="modal">
+      <button class="modal__close" onclick="closeModal()">
+        <svg>
+          <use xlink:href="assets/images/sprite/sprite-icons.svg#iconClose"></use>
+        </svg>
+        <span>закрыть</span>
+      </button>
+      <p class="modal__title">Избранные товары</p>
+  
+      <div class="modal__content">
+  
+        <div class="modal-el">
+  
+          <div class="modal-el__head">
+            <div class="modal-el__img">
+              <img src="assets/images/kitchen.jpg" alt="#">
+            </div>
+  
+            <button class="btn-like">
+              <svg>
+                <use xlink:href="assets/images/sprite/sprite-icons.svg#iconLike"></use>
+              </svg>
+            </button>
+          </div>
+  
+          <p class="modal-el__title">Двух спальная кровать Бланка</p>
+  
+          <div class="modal-el__choice">
+            <div class="modal-el__characteristics">
+  
+              <button class="modal-el__characteristics-btn">
+                <span>Ш1250 х Г2030 х В850 </span>
+                <svg>
+                  <use xlink:href="assets/images/sprite/sprite-icons.svg#iconArrow"></use>
+                </svg>
+              </button>
+  
+  
+  
+            </div>
+            <div class="modal-el__model">
+              <button class="modal-el__model-btn">
+                <img src="assets/images/model/model-1.png" alt="#">
+              </button>
+  
+              <button class="modal-el__model-btn">
+                <img src="assets/images/model/model-2.png" alt="#">
+              </button>
+  
+            </div>
+  
+          </div>
+  
+          <div class="modal-el__res">
+            <p>8 800 ₽</p>
+            <p>15 200 ₽</p>
+  
+          </div>
+  
+  
+        </div>
+  
+        <div class="modal-el">
+  
+          <div class="modal-el__head">
+            <div class="modal-el__img">
+              <img src="assets/images/kitchen.jpg" alt="#">
+            </div>
+  
+            <button class="btn-like">
+              <svg>
+                <use xlink:href="assets/images/sprite/sprite-icons.svg#iconLike"></use>
+              </svg>
+            </button>
+          </div>
+  
+          <p class="modal-el__title">Двух спальная кровать Бланка</p>
+  
+          <div class="modal-el__choice">
+            <div class="modal-el__characteristics">
+  
+              <button class="modal-el__characteristics-btn">
+                <span>Ш1250 х Г2030 х В850 </span>
+                <svg>
+                  <use xlink:href="assets/images/sprite/sprite-icons.svg#iconArrow"></use>
+                </svg>
+              </button>
+  
+  
+  
+            </div>
+            <div class="modal-el__model">
+              <button class="modal-el__model-btn">
+                <img src="assets/images/model/model-1.png" alt="#">
+              </button>
+  
+              <button class="modal-el__model-btn">
+                <img src="assets/images/model/model-2.png" alt="#">
+              </button>
+  
+            </div>
+  
+          </div>
+  
+          <div class="modal-el__res">
+            <p>8 800 ₽</p>
+            <p>15 200 ₽</p>
+  
+          </div>
+  
+  
+        </div>
+  
+  
+  
+  
+      </div>
+  
+      <a href="#" class="btn-black">Перейти к оформлению товаров</a>
+  
+  
+    </div>
+  </div>
+  
+  
+  
+  <div id="modalCatalog" class="modal-wrapper">
+    <div class="modal">
+      <button class="modal__close" onclick="closeModal()">
+        <svg>
+          <use xlink:href="assets/images/sprite/sprite-icons.svg#iconClose"></use>
+        </svg>
+      </button>
+  
+      <div class="modal-catalog__content">
+  
+        <div class="modal-catalog__el">
+          <a href="#">Кухни</a>
+  
+          <ul>
+            <li><a href="#">Кухни прямые</a></li>
+            <li><a href="#">Кухни угловые</a></li>
+            <li><a href="#">Кухни эконом</a></li>
+            <li><a href="#">Кухни эконом</a></li>
+            <li><a href="#">Кухонные уголки</a></li>
+          </ul>
+  
+        </div>
+  
+        <div class="modal-catalog__el">
+          <a href="#">Корпусная мебель</a>
+  
+          <ul>
+            <li><a href="#">Комоды</a></li>
+            <li><a href="#">Полки</a></li>
+            <li><a href="#">Прихожие</a></li>
+            <li><a href="#">Серия мебели Дуэт</a></li>
+            <li><a href="#">Стеллажи</a></li>
+            <li><a href="#">Тумбы</a></li>
+            <li><a href="#">Шкафы</a></li>
+            <li><a href="#">Шкафы-купе</a></li>
+          </ul>
+  
+        </div>
+  
+        <div class="modal-catalog__el">
+          <a href="#">Спальни</a>
+  
+          <ul>
+            <li><a href="#">Кровати</a></li>
+            <li><a href="#">Матрасы</a></li>
+            <li><a href="#">Модульные спальни</a></li>
+          </ul>
+  
+        </div>
+  
+  
+        <div class="modal-catalog__el">
+          <a href="#">Мягкая мебель</a>
+  
+          <ul>
+            <li><a href="#">Прямые</a></li>
+            <li><a href="#">Угловые</a></li>
+            <li><a href="#">Кресла</a></li>
+            <li><a href="#">Детские диваны</a></li>
+          </ul>
+  
+        </div>
+  
+        <div class="modal-catalog__el">
+          <a href="#">Столы</a>
+  
+          <ul>
+            <li><a href="#">Кухни прямые</a></li>
+            <li><a href="#">Кухни угловые</a></li>
+            <li><a href="#">Кухни эконом</a></li>
+            <li><a href="#">Кухонные уголки</a></li>
+          </ul>
+  
+        </div>
+  
+  
+        <div class="modal-catalog__el">
+          <a href="#">Гостиные</a>
+  
+          <ul>
+            <li><a href="#">Кухни прямые</a></li>
+            <li><a href="#">Кухни угловые</a></li>
+            <li><a href="#">Кухни эконом</a></li>
+            <li><a href="#">Кухонные уголки</a></li>
+          </ul>
+  
+        </div>
+  
+        <div class="modal-catalog__el">
+          <a href="#">Детские</a>
+        </div>
+  
+  
+  
+      </div>
+  
+  
+  
+  
+  
+  
+  
+    </div>
+  </div>
+  
+  
+  <div id="modalSearch" class="modal-wrapper">
+    <div class="modal">
+  
+      <form class="form-search" action="">
+        <input class="form-search__i" id="modalSearchInput" type="text"
+          placeholder="Напишите какой товар вы хотите найти">
+  
+        <button class="form-search__close-text" onclick="clearText('modalSearchInput')">
+          <div></div>
+          <div></div>
+        </button>
+        <button class="btn-black" type="submit">Найти</button>
+  
+        <button class="modal__close" onclick="closeModal()">
+          <svg>
+            <use xlink:href="assets/images/sprite/sprite-icons.svg#iconClose"></use>
+          </svg>
+        </button>
+      </form>
+  
+      <!-- появляется при вводе текста > 3 символов. добавляяется класс active-->
+      <div class="search-res">
+  
+        <div class="search-res__wrap">
+          <a class="search-res__el" href="#">
+  
+            <div class="search-res__el-img">
+              <img src="assets/images/kitchen.jpg" alt="#">
+            </div>
+  
+            <div class="search-res__el-desc">
+              <p class="search-res__el-title">Кухня Барселона</p>
+  
+              <div class="search-res__el-characteristics">
+                <p> <span>Цвет: </span> <span> Серый / Матера</span></p>
+                <p><span>Размер: </span> <span>1,5 метра</span></p>
+              </div>
+            </div>
+  
+            <p class="search-res__el-price">16 800 ₽</p>
+  
+          </a>
+  
+          <a class="search-res__el" href="#">
+  
+            <div class="search-res__el-img">
+              <img src="assets/images/kitchen.jpg" alt="#">
+            </div>
+  
+            <div class="search-res__el-desc">
+              <p class="search-res__el-title">Кухня Барселона</p>
+  
+              <div class="search-res__el-characteristics">
+                <p> <span>Цвет: </span> <span> Серый / Матера</span></p>
+                <p><span>Размер: </span> <span>1,5 метра</span></p>
+              </div>
+            </div>
+  
+            <p class="search-res__el-price">16 800 ₽</p>
+  
+          </a>
+  
+          <a class="search-res__el" href="#">
+  
+            <div class="search-res__el-img">
+              <img src="assets/images/kitchen.jpg" alt="#">
+            </div>
+  
+            <div class="search-res__el-desc">
+              <p class="search-res__el-title">Кухня Барселона</p>
+  
+              <div class="search-res__el-characteristics">
+                <p> <span>Цвет: </span> <span> Серый / Матера</span></p>
+                <p><span>Размер: </span> <span>1,5 метра</span></p>
+              </div>
+            </div>
+  
+            <p class="search-res__el-price">16 800 ₽</p>
+  
+          </a>
+  
+          <a class="search-res__el" href="#">
+  
+            <div class="search-res__el-img">
+              <img src="assets/images/kitchen.jpg" alt="#">
+            </div>
+  
+            <div class="search-res__el-desc">
+              <p class="search-res__el-title">Кухня Барселона</p>
+  
+              <div class="search-res__el-characteristics">
+                <p> <span>Цвет: </span> <span> Серый / Матера</span></p>
+                <p><span>Размер: </span> <span>1,5 метра</span></p>
+              </div>
+            </div>
+  
+            <p class="search-res__el-price">16 800 ₽</p>
+  
+          </a>
+  
+  
+        </div>
+  
+  
+  
+  
+  
+  
+  
+  
+      </div>
+  
+  
+  
+  
+  
+  
+    </div>
+  </div>
+  
+  
+  <div id="modalSelectionCity" class="modal-wrapper">
+    <div class="modal">
+  
+      <button class="modal__close" onclick="closeModal()">
+        <svg>
+          <use xlink:href="assets/images/sprite/sprite-icons.svg#iconClose"></use>
+        </svg>
+      </button>
+      <div class="modal-"></div>
+      <p class="modal-title">Выберите ваш город</p>
+  
+      <form action="#" class="city-form">
+  
+        <label class="city-form__label" for="cityFormInput">Город</label>
+        <input id="cityFormInput" class="city-form__i" type="text" placeholder="Введите название города">
+  
+        <button class="city-form__close-text" onclick="clearText('cityFormInput')">
+          <svg>
+            <use xlink:href="assets/images/sprite/sprite-icons.svg#iconClose"></use>
+          </svg>
+        </button>
+  
+      </form>
+  
+      <!-- появляется при вводе текста > 3 символов. добавляяется класс active-->
+      <div class="selection-city-res">
+        <ul>
+          <li><a href="#">Иваново <span>Ивановская область, Россия</span> </a></li>
+          <li><a href="#">Иваново <span>Ивановская область, Россия</span> </a></li>
+          <li><a href="#">Иваново <span>Ивановская область, Россия</span> </a></li>
+          <li><a href="#">Иваново <span>Ивановская область, Россия</span> </a></li>
+          <li><a href="#">Иваново <span>Ивановская область, Россия</span> </a></li>
+          <li><a href="#">Иваново <span>Ивановская область, Россия</span> </a></li>
+          <li><a href="#">Иваново <span>Ивановская область, Россия</span> </a></li>
+        </ul>
+  
+      </div>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+    </div>
+  </div>
+  <!-- JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <script src="./assets/js/index.js"></script>
+
+
+</body>
+
+</html>
