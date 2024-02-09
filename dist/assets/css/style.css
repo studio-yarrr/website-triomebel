@@ -2434,6 +2434,19 @@ h2 {
     border-radius: 1.5rem;
 }
 
+.banner__el::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(76.63deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0) 114.42%);
+    z-index: -1;
+}
+
 @media (max-width: 1024px) {
     .banner__el {
         width: 56.4rem;
@@ -2461,7 +2474,7 @@ h2 {
     bottom: 0;
     width: 100%;
     height: 100%;
-    z-index: -1;
+    z-index: -2;
 }
 
 .banner__el-img img {
