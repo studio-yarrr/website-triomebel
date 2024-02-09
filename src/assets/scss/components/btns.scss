@@ -49,13 +49,27 @@
 }
 
 
+.btn {
+  display: block;
+  padding: 1.5rem 2rem;
+  border: 0.1rem solid var(--black);
+  border-radius: 1rem;
+
+  font-size: 1.4rem;
+  font-weight: 500;
+
+
+  color: var(--black);
+
+
+}
+
 .btn-like {
   position: relative;
   width: 4rem;
   height: 4rem;
   border-radius: 1rem;
-  background: #fff;
-
+  background: linear-gradient(259.43deg, #0057FF 2.5%, #5200FF 46.09%, #DB00FF 173.66%);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -74,20 +88,16 @@
   &::before {
     content: "";
     position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    border: 0.1rem linear-gradient(259.43deg, #0057FF 2.5%, #5200FF 46.09%, #DB00FF 173.66%) solid transparent;
-    background: linear-gradient(259.43deg, #0057FF 2.5%, #5200FF 46.09%, #DB00FF 173.66%) border-box;
-    -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
-    // mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
-    -webkit-mask-composite: destination-out;
-    mask-composite: exclude;
-    border-radius: 1rem;
+    top: 1px;
+    bottom: 01px;
+    left: 1px;
+    right: 1px;
+    background: #fff;
+    border-radius: 0.9rem;
 
   }
 }
+
 
 .btn-black {
   display: block;
@@ -102,4 +112,54 @@
   border-radius: 1rem;
   padding: 1.7rem 1rem;
 
+}
+
+.swiper-navigation {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+
+
+
+}
+
+@include breakpoint($xl-bp) {}
+
+@include breakpoint($sm-bp) {}
+
+.btn-next,
+.btn-prev {
+  width: 4rem;
+  height: 4rem;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  cursor: pointer;
+
+  @include breakpoint($xl-bp) {
+    width: 3.5rem;
+    height: 3.5rem;
+  }
+
+  @include breakpoint($sm-bp) {}
+
+
+  svg {
+    stroke: #000;
+    width: 1.6rem;
+    height: 1.6rem;
+
+  }
+}
+
+.btn-next {
+
+  transform: rotate(-90deg);
+
+}
+
+.btn-prev {
+  transform: rotate(90deg);
 }

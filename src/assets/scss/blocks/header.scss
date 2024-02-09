@@ -1,6 +1,16 @@
 .header {
 
+  margin-bottom: 4rem;
+
   width: 100%;
+
+  @include breakpoint($xl-bp) {
+    margin-bottom: 2rem;
+  }
+
+  @include breakpoint($xl-bp) {
+    margin-bottom: 1.5rem;
+  }
 
   &__choice {
     display: flex;
@@ -14,6 +24,7 @@
     @include breakpoint($xl-bp) {
       align-items: center;
       gap: 1rem;
+
     }
 
     @include breakpoint($sm-bp) {}
@@ -50,7 +61,7 @@
       position: absolute;
       content: "";
       width: 100%;
-      height: 0.1rem;
+      height: 0.05rem;
       background-color: var(--background);
       bottom: 0;
       left: 0;
@@ -487,7 +498,7 @@
   &__nav-dropdown:hover &__nav-panel {
 
     max-height: 100vh;
-    z-index: 1;
+    z-index: 6;
 
     @include breakpoint($xl-bp) {
       max-height: 0;
@@ -539,6 +550,7 @@
     max-height: 0;
     transition: max-height 0.3s;
     left: -29rem;
+    z-index: 10;
 
     ul {
       width: 46rem;
@@ -585,7 +597,7 @@
     overflow: hidden;
     max-height: 0;
     transition: max-height 0.5s;
-    z-index: 0;
+    z-index: 5;
 
     ul {
       display: flex;

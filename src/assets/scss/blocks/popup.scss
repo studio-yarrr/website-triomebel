@@ -466,6 +466,18 @@
 
   @include breakpoint($sm-bp) {}
 
+
+  &.visibility-modal .modal {
+
+    transform: translateY(0);
+    opacity: 1;
+
+    @include breakpoint($sm-bp) {
+      // transform: translateX(0);
+    }
+  }
+
+
   .modal {
     width: 41rem;
     height: 17.4rem;
@@ -474,12 +486,18 @@
     padding: 3rem;
     position: relative;
 
+    transform: translateY(20%);
+    opacity: 0;
+    transition: transform 0.3s, opacity 0.2s;
+
     @include breakpoint($xl-bp) {
       margin-top: 10rem;
     }
 
     @include breakpoint($xl-bp) {
       margin-top: 18rem;
+
+
     }
 
     &__close {
@@ -543,7 +561,7 @@
 
   &__label {
 
-    visibility: hidden;
+    display: none;
     position: absolute;
 
     font-size: 1rem;
@@ -555,7 +573,7 @@
 
 
     &.active {
-      visibility: visible;
+      display: block;
     }
 
   }

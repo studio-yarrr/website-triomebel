@@ -1,10 +1,13 @@
 document.addEventListener("DOMContentLoaded", function (event) {
 
   const windowWidth = window.innerWidth;
-
   console.log("разрешение", windowWidth);
 
-  /*----------------------------DropDownList-----------------------------*/
+  Fancybox.bind("[data-fancybox]", {
+    // Your custom options
+  });
+
+
   class DropDownList {
 
     constructor(dropDown, setting) {
@@ -146,10 +149,6 @@ document.addEventListener("DOMContentLoaded", function (event) {
 
 
   /*----------------------------Accordion-----------------------------*/
-
-
-
-
   // new Accordion('.accordion', {
   //   panel: '.accordion__panel',
   //   btn: '.accordion__btn',
@@ -214,32 +213,191 @@ document.addEventListener("DOMContentLoaded", function (event) {
 
 
 
-  /*-------------------------------Swipper------------------------------*/
-  // new Swiper('.swiper', {
-  //   loop: true,
-  //   speed:900,
-  //   navigation: {
-  //     nextEl: '.btn-next',
-  //     prevEl: '.btn-prev',
-  //   },
-  //   breakpoints: {
-  //     640: {
-  //       slidesPerView: 1,
-  //     },
-  //     1024: {
-  //       slidesPerView: 3,
-  //     },
-  //   },
-  // });
+  /*-------------------------------Swiper------------------------------*/
+  new Swiper('.swiper-banner', {
+    loop: true,
+    speed: 600,
+    slidesPerView: 1,
+    effect: 'creative',
+    creativeEffect: {
+      prev: {
+
+        translate: [0, 0, -500],
+      },
+      next: {
+
+        translate: ['130%', 0, 0],
+      },
+    },
+    navigation: {
+      nextEl: '.swiper-banner .btn-next',
+      prevEl: '.swiper-banner .btn-prev',
+    }
+
+  });
+
+  new Swiper('.swiper-month', {
+    loop: true,
+    speed: 600,
+    autoplay: {
+      delay: 5000,
+    },
+    slidesPerView: 1,
+    effect: 'creative',
+    creativeEffect: {
+      prev: {
+
+        translate: [0, 0, -500],
+      },
+      next: {
+
+        translate: ['130%', 0, 0],
+      },
+    },
+
+    pagination: {
+      el: '.products-month .swiper-pagination',
+      clickable: true,
+    },
+
+
+
+  });
+
+  new Swiper('.swiper-news', {
+
+    speed: 600,
+    breakpoints: {
+      0: {
+        slidesPerView: 1,
+        spaceBetween: 0,
+      },
+
+      374: {
+        slidesPerView: 1,
+        spaceBetween: -40,
+      },
+
+      440: {
+        slidesPerView: 1,
+        spaceBetween: -60,
+      },
+
+      558: {
+        slidesPerView: 1,
+        spaceBetween: -80,
+      },
+
+      601: {
+        slidesPerView: 2,
+        spaceBetween: -80,
+      },
+
+      880: {
+        slidesPerView: 2,
+        spaceBetween: -120,
+      },
+      1025: {
+        slidesPerView: 3,
+        spaceBetween: 10,
+      },
+
+    },
+
+  });
+  new Swiper('.swiper-comment', {
+
+    speed: 600,
+    breakpoints: {
+      0: {
+        slidesPerView: 1,
+        spaceBetween: 0,
+      },
+
+      374: {
+        slidesPerView: 1,
+        spaceBetween: -40,
+      },
+
+      440: {
+        slidesPerView: 1,
+        spaceBetween: -60,
+      },
+
+
+      558: {
+        slidesPerView: 1,
+        spaceBetween: -80,
+      },
+
+      601: {
+        slidesPerView: 2,
+        spaceBetween: -80,
+      },
+
+      880: {
+        slidesPerView: 2,
+        spaceBetween: -120,
+      },
+      1025: {
+        slidesPerView: 4,
+        spaceBetween: 10,
+      },
+
+    },
+
+  });
+
+
+
+  const productAll = document.querySelectorAll('.section-products');
+
+  if (productAll.length > 0) {
+    productAll.forEach(product => {
+
+      let btnNext = product.querySelector('.btn-next');
+      let btnPrev = product.querySelector('.btn-prev');
+      let swiper = product.querySelector('.swiper-product');
+
+      new Swiper(swiper, {
+
+        speed: 600,
+
+
+        breakpoints: {
+          0: {
+            slidesPerView: 2,
+            spaceBetween: 0,
+          },
+
+          601: {
+            slidesPerView: 3,
+            spaceBetween: -80,
+          },
+
+          830: {
+            slidesPerView: 3,
+            spaceBetween: -120,
+          },
+          1025: {
+            slidesPerView: 4,
+            spaceBetween: 20,
+          },
+
+        },
+        navigation: {
+          nextEl: btnNext,
+          prevEl: btnPrev,
+        },
+      });
+
+
+
+    })
+  }
+
+
   /*-----------------------*/
-
-
-
-
-
-
-
-
 
 
 
@@ -305,6 +463,9 @@ document.addEventListener("DOMContentLoaded", function (event) {
 
 
 
+
+
+
 });
 
 /*--------------------------function---------------------------------------*/
@@ -346,6 +507,43 @@ function enableScroll() {
   document.documentElement.style.setProperty('scroll-behavior', null);
   document.documentElement.classList.remove('scroll-lock');
   window.onscroll = function () { };
+}
+
+
+function addToBasket(id) {
+  // let quantityProduct = document.getElementById('quantity_' + id);
+  let productClassToggle = document.getElementById('product_' + id);
+
+  // let quantityProductValue = 1;
+  // if (quantityProduct) {
+  //   quantityProductValue = quantityProduct.value;
+  // }
+
+  // const request = new XMLHttpRequest();
+  // const url = "/local/ajax/add_to_basket.php";
+  // const params = "id=" + id + "&quantity=" + quantityProductValue;
+
+  // request.open("POST", url, true);
+
+  // request.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+
+  // request.addEventListener("readystatechange", () => {
+  //   if (request.readyState === 4 && request.status === 200) {
+  //     BX.onCustomEvent('OnBasketChange');
+  //     productClassToggle.classList.add('active');
+  //   }
+  // });
+  productClassToggle.classList.toggle('active');
+  // request.send(params);
+}
+
+function addToFavorites(id) {
+
+  let productClassToggle = document.getElementById('product_' + id);
+
+
+  productClassToggle.classList.toggle('favorite');
+
 }
 
 

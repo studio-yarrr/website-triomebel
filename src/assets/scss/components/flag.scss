@@ -1,0 +1,24 @@
+.flag--red,
+.flag--yellow,
+.flag--blue {
+  display: inline-block;
+  border-radius: 2rem;
+  padding: 0.6rem 0.8rem;
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--white);
+}
+
+.flag--red {
+  background: linear-gradient(260.17deg, #FF0000 2.35%, #FF7A00 102.74%);
+}
+
+.flag--yellow {
+  background: linear-gradient(260.17deg, #FFB800 2.35%, #FF7A00 102.74%);
+
+}
+
+.flag--blue {
+  background: linear-gradient(259.43deg, #0057FF 2.5%, #5200FF 46.09%, #DB00FF 173.66%);
+
+}
