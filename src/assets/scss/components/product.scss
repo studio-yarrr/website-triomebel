@@ -583,9 +583,7 @@
   .btn-like {}
 }
 
-@include breakpoint($xl-bp) {}
 
-@include breakpoint($sm-bp) {}
 
 .category-product {
   width: 32.8rem;
@@ -682,7 +680,7 @@
   &__el {
     width: 44rem;
     height: 31.5rem;
-
+    height: 31.5rem;
     position: relative;
     border-radius: 2rem;
     overflow: hidden;
@@ -736,11 +734,7 @@
 
   }
 
-  .flag--red {}
 
-  .flag--blue {}
-
-  .flag--yellow {}
 }
 
 @include breakpoint($xl-bp) {}
