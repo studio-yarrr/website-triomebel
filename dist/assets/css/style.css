@@ -2228,6 +2228,7 @@ h2 {
     #modalSearch .modal {
         -webkit-transform: translate(100%);
         transform: translate(100%);
+        margin-top: 8rem;
     }
 }
 

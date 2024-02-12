@@ -16,9 +16,7 @@
   visibility: visible;
 }
 
-@include breakpoint($xl-bp) {}
 
-@include breakpoint($sm-bp) {}
 
 .modal {
   background-color: #fff;
@@ -26,9 +24,7 @@
 
 }
 
-@include breakpoint($xl-bp) {}
 
-@include breakpoint($sm-bp) {}
 
 #modalLike {
   justify-content: flex-end;
@@ -143,9 +139,7 @@
 
 }
 
-@include breakpoint($xl-bp) {}
 
-@include breakpoint($sm-bp) {}
 
 #modalCatalog {
 
@@ -378,6 +372,7 @@
 
     @include breakpoint($sm-bp) {
       transform: translate(100%);
+      margin-top: 8rem;
     }
 
 
@@ -524,9 +519,6 @@
 }
 
 
-@include breakpoint($xl-bp) {}
-
-@include breakpoint($sm-bp) {}
 
 #modalSelectionCity {
 
