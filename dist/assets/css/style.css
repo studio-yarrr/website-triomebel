@@ -2067,6 +2067,7 @@ h2 {
         margin: 0;
         max-height: 100%;
         border-radius: 0;
+        padding: 1.5rem;
         padding-bottom: 20rem;
         -webkit-transform: translateX(100%);
         transform: translateX(100%);
@@ -2093,6 +2094,7 @@ h2 {
     flex-wrap: wrap;
     gap: 8rem;
     row-gap: 8rem;
+    overflow: hidden;
     overflow-y: auto;
     height: 100%;
 }
