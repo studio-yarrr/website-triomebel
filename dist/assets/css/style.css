@@ -2697,6 +2697,12 @@ h2 {
     border-top: 0.1rem solid #E6E6E6;
 }
 
+@media (max-width: 600px) {
+    .footer {
+        margin-top: 8rem;
+    }
+}
+
 .footer__top {
     padding-top: 2rem;
     padding-bottom: 2rem;

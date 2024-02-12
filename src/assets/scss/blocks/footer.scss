@@ -4,7 +4,9 @@
 
   @include breakpoint($xl-bp) {}
 
-  @include breakpoint($sm-bp) {}
+  @include breakpoint($sm-bp) {
+    margin-top: 8rem;
+  }
 
   &__top {
     padding-top: 2rem;
