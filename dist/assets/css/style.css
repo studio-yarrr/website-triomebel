@@ -983,8 +983,8 @@ h2 {
     }
 }
 
-.product__characteristics-panel ul li a {
-    color: var(--black);
+.product__characteristics-panel ul li button {
+    color: transparent;
 }
 
 .product__model {
