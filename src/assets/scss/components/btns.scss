@@ -210,6 +210,10 @@
   &:hover {
     svg {
       transform: rotate(180deg) translateY(0.5rem);
+
+      @include breakpoint($xl-bp) {
+        transform: rotate(180deg) translateY(0);
+      }
     }
 
   }

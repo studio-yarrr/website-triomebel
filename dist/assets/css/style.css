@@ -474,6 +474,13 @@ h2 {
     transform: rotate(180deg) translateY(0.5rem);
 }
 
+@media (max-width: 1024px) {
+    .btn-up:hover svg {
+        -webkit-transform: rotate(180deg) translateY(0);
+        transform: rotate(180deg) translateY(0);
+    }
+}
+
 .modal-el {
     width: 100%;
     padding-bottom: 2rem;
