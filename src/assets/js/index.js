@@ -461,6 +461,30 @@ document.addEventListener("DOMContentLoaded", function (event) {
   }
 
 
+  const commentAll = document.querySelectorAll('.comment__el');
+
+  if (commentAll.length > 0) {
+
+    const maxLength = 106;
+
+    commentAll.forEach(c => {
+      const text = c.querySelector('.comment__el-text');
+      let str = text.dataset.originalComment;
+      const commentMore = c.querySelector('.comment__more');
+
+      if (str.length >= maxLength) {
+        text.textContent = str.slice(0, maxLength) + '...';
+        commentMore.classList.add('active');
+      } else {
+        text.textContent = str;
+      }
+    })
+
+
+  }
+
+
+
 
 
 
@@ -474,6 +498,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
 function showModal(modalSelect) {
   const modal = document.getElementById(modalSelect);
   if (modal) {
+    document.querySelector('.visibility-modal') ? document.querySelector('.visibility-modal').classList.remove('visibility-modal') : '';
     modal.classList.add('visibility-modal');
     disableScroll();
   }
@@ -546,5 +571,19 @@ function addToFavorites(id) {
 
 }
 
+function showComment(modalSelect, commentSelect) {
+  const modalWrap = document.getElementById(modalSelect);
+
+  const comment = document.getElementById(commentSelect);
+  if (modalWrap && comment) {
+    const commentModal = modalWrap.querySelector('.comment');
+    modalWrap.classList.add('visibility-modal');
+    commentModal.innerHTML = comment.innerHTML;
+    const newText = modalWrap.querySelector('.comment__el-text');
+    newText.textContent = newText.dataset.originalComment
+    disableScroll();
+  }
+
+}
 
 

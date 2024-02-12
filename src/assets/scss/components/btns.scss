@@ -60,6 +60,7 @@
 
 
   color: var(--black);
+  cursor: pointer;
 
 
 }
@@ -111,7 +112,7 @@
   background-color: #000;
   border-radius: 1rem;
   padding: 1.7rem 1rem;
-
+  cursor: pointer;
 }
 
 .swiper-navigation {
@@ -162,4 +163,22 @@
 
 .btn-prev {
   transform: rotate(90deg);
+}
+
+
+.btn-up {
+  width: 4.5rem;
+  height: 4.5rem;
+  border-radius: 1rem;
+  border: 0.1rem solid #000000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  svg {
+    stroke: #000000;
+    width: 2rem;
+    height: 2rem;
+    transform: rotate(180deg);
+  }
 }

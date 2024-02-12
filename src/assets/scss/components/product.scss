@@ -133,6 +133,9 @@
 
 .search-res {
 
+
+
+
   display: none;
   width: 100%;
   overflow: hidden;
@@ -161,6 +164,24 @@
     flex-direction: column;
     gap: 4rem;
     overflow-y: auto;
+
+    &::-webkit-scrollbar {
+      width: 0.3rem;
+      height: 0.3rem;
+      background-color: transparent;
+    }
+
+
+    &::-webkit-scrollbar-thumb {
+      background-color: #000000;
+      border-radius: 0.5rem;
+
+    }
+
+    &::-webkit-scrollbar-thumb:hover {
+      background-color: #3f3f3f;
+    }
+
   }
 
   &__el {

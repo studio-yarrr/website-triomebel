@@ -22,6 +22,8 @@
 
 .modal {
   background-color: #fff;
+
+
 }
 
 @include breakpoint($xl-bp) {}
@@ -49,10 +51,22 @@
     transform: translateX(100%);
     transition: transform 0.3s ease-in-out;
 
+    &::-webkit-scrollbar {
+      width: 0.3rem;
+      height: 0.3rem;
+      background-color: transparent;
+    }
 
 
+    &::-webkit-scrollbar-thumb {
+      background-color: #000000;
+      border-radius: 0.5rem;
 
+    }
 
+    &::-webkit-scrollbar-thumb:hover {
+      background-color: #3f3f3f;
+    }
 
     &__close {
 
@@ -146,6 +160,24 @@
     transition: transform 0.3s, opacity 0.2s;
 
 
+    &::-webkit-scrollbar {
+      width: 0.3rem;
+      height: 0.3rem;
+      background-color: transparent;
+    }
+
+
+    &::-webkit-scrollbar-thumb {
+      background-color: #000000;
+      border-radius: 0.5rem;
+
+    }
+
+    &::-webkit-scrollbar-thumb:hover {
+      background-color: #3f3f3f;
+    }
+
+
     @include breakpoint($xl-bp) {
       margin: 0 2rem;
       margin-top: 12rem;
@@ -187,6 +219,8 @@
       flex-wrap: wrap;
       gap: 8rem;
       row-gap: 8rem;
+      overflow-y: auto;
+      height: 100%;
 
 
       @include breakpoint($xl-bp) {
@@ -204,6 +238,22 @@
         column-gap: 5.8rem;
       }
 
+      &::-webkit-scrollbar {
+        width: 0.3rem;
+        height: 0.3rem;
+        background-color: transparent;
+      }
+
+
+      &::-webkit-scrollbar-thumb {
+        background-color: #000000;
+        border-radius: 0.5rem;
+
+      }
+
+      &::-webkit-scrollbar-thumb:hover {
+        background-color: #3f3f3f;
+      }
 
     }
 
@@ -494,7 +544,7 @@
       margin-top: 10rem;
     }
 
-    @include breakpoint($xl-bp) {
+    @include breakpoint($sm-bp) {
       margin-top: 18rem;
 
 
@@ -656,4 +706,184 @@
     }
   }
 
+}
+
+
+#modalThank {
+
+  .modal-title {
+    margin-bottom: 2rem;
+
+  }
+
+  .modal {
+    height: 35.9rem !important;
+  }
+
+
+
+  .btn-black {
+    padding: 1.5rem 2rem;
+  }
+
+}
+
+.modal-thank-wrap {
+  width: 26.2rem;
+}
+
+.modal-thank-text {
+
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: var(--grey);
+
+
+}
+
+
+#modalComment,
+#modalCall,
+#modalThank {
+
+
+  align-items: center;
+  justify-content: center;
+
+  @include breakpoint($sm-bp) {}
+
+
+  &.visibility-modal .modal {
+
+    transform: translateY(0);
+    opacity: 1;
+
+
+  }
+
+
+  .modal {
+    width: 41rem;
+    height: auto;
+
+    background-color: #fff;
+    border-radius: 2rem;
+    padding: 3rem;
+    position: relative;
+
+    transform: translateY(20%);
+    opacity: 0;
+    transition: transform 0.3s, opacity 0.2s;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+
+
+
+    &__close {
+      position: absolute;
+      right: -5.5rem;
+      top: 0;
+      background-color: #000;
+      width: 4.5rem;
+      height: 4.5rem;
+      border-radius: 1rem;
+
+      @include breakpoint($sm-bp) {
+
+        right: 50%;
+
+        transform: translate(50%);
+
+        top: -7.5rem;
+      }
+
+      svg {
+        width: 2rem;
+        height: 2rem;
+        stroke: #fff;
+        stroke-width: 0.3rem;
+      }
+    }
+  }
+
+  .comment__el-title {
+
+    font-size: 2.4rem;
+    font-weight: 500;
+
+    text-decoration: underline;
+
+  }
+
+  .comment__el-text {
+    height: auto;
+    overflow: auto;
+  }
+
+  .comment__more {
+    display: none;
+  }
+}
+
+
+#modalCall {
+  .modal {}
+}
+
+.form-call {
+  width: 100%;
+  margin-top: 4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+
+  &__i {
+    width: 100%;
+    background: transparent;
+    padding: 1.7rem 2rem;
+    border: 0.1rem solid #E6E6E6;
+    border-radius: 1rem;
+
+    font-size: 1.4rem;
+    font-weight: 500;
+
+    color: var(--black);
+
+
+  }
+
+  &__bottom {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+    align-items: center;
+
+    p {
+      width: 15.8rem;
+
+      font-size: 1.2rem;
+      font-weight: 400;
+      color: var(--grey);
+
+      a {
+        font-weight: 500;
+        background: linear-gradient(259.43deg, #0057ff 2.5%, #5200ff 46.09%, #db00ff 173.66%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+      }
+
+
+
+    }
+  }
+
+  &__submit {
+    width: 11.3rem;
+
+  }
 }

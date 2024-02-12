@@ -418,3 +418,88 @@
 
   </div>
 </div>
+
+<div id="modalThank" class="modal-wrapper">
+  <div class="modal">
+
+    <button class="modal__close" onclick="closeModal()">
+      <svg>
+        <use xlink:href="assets/images/sprite/sprite-icons.svg#iconClose"></use>
+      </svg>
+    </button>
+
+    <div class="modal-thank-wrap">
+      <p class="modal-title">Ваши данные
+        успешно отправлены!</p>
+
+      <p class="modal-thank-text">В ближайшее время наш менеджер
+        свяжется с вами!</p>
+
+    </div>
+
+
+
+    <button class="btn-black" onclick="closeModal()">Вернуться назад</button>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+</div>
+
+
+
+
+<div id="modalComment" class="modal-wrapper">
+  <div class="modal">
+    <button class="modal__close" onclick="closeModal()">
+      <svg>
+        <use xlink:href="assets/images/sprite/sprite-icons.svg#iconClose"></use>
+      </svg>
+    </button>
+    <div class="comment"></div>
+
+
+  </div>
+</div>
+
+
+
+<div id="modalCall" class="modal-wrapper">
+  <div class="modal">
+    <button class="modal__close" onclick="closeModal()">
+      <svg>
+        <use xlink:href="assets/images/sprite/sprite-icons.svg#iconClose"></use>
+      </svg>
+    </button>
+    <p class="modal-title">Заказать звонок</p>
+
+
+    <form action="#" class="form-call">
+
+
+      <input class="form-call__i" type="text" placeholder="Имя">
+      <input class="form-call__i" type="tel" placeholder="Номер телефона">
+      <input class="form-call__i" type="email" placeholder="Email">
+
+      <div class="form-call__bottom">
+        <input class="form-call__submit btn-black" type="submit" onclick="showModal('modalThank')">
+        <p>Отправляя свои данные, вы
+          соглашаетесь на обработку
+          <a href="#">персональных данных</a>
+        </p>
+      </div>
+    </form>
+
+
+  </div>
+</div>
