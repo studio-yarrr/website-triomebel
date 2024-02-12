@@ -61,6 +61,22 @@
 
   color: var(--black);
   cursor: pointer;
+  transition: all 0.2s;
+  position: relative;
+
+
+  &:hover {
+    color: var(--white);
+
+    background: #000;
+
+    @include breakpoint($xl-bp) {
+      color: var(--black);
+
+
+      background: transparent;
+    }
+  }
 
 
 }
@@ -102,17 +118,25 @@
 
 .btn-black {
   display: block;
-
   font-size: 1.4rem;
   font-weight: 500;
   text-align: center;
-
   color: var(--white);
-
-  background-color: #000;
+  background: #000;
   border-radius: 1rem;
   padding: 1.7rem 1rem;
   cursor: pointer;
+  transition: all 0.3s;
+
+  &:hover {
+    transform: translateY(-0.2rem);
+    box-shadow: -0.3rem 0.5rem 0.7rem 0px #727272a8;
+
+    @include breakpoint($xl-bp) {
+      box-shadow: 0 0 0 0;
+      transform: translateY(0);
+    }
+  }
 }
 
 .swiper-navigation {
@@ -179,6 +203,14 @@
     stroke: #000000;
     width: 2rem;
     height: 2rem;
-    transform: rotate(180deg);
+    transform: rotate(180deg) translateY(0);
+    transition: all 0.2s;
+  }
+
+  &:hover {
+    svg {
+      transform: rotate(180deg) translateY(0.5rem);
+    }
+
   }
 }
