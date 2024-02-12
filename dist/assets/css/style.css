@@ -984,7 +984,7 @@ h2 {
 }
 
 .product__characteristics-panel ul li button {
-    color: transparent;
+    color: var(--black);
 }
 
 .product__model {
