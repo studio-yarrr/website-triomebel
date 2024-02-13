@@ -8,6 +8,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
   });
 
 
+
   class DropDownList {
 
     constructor(dropDown, setting) {
@@ -86,7 +87,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
       return this.btnAll = typeof this.setting.btn === "string" ? this.accordion.querySelectorAll(this.setting.btn) : this.setting.btn;  //получить все кнопки
     }
     #getPanel() {
-      return this.panelAll = typeof this.setting.panel === "string" ? this.accordion.querySelectorAll(this.setting.panel) : this.setting.panel; // получить все панели
+      return this.panelAll = typeof this.setting.panel === "string" ? this.accordion.querySelectorAll(this.setting.panel) : this.setting.panel;
     }
 
 
@@ -146,15 +147,26 @@ document.addEventListener("DOMContentLoaded", function (event) {
     })
   }
 
+  const range = document.querySelector('.range-slider')
 
 
   /*----------------------------Accordion-----------------------------*/
-  // new Accordion('.accordion', {
-  //   panel: '.accordion__panel',
-  //   btn: '.accordion__btn',
-  //   onlyOnePanel: true,        // открывать только одну
-  //   showPanel: 1,               // выбираем открытую панель
-  // })
+
+
+  const accBar = document.querySelector('.sidebar__form');
+
+  if (accBar && windowWidth <= 600) {
+    new Accordion(accBar, {
+      panel: '.sidebar__el-panel',
+      btn: '.sidebar__el-title',
+      onlyOnePanel: true,
+      showPanel: 1,
+    })
+  }
+
+
+
+
   /*-----------------------*/
 
 
@@ -484,11 +496,32 @@ document.addEventListener("DOMContentLoaded", function (event) {
   }
 
 
+  const rangeSlider = document.querySelector('.range-slider');
+
+  if (rangeSlider) {
+    const rangeFromRes = rangeSlider.querySelector('.range-slider__from-r');
+    const rangeToRes = rangeSlider.querySelector('.range-slider__to-r');
 
 
+    $(".js-range-slider").ionRangeSlider({
+      grid: false,
+      hide_from_to: true,
+      type: "double",
+      hide_min_max: true,
 
+      onStart: function (data) {
+        rangeFromRes.textContent = new Intl.NumberFormat('ru-RU').format(data.from);
+        rangeToRes.textContent = new Intl.NumberFormat('ru-RU').format(data.to);
 
+      },
+      onChange: function (data) {
 
+        rangeFromRes.textContent = new Intl.NumberFormat('ru-RU').format(data.from);
+        rangeToRes.textContent = new Intl.NumberFormat('ru-RU').format(data.to);
+
+      },
+    });
+  }
 
 });
 

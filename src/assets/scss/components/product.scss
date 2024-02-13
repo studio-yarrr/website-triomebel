@@ -260,9 +260,24 @@
   background-color: #fff;
   border-radius: 2rem;
   width: 32.8rem;
+  position: relative;
 
 
   .flag--red {
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+
+    @include breakpoint($xl-bp) {
+      top: 1.5rem;
+      left: 1.5rem;
+    }
+
+    @include breakpoint($sm-bp) {}
+
+  }
+
+  .flag--blue {
     position: absolute;
     top: 2rem;
     left: 2rem;

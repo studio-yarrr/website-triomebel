@@ -107,6 +107,11 @@
   </symbol>
 
 
+   <symbol id="iconСhecket"  viewBox="0 0 10 8">
+      <g>
+        <path d="M9 1L3.5 6.5L1 4" stroke="#F6F4F1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      </g>
+  </symbol>
 
 
 

@@ -67,8 +67,6 @@ body {
 }
 
 .content {
-  // overflow: hidden;
-
   display: flex;
   flex-direction: column;
   gap: 6rem;
@@ -161,6 +159,7 @@ a {}
 @import './components/btns.scss';
 @import './components/product.scss';
 @import './components/flag.scss';
+@import './components/breadcrumb.scss';
 
 /*--------- blocks -------------*/
 
@@ -174,3 +173,5 @@ a {}
 /*------page------*/
 
 @import './page/main.scss';
+
+@import './page/catalog.scss';
