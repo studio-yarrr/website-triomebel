@@ -628,6 +628,15 @@
     font-size: 1.8rem;
     font-weight: 500;
     color: var(--black);
+    transition: color 0.2s;
+
+    &:hover {
+      color: var(--grey);
+
+      @include breakpoint($xl-bp) {
+        color: var(--black);
+      }
+    }
 
     @include breakpoint($xl-bp) {
 

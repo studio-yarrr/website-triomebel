@@ -175,7 +175,14 @@
     stroke: #000;
     width: 1.6rem;
     height: 1.6rem;
+    transition: all 0.2s;
 
+  }
+}
+
+.swiper-button-disabled {
+  svg {
+    stroke: var(--grey);
   }
 }
 

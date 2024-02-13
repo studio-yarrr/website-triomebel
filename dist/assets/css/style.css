@@ -435,6 +435,11 @@ h2 {
     stroke: #000;
     width: 1.6rem;
     height: 1.6rem;
+    transition: all 0.2s;
+}
+
+.swiper-button-disabled svg {
+    stroke: var(--grey);
 }
 
 .btn-next {
@@ -1095,6 +1100,17 @@ h2 {
     font-size: 1.8rem;
     font-weight: 500;
     color: var(--black);
+    transition: color 0.2s;
+}
+
+.category-product__name:hover {
+    color: var(--grey);
+}
+
+@media (max-width: 1024px) {
+    .category-product__name:hover {
+        color: var(--black);
+    }
 }
 
 @media (max-width: 1024px) {
