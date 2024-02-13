@@ -389,7 +389,7 @@
     gap: 2.5rem;
 
     @include breakpoint($xl-bp) {
-      gap: 2rem;
+      justify-content: space-between;
     }
 
     @include breakpoint($sm-bp) {}
@@ -399,6 +399,7 @@
 
   &__price-new {
     color: var(--black);
+    flex: none;
 
     @include breakpoint($xl-bp) {
 
@@ -414,6 +415,7 @@
   &__price-old {
     color: var(--grey);
     text-decoration: line-through;
+    flex: none;
 
     @include breakpoint($xl-bp) {
 

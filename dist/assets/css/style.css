@@ -870,12 +870,15 @@ h2 {
 
 @media (max-width: 1024px) {
     .product__price {
-        gap: 2rem;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
     }
 }
 
 .product__price-new {
     color: var(--black);
+    -ms-flex: none;
+    flex: none;
 }
 
 @media (max-width: 1024px) {
@@ -887,6 +890,8 @@ h2 {
 .product__price-old {
     color: var(--grey);
     text-decoration: line-through;
+    -ms-flex: none;
+    flex: none;
 }
 
 @media (max-width: 1024px) {
