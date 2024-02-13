@@ -888,6 +888,7 @@ h2 {
 }
 
 .product__price-old {
+    font-size: 1.6rem;
     color: var(--grey);
     text-decoration: line-through;
     -ms-flex: none;
