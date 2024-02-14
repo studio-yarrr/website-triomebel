@@ -108,6 +108,10 @@
         stroke-width: 0.3rem;
         margin-bottom: -0.1rem;
         transition: all 0.2s;
+
+        @include breakpoint($xl-bp) {
+          margin-bottom: 0;
+        }
       }
 
       &:hover {

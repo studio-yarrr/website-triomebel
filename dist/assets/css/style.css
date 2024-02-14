@@ -2145,6 +2145,12 @@ h2 {
     transition: all 0.2s;
 }
 
+@media (max-width: 1024px) {
+    #modalLike .modal__close svg {
+        margin-bottom: 0;
+    }
+}
+
 #modalLike .modal__close:hover {
     background: #000;
     color: var(--white);
