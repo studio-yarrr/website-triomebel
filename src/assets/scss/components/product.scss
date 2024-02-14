@@ -403,6 +403,10 @@
     align-items: center;
     gap: 2.5rem;
 
+    p {
+      font-family: "HelveticaNeueCyr", sans-serif;
+    }
+
     @include breakpoint($xl-bp) {
       justify-content: space-between;
     }
@@ -424,7 +428,9 @@
 
     }
 
-    @include breakpoint($sm-bp) {}
+    @include breakpoint($sm-bp) {
+      font-size: 1.6rem;
+    }
   }
 
   &__price-old {
@@ -440,7 +446,9 @@
 
     }
 
-    @include breakpoint($sm-bp) {}
+    @include breakpoint($sm-bp) {
+      font-size: 1.6rem;
+    }
   }
 
   &__characteristics {

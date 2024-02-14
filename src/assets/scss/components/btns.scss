@@ -106,7 +106,7 @@
     content: "";
     position: absolute;
     top: 1px;
-    bottom: 01px;
+    bottom: 1px;
     left: 1px;
     right: 1px;
     background: #fff;
@@ -223,5 +223,46 @@
       }
     }
 
+  }
+}
+
+
+
+.stars {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+
+  @include breakpoint($xl-bp) {}
+
+  @include breakpoint($sm-bp) {}
+
+  svg {
+    width: 1.2rem;
+    height: 1.2rem;
+    stroke: var(--grey);
+    fill: var(--grey);
+
+    @include breakpoint($xl-bp) {}
+
+    @include breakpoint($sm-bp) {}
+
+    &.active {
+      fill: #FFC700;
+      stroke: #FFC700;
+
+    }
+  }
+}
+
+
+
+.share {
+
+  svg {
+    width: 2rem;
+    height: 2rem;
+    fill: transparent;
   }
 }

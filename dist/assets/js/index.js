@@ -634,3 +634,11 @@ function showComment(modalSelect, commentSelect) {
   }
 
 }
+
+function showTab(data) {
+  document.querySelector("[data-prod-tab].active") ? document.querySelector("[data-prod-tab].active").classList.remove('active') : '';
+  document.querySelector(`[data-prod-tab='${data}']`).classList.add('active');
+
+  document.querySelector("[data-tab].active") ? document.querySelector("[data-tab].active").classList.remove('active') : '';
+  document.querySelector(`[data-tab='${data}']`).classList.add('active');
+}

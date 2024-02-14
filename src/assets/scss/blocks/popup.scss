@@ -586,6 +586,9 @@
       width: 4.5rem;
       height: 4.5rem;
       border-radius: 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
 
       @include breakpoint($sm-bp) {
 
@@ -818,6 +821,10 @@
       width: 4.5rem;
       height: 4.5rem;
       border-radius: 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
 
       @include breakpoint($sm-bp) {
 

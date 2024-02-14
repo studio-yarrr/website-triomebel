@@ -309,7 +309,9 @@
       margin-left: 2rem;
     }
 
-    @include breakpoint($sm-bp) {}
+    @include breakpoint($sm-bp) {
+      font-size: 1.4rem;
+    }
 
   }
 }
@@ -350,12 +352,19 @@
     font-weight: 500;
     line-height: 120%;
 
-    @include breakpoint($xl-bp) {}
+    @include breakpoint($sm-bp) {
+      font-size: 1.4rem;
+    }
 
 
     svg {
       width: 1.2rem;
       height: 1.2rem;
+
+      @include breakpoint($sm-bp) {
+        width: 1.5rem;
+        height: 1.5rem;
+      }
     }
 
   }
@@ -497,11 +506,13 @@
 
   &__nav-dropdown:hover &__nav-panel {
 
-    max-height: 100vh;
+    opacity: 1;
+    transform: translateY(0);
     z-index: 6;
 
     @include breakpoint($xl-bp) {
       max-height: 0;
+
     }
 
 
@@ -541,14 +552,28 @@
 
   }
 
+  &__dropdown-more:hover &__dropdown-panel {
 
+    opacity: 1;
+    transform: translateY(0);
+    z-index: 6;
+
+    @include breakpoint($xl-bp) {
+      max-height: 0;
+
+    }
+
+
+
+  }
 
   &__dropdown-panel {
     min-width: 100%;
     position: absolute;
     overflow: hidden;
-    max-height: 0;
-    transition: max-height 0.3s;
+    opacity: 0;
+    transform: translateY(3rem);
+    transition: opacity 0.3s, transform 0.5s;
     left: -29rem;
     z-index: 10;
 
@@ -595,9 +620,12 @@
     position: absolute;
     left: -1.4rem;
     overflow: hidden;
-    max-height: 0;
-    transition: max-height 0.5s;
+    opacity: 0;
+    transform: translateY(3rem);
+    transition: opacity 0.3s, transform 0.5s;
     z-index: 5;
+
+
 
     ul {
       display: flex;

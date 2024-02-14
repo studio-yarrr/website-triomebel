@@ -354,33 +354,7 @@
 
   }
 
-  &__el-stars {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    margin-bottom: 2rem;
 
-    @include breakpoint($xl-bp) {}
-
-    @include breakpoint($sm-bp) {}
-
-    svg {
-      width: 1.2rem;
-      height: 1.2rem;
-      stroke: var(--grey);
-      fill: var(--grey);
-
-      @include breakpoint($xl-bp) {}
-
-      @include breakpoint($sm-bp) {}
-
-      &.active {
-        fill: #FFC700;
-        stroke: #FFC700;
-
-      }
-    }
-  }
 
   &__el-text {
     margin-bottom: 1rem;
@@ -636,7 +610,7 @@
   &__title {
 
     width: 44rem;
-    font-size: 26px;
+    font-size: 2.6rem;
     font-weight: 500;
     flex: none;
 
@@ -728,3 +702,13 @@
 @include breakpoint($xl-bp) {}
 
 @include breakpoint($sm-bp) {}
+
+
+.rub {
+  font-family: "PT_Sans", Tofu;
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
+  font-optical-sizing: auto;
+  line-height: initial // text-transform: uppercase;
+}
