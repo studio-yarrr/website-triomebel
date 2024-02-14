@@ -632,7 +632,7 @@ h2 {
     width: 1.7rem;
     height: 1.7rem;
     overflow: hidden;
-    border: 50%;
+    border-radius: 50%;
 }
 
 .modal-el__model-btn img {
