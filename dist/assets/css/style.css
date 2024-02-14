@@ -2125,6 +2125,8 @@ h2 {
     margin-bottom: 2.2rem;
     transition: all 0.2s;
     color: var(--black);
+    line-height: 1.5rem;
+    letter-spacing: 0em;
 }
 
 #modalLike .modal__close svg {
