@@ -428,8 +428,7 @@
   
   </header>
   <!-- Main content -->
-  <main class="catalog-page">
-  
+  <main class="product-page content">
     <div class="breadcrumb container">
       <a href="#">Назад</a>
       /
@@ -437,684 +436,73 @@
       /
       <a href="#">Каталог</a>
       /
-      <span>Кухни</span>
+      <a href="#">Кухни</a>
+      /
+      <span>Кухня комфорт</span>
     </div>
   
   
-    <section class="catalog">
+    <section class="desc-product container">
   
-      <div class="catalog__head  container">
   
-        <h1 class="catalog__title">Кухни</h1>
   
-        <div class="sorting dropdown">
-          <button class="sorting__btn dropdown-btn">
-            <span>выводить товары: по умолчанию</span>
-            <svg>
-              <use xlink:href="assets/images/sprite/sprite-icons.svg#iconArrow"></use>
-            </svg>
-          </button>
   
-          <div class="sorting__panel dropdown-panel">
-            <form action="#" class="sorting__form">
-              <ul>
-                <li>
-                  <input name="sort" type="radio" id="inexpensive">
-                  <label for="inexpensive">Сначала недорогие</label>
-                </li>
-                <li>
-                  <input name="sort" type="radio" id="expensiv">
-                  <label for="expensiv">Сначала дорогие</label>
-                </li>
-                <li>
-                  <input name="sort" type="radio" id="popula">
-                  <label for="popula">Популярные</label>
-                </li>
-                <li>
-                  <input name="sort" type="radio" id="action">
-                  <label for="action">По акции</label>
-                </li>
-              </ul>
-            </form>
+  
+      <div class="desc-product__content">
+  
+  
+  
+        <div class="desc-product__wrap">
+  
+          <div class="desc-product__foto">
+            <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="swiper mySwiper2">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+  
+                  <a href="assets/images/plan.png" data-fancybox="gallery"><img alt="Gallery picture #1"
+                      src="assets/images/plan.png"></a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="assets/images/kitchen.jpg" data-fancybox="gallery"><img alt="Gallery picture #1"
+                      src="assets/images/kitchen.jpg"></a>
+  
+                </div>
+                <div class="swiper-slide">
+                  <a href="assets/images/kitchen.jpg" data-fancybox="gallery"><img alt="Gallery picture #1"
+                      src="assets/images/kitchen.jpg"></a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="assets/images/kitchen.jpg" data-fancybox="gallery"><img alt="Gallery picture #1"
+                      src="assets/images/kitchen.jpg"></a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="assets/images/kitchen.jpg" data-fancybox="gallery"><img alt="Gallery picture #1"
+                      src="assets/images/kitchen.jpg"></a>
+                </div>
+  
+              </div>
+            </div>
+            <div thumbsSlider="" class="swiper mySwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img src="assets/images//plan.png" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="assets/images/kitchen.jpg" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="assets/images/kitchen.jpg" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="assets/images/kitchen.jpg" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="assets/images/kitchen.jpg" />
+                </div>
+              </div>
+            </div>
   
           </div>
-        </div>
-      </div>
-  
-      <div class="catalog__links">
-        <div class="catalog__links-wrap">
-          <a class="catalog__links-el" href="#">Кухни прямые</a>
-          <a class="catalog__links-el" href="#">Кухни угловые</a>
-          <a class="catalog__links-el" href="#">Кухня эконом</a>
-          <a class="catalog__links-el" href="#">Кухонные уголки</a>
-        </div>
-  
-      </div>
-  
-  
-      <div class="catalog__wrap  container">
-  
-        <div class="sidebar">
-          <form action="#" class="sidebar__form">
-  
-  
-  
-            <div class="sidebar__el">
-              <div class="sidebar__el-title">
-                <span>Цена, ₽</span>
-                <svg>
-                  <use xlink:href="assets/images/sprite/sprite-icons.svg#iconArrow"></use>
-                </svg>
-              </div>
-              <div class="sidebar__el-panel">
-                <div class="range-slider">
-                  <div class="range-slider__res">
-                    <p class="range-slider__from"><span>oт</span><span class="range-slider__from-r"></span><span>₽</span>
-                    </p>
-                    <span class="range-slider__line"></span>
-                    <p class="range-slider__to"><span>oт</span><span class="range-slider__to-r"></span><span>₽</span></pc>
-                  </div>
-                  <input type="text" class="js-range-slider" name="my_range" value="" data-min="500" data-max="500000"
-                    data-from="8000" data-to="90000" data-min-interval="25000" />
-                </div>
-              </div>
-  
-  
-  
-            </div>
-  
-            <div class="sidebar__el">
-              <div class="sidebar__el-title">
-                <span>Тип кухни</span>
-                <svg>
-                  <use xlink:href="assets/images/sprite/sprite-icons.svg#iconArrow"></use>
-                </svg>
-              </div>
-  
-              <div class="sidebar__el-panel">
-                <div class="radio-check">
-  
-                  <div class="radio-check__el">
-                    <input type="radio" id="type_1" name="type">
-                    <label for="type_1">
-                      <div class="radio-check__el-box">
-                        <svg>
-                          <use xlink:href="assets/images/sprite/sprite-icons.svg#iconСhecket"></use>
-                        </svg>
-                      </div>
-                      <span>Прямая</span>
-                    </label>
-                  </div>
-  
-  
-                  <div class="radio-check__el">
-                    <input type="radio" id="type_2" name="type">
-                    <label for="type_2">
-                      <div class="radio-check__el-box">
-                        <svg>
-                          <use xlink:href="assets/images/sprite/sprite-icons.svg#iconСhecket"></use>
-                        </svg>
-                      </div>
-                      <span>Угловая</span>
-                    </label>
-                  </div>
-  
-  
-                </div>
-  
-              </div>
-  
-            </div>
-  
-  
-            <div class="sidebar__el">
-              <div class="sidebar__el-title">
-                <span>Размер кухни</span>
-                <svg>
-                  <use xlink:href="assets/images/sprite/sprite-icons.svg#iconArrow"></use>
-                </svg>
-              </div>
-  
-              <div class="sidebar__el-panel">
-                <div class="radio-check">
-  
-                  <div class="radio-check__el">
-                    <input type="radio" id="size_1" name="size">
-                    <label for="size_1">
-                      <div class="radio-check__el-box">
-                        <svg>
-                          <use xlink:href="assets/images/sprite/sprite-icons.svg#iconСhecket"></use>
-                        </svg>
-                      </div>
-                      <span>1.2 метра</span>
-                    </label>
-                  </div>
-  
-  
-                  <div class="radio-check__el">
-                    <input type="radio" id="size_2" name="size">
-                    <label for="size_2">
-                      <div class="radio-check__el-box">
-                        <svg>
-                          <use xlink:href="assets/images/sprite/sprite-icons.svg#iconСhecket"></use>
-                        </svg>
-                      </div>
-                      <span>1,5 метра</span>
-                    </label>
-                  </div>
-  
-                  <div class="radio-check__el">
-                    <input type="radio" id="size_3" name="size">
-                    <label for="size_3">
-                      <div class="radio-check__el-box">
-                        <svg>
-                          <use xlink:href="assets/images/sprite/sprite-icons.svg#iconСhecket"></use>
-                        </svg>
-                      </div>
-                      <span>1.7 метра</span>
-                    </label>
-                  </div>
-  
-  
-                  <div class="radio-check__el">
-                    <input type="radio" id="size_4" name="size">
-                    <label for="size_4">
-                      <div class="radio-check__el-box">
-                        <svg>
-                          <use xlink:href="assets/images/sprite/sprite-icons.svg#iconСhecket"></use>
-                        </svg>
-                      </div>
-                      <span>2 метра</span>
-                    </label>
-                  </div>
-  
-  
-                </div>
-  
-              </div>
-  
-            </div>
-  
-  
-            <div class="sidebar__el">
-              <div class="sidebar__el-title">
-                <span>Цвет</span>
-                <svg>
-                  <use xlink:href="assets/images/sprite/sprite-icons.svg#iconArrow"></use>
-                </svg>
-              </div>
-  
-              <div class="sidebar__el-panel">
-                <div class="color-selection">
-  
-                  <div class="color-selection__el">
-                    <input type="radio" id="color_1" name="color">
-                    <label for="color_1">
-                      <div class="color-selection__el-img">
-                        <img src="assets/images/model/model-1.png" alt="#">
-  
-                      </div>
-                    </label>
-                  </div>
-  
-                  <div class="color-selection__el">
-                    <input type="radio" id="color_2" name="color">
-                    <label for="color_2">
-                      <div class="color-selection__el-img">
-                        <img src="assets/images/model/model-2.png" alt="#">
-                      </div>
-                    </label>
-                  </div>
-  
-  
-  
-  
-  
-  
-                </div>
-  
-              </div>
-  
-            </div>
-  
-          </form>
-  
-  
-        </div>
-  
-  
-        <div class="catalog__content">
-  
-          <div class="catalog__products">
-            <div id="product_1" class="product">
-  
-              <div class="flag--blue">Товар месяца</div>
-  
-              <div class="product__img">
-                <img src="assets/images/wardrobe.jpg" alt="#">
-              </div>
-  
-              <div class="product__wrap">
-                <div class="product__desc">
-                  <a href="#" class="product__title">
-                    <p>Двух спальная кровать</p>
-                    <p>Бланка</p>
-                  </a>
-  
-                  <div class="product__price">
-                    <p class="product__price-new">8 800 ₽</p>
-                    <p class="product__price-old">15 200 ₽</p>
-                  </div>
-  
-                  <div class="product__characteristics dropdown">
-                    <div class="product__characteristics-btn dropdown-btn">
-                      <p>Ш1250 х Г2030 х В850 </p>
-                      <svg>
-                        <use xlink:href="assets/images/sprite/sprite-icons.svg#iconArrow"></use>
-                      </svg>
-                    </div>
-  
-                    <div class="product__characteristics-panel dropdown-panel">
-                      <ul>
-                        <li><button>Ш1050 х Г1030 х В250 </button></li>
-                        <li><button>Ш1950 х Г3230 х В1050 </button></li>
-                        <li><button>Ш2250 х Г5030 х В9050 </button></li>
-                      </ul>
-                    </div>
-  
-                  </div>
-                </div>
-  
-                <div class="product__model">
-  
-                  <div class="product__model-img">
-                    <img src="assets/images/model/model-1.png" alt="#">
-                  </div>
-  
-                  <div class="product__model-img">
-                    <img src="assets/images/model/model-2.png" alt="#">
-                  </div>
-                </div>
-  
-              </div>
-  
-              <div class="product__btns">
-  
-                <button class="btn-black" onclick="addToBasket('1')">В корзину</button>
-  
-                <button class="btn-like" onclick="addToFavorites('1')">
-                  <svg>
-                    <use xlink:href="assets/images/sprite/sprite-icons.svg#iconLike"></use>
-                  </svg>
-                </button>
-  
-              </div>
-  
-            </div>
-  
-            <div id="product_2" class="product">
-  
-              <div class="flag--blue">Товар месяца</div>
-  
-              <div class="product__img">
-                <img src="assets/images/wardrobe.jpg" alt="#">
-              </div>
-  
-              <div class="product__wrap">
-                <div class="product__desc">
-                  <a href="#" class="product__title">
-                    <p>Двух спальная кровать</p>
-                    <p>Бланка</p>
-                  </a>
-  
-                  <div class="product__price">
-                    <p class="product__price-new">8 800 ₽</p>
-                    <p class="product__price-old">15 200 ₽</p>
-                  </div>
-  
-                  <div class="product__characteristics dropdown">
-                    <div class="product__characteristics-btn dropdown-btn">
-                      <p>Ш1250 х Г2030 х В850 </p>
-                      <svg>
-                        <use xlink:href="assets/images/sprite/sprite-icons.svg#iconArrow"></use>
-                      </svg>
-                    </div>
-  
-                    <div class="product__characteristics-panel dropdown-panel">
-                      <ul>
-                        <li><button>Ш1050 х Г1030 х В250 </button></li>
-                        <li><button>Ш1950 х Г3230 х В1050 </button></li>
-                        <li><button>Ш2250 х Г5030 х В9050 </button></li>
-                      </ul>
-                    </div>
-  
-                  </div>
-                </div>
-  
-                <div class="product__model">
-  
-                  <div class="product__model-img">
-                    <img src="assets/images/model/model-1.png" alt="#">
-                  </div>
-  
-                  <div class="product__model-img">
-                    <img src="assets/images/model/model-2.png" alt="#">
-                  </div>
-                </div>
-  
-              </div>
-  
-              <div class="product__btns">
-  
-                <button class="btn-black" onclick="addToBasket('2')">В корзину</button>
-  
-                <button class="btn-like" onclick="addToFavorites('2')">
-                  <svg>
-                    <use xlink:href="assets/images/sprite/sprite-icons.svg#iconLike"></use>
-                  </svg>
-                </button>
-  
-              </div>
-  
-            </div>
-  
-            <div id="product_3" class="product">
-  
-              <div class="flag--blue">Товар месяца</div>
-  
-              <div class="product__img">
-                <img src="assets/images/wardrobe.jpg" alt="#">
-              </div>
-  
-              <div class="product__wrap">
-                <div class="product__desc">
-                  <a href="#" class="product__title">
-                    <p>Двух спальная кровать</p>
-                    <p>Бланка</p>
-                  </a>
-  
-                  <div class="product__price">
-                    <p class="product__price-new">8 800 ₽</p>
-                    <p class="product__price-old">15 200 ₽</p>
-                  </div>
-  
-                  <div class="product__characteristics dropdown">
-                    <div class="product__characteristics-btn dropdown-btn">
-                      <p>Ш1250 х Г2030 х В850 </p>
-                      <svg>
-                        <use xlink:href="assets/images/sprite/sprite-icons.svg#iconArrow"></use>
-                      </svg>
-                    </div>
-  
-                    <div class="product__characteristics-panel dropdown-panel">
-                      <ul>
-                        <li><button>Ш1050 х Г1030 х В250 </button></li>
-                        <li><button>Ш1950 х Г3230 х В1050 </button></li>
-                        <li><button>Ш2250 х Г5030 х В9050 </button></li>
-                      </ul>
-                    </div>
-  
-                  </div>
-                </div>
-  
-                <div class="product__model">
-  
-                  <div class="product__model-img">
-                    <img src="assets/images/model/model-1.png" alt="#">
-                  </div>
-  
-                  <div class="product__model-img">
-                    <img src="assets/images/model/model-2.png" alt="#">
-                  </div>
-                </div>
-  
-              </div>
-  
-              <div class="product__btns">
-  
-                <button class="btn-black" onclick="addToBasket('3')">В корзину</button>
-  
-                <button class="btn-like" onclick="addToFavorites('3')">
-                  <svg>
-                    <use xlink:href="assets/images/sprite/sprite-icons.svg#iconLike"></use>
-                  </svg>
-                </button>
-  
-              </div>
-  
-            </div>
-  
-            <div id="product_4" class="product">
-  
-              <div class="flag--red">Товар месяца</div>
-  
-              <div class="product__img">
-                <img src="assets/images/wardrobe.jpg" alt="#">
-              </div>
-  
-              <div class="product__wrap">
-                <div class="product__desc">
-                  <a href="#" class="product__title">
-                    <p>Двух спальная кровать</p>
-                    <p>Бланка</p>
-                  </a>
-  
-                  <div class="product__price">
-                    <p class="product__price-new">8 800 ₽</p>
-                    <p class="product__price-old">15 200 ₽</p>
-                  </div>
-  
-                  <div class="product__characteristics dropdown">
-                    <div class="product__characteristics-btn dropdown-btn">
-                      <p>Ш1250 х Г2030 х В850 </p>
-                      <svg>
-                        <use xlink:href="assets/images/sprite/sprite-icons.svg#iconArrow"></use>
-                      </svg>
-                    </div>
-  
-                    <div class="product__characteristics-panel dropdown-panel">
-                      <ul>
-                        <li><button>Ш1050 х Г1030 х В250 </button></li>
-                        <li><button>Ш1950 х Г3230 х В1050 </button></li>
-                        <li><button>Ш2250 х Г5030 х В9050 </button></li>
-                      </ul>
-                    </div>
-  
-                  </div>
-                </div>
-  
-                <div class="product__model">
-  
-                  <div class="product__model-img">
-                    <img src="assets/images/model/model-1.png" alt="#">
-                  </div>
-  
-                  <div class="product__model-img">
-                    <img src="assets/images/model/model-2.png" alt="#">
-                  </div>
-                </div>
-  
-              </div>
-  
-              <div class="product__btns">
-  
-                <button class="btn-black" onclick="addToBasket('4')">В корзину</button>
-  
-                <button class="btn-like" onclick="addToFavorites('4')">
-                  <svg>
-                    <use xlink:href="assets/images/sprite/sprite-icons.svg#iconLike"></use>
-                  </svg>
-                </button>
-  
-              </div>
-  
-            </div>
-  
-            <div id="product_5" class="product">
-  
-              <div class="flag--red">Товар месяца</div>
-  
-              <div class="product__img">
-                <img src="assets/images/wardrobe.jpg" alt="#">
-              </div>
-  
-              <div class="product__wrap">
-                <div class="product__desc">
-                  <a href="#" class="product__title">
-                    <p>Двух спальная кровать</p>
-                    <p>Бланка</p>
-                  </a>
-  
-                  <div class="product__price">
-                    <p class="product__price-new">8 800 ₽</p>
-                    <p class="product__price-old">15 200 ₽</p>
-                  </div>
-  
-                  <div class="product__characteristics dropdown">
-                    <div class="product__characteristics-btn dropdown-btn">
-                      <p>Ш1250 х Г2030 х В850 </p>
-                      <svg>
-                        <use xlink:href="assets/images/sprite/sprite-icons.svg#iconArrow"></use>
-                      </svg>
-                    </div>
-  
-                    <div class="product__characteristics-panel dropdown-panel">
-                      <ul>
-                        <li><button>Ш1050 х Г1030 х В250 </button></li>
-                        <li><button>Ш1950 х Г3230 х В1050 </button></li>
-                        <li><button>Ш2250 х Г5030 х В9050 </button></li>
-                      </ul>
-                    </div>
-  
-                  </div>
-                </div>
-  
-                <div class="product__model">
-  
-                  <div class="product__model-img">
-                    <img src="assets/images/model/model-1.png" alt="#">
-                  </div>
-  
-                  <div class="product__model-img">
-                    <img src="assets/images/model/model-2.png" alt="#">
-                  </div>
-                </div>
-  
-              </div>
-  
-              <div class="product__btns">
-  
-                <button class="btn-black" onclick="addToBasket('5')">В корзину</button>
-  
-                <button class="btn-like" onclick="addToFavorites('5')">
-                  <svg>
-                    <use xlink:href="assets/images/sprite/sprite-icons.svg#iconLike"></use>
-                  </svg>
-                </button>
-  
-              </div>
-  
-            </div>
-  
-            <div id="product_6" class="product">
-  
-              <div class="flag--red">Товар месяца</div>
-  
-              <div class="product__img">
-                <img src="assets/images/wardrobe.jpg" alt="#">
-              </div>
-  
-              <div class="product__wrap">
-                <div class="product__desc">
-                  <a href="#" class="product__title">
-                    <p>Двух спальная кровать</p>
-                    <p>Бланка</p>
-                  </a>
-  
-                  <div class="product__price">
-                    <p class="product__price-new">8 800 ₽</p>
-                    <p class="product__price-old">15 200 ₽</p>
-                  </div>
-  
-                  <div class="product__characteristics dropdown">
-                    <div class="product__characteristics-btn dropdown-btn">
-                      <p>Ш1250 х Г2030 х В850 </p>
-                      <svg>
-                        <use xlink:href="assets/images/sprite/sprite-icons.svg#iconArrow"></use>
-                      </svg>
-                    </div>
-  
-                    <div class="product__characteristics-panel dropdown-panel">
-                      <ul>
-                        <li><button>Ш1050 х Г1030 х В250 </button></li>
-                        <li><button>Ш1950 х Г3230 х В1050 </button></li>
-                        <li><button>Ш2250 х Г5030 х В9050 </button></li>
-                      </ul>
-                    </div>
-  
-                  </div>
-                </div>
-  
-                <div class="product__model">
-  
-                  <div class="product__model-img">
-                    <img src="assets/images/model/model-1.png" alt="#">
-                  </div>
-  
-                  <div class="product__model-img">
-                    <img src="assets/images/model/model-2.png" alt="#">
-                  </div>
-                </div>
-  
-              </div>
-  
-              <div class="product__btns">
-  
-                <button class="btn-black" onclick="addToBasket('6')">В корзину</button>
-  
-                <button class="btn-like" onclick="addToFavorites('6')">
-                  <svg>
-                    <use xlink:href="assets/images/sprite/sprite-icons.svg#iconLike"></use>
-                  </svg>
-                </button>
-  
-              </div>
-  
-            </div>
-          </div>
-  
-  
-  
-          <div class="pagination">
-            <button class="btn show-more">Показать еще</button>
-            <div class="pagination__num" data-pagination-num="1">
-  
-  
-              <span class="pagination-prev disabled">
-                <svg>
-                  <use xlink:href="assets/images/sprite/sprite-icons.svg#iconArrow"></use>
-                </svg>
-              </span>
-              <span class="pagination-button active">1</span>
-              <a href="#" class="pagination-button">2</a>
-              <a href="#" class="pagination-button">3</a>
-              <a href="#" class="pagination-button">4</a>
-              <a href="#" class="pagination-button pagination--hidden">5</a>
-              <span class="pagination-points">...</span>
-              <a href="#" class="pagination-button">11</a>
-              <a class="pagination-next" id="navigation_1_next_page">
-                <svg>
-                  <use xlink:href="assets/images/sprite/sprite-icons.svg#iconArrow"></use>
-                </svg>
-              </a>
-  
-  
-  
-            </div>
-  
-  
-          </div>
-  
   
         </div>
   
@@ -1124,18 +512,16 @@
   
   
       </div>
+  
+  
+      <div class="desc-product__sidebar"></div>
+  
+  
+  
+  
+  
   
     </section>
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
   
   
   
