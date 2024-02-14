@@ -1883,7 +1883,7 @@ h2 {
     transition: opacity 0.3s, transform 0.5s;
     transition: opacity 0.3s, transform 0.5s, -webkit-transform 0.5s;
     left: -29rem;
-    z-index: 10;
+    z-index: -1;
 }
 
 .header-bottom__dropdown-panel ul {
@@ -1933,7 +1933,7 @@ h2 {
     transition: opacity 0.3s, -webkit-transform 0.5s;
     transition: opacity 0.3s, transform 0.5s;
     transition: opacity 0.3s, transform 0.5s, -webkit-transform 0.5s;
-    z-index: 5;
+    z-index: -1;
 }
 
 .header-bottom__nav-panel ul {

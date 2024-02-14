@@ -575,7 +575,7 @@
     transform: translateY(3rem);
     transition: opacity 0.3s, transform 0.5s;
     left: -29rem;
-    z-index: 10;
+    z-index: -1;
 
     ul {
       width: 46rem;
@@ -623,7 +623,7 @@
     opacity: 0;
     transform: translateY(3rem);
     transition: opacity 0.3s, transform 0.5s;
-    z-index: 5;
+    z-index: -1;
 
 
 
