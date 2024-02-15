@@ -4945,6 +4945,7 @@ h2 {
     border-radius: 1rem;
     border: 0.1rem solid transparent;
     transition: all 0.2s;
+    cursor: pointer;
 }
 
 .color-selection__el input:checked + label {
