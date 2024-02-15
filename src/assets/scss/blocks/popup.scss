@@ -1109,7 +1109,11 @@
   color: var(--black-1a);
   margin-bottom: -1rem;
 
-
+  @media screen and (-webkit-min-device-pixel-ratio: 0) {
+    &:focus {
+      font-size: 1.6rem;
+    }
+  }
 
 }
 

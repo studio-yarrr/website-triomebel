@@ -3054,6 +3054,12 @@ h2 {
     margin-bottom: -1rem;
 }
 
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+    .share-link:focus {
+        font-size: 1.6rem;
+    }
+}
+
 .share-btn svg {
     width: 2rem;
     height: 2rem;
