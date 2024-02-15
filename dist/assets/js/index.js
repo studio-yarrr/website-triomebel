@@ -698,16 +698,18 @@ function productPlus(selectorInput) {
 }
 
 
+
+
 function share(select) {
-  /* Get the text field */
-  var copyText = document.getElementById(select);
-
-  /* Select the text field */
+  let copyText = document.getElementById(select);
   copyText.select();
-
-  /* Copy the text inside the text field */
   document.execCommand("copy");
 
-  /* Alert the copied text */
-  alert("Ссылка скопирована в буфер обмен");
+  let tooltip = document.getElementById("myTooltip");
+  tooltip.innerHTML = "Готово";
+}
+
+function outFunc() {
+  let tooltip = document.getElementById("myTooltip");
+  tooltip.innerHTML = "Скопировать";
 }

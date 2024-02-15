@@ -3060,6 +3060,11 @@ h2 {
     }
 }
 
+.share-btn {
+    position: relative;
+    display: inline-block;
+}
+
 .share-btn svg {
     width: 2rem;
     height: 2rem;
@@ -3073,6 +3078,39 @@ h2 {
     font-size: 1rem;
     font-weight: 500;
     color: var(--grey);
+}
+
+.tooltiptext {
+    visibility: hidden;
+    width: 140px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    bottom: 150%;
+    left: 50%;
+    margin-left: -75px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+
+.share-btn:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
 }
 
 .footer {
