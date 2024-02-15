@@ -551,6 +551,19 @@ document.addEventListener("DOMContentLoaded", function (event) {
     });
   }
 
+
+
+  const btnUp = document.querySelector('.btn-up');
+  if (btnUp) {
+    btnUp.onclick = () => {
+      window.scrollTo({
+        top: 0,
+        left: 0,
+        behavior: 'smooth'
+      });
+    }
+  }
+
 });
 
 /*--------------------------function---------------------------------------*/
