@@ -159,9 +159,21 @@ document.addEventListener("DOMContentLoaded", function (event) {
     new Accordion(accBar, {
       panel: '.sidebar__el-panel',
       btn: '.sidebar__el-title',
-      onlyOnePanel: true,
+      onlyOnePanel: false,
       showPanel: 1,
     })
+  }
+
+  const specificationAcc = document.querySelector('.specification-acc');
+
+  if (specificationAcc) {
+    new Accordion(specificationAcc, {
+      panel: '.specification-acc__panel',
+      btn: '.specification-acc__btn',
+      onlyOnePanel: true,
+
+    })
+
   }
 
 
@@ -641,4 +653,20 @@ function showTab(data) {
 
   document.querySelector("[data-tab].active") ? document.querySelector("[data-tab].active").classList.remove('active') : '';
   document.querySelector(`[data-tab='${data}']`).classList.add('active');
+}
+
+function productMinus(selectorInput) {
+
+  const i = document.getElementById(`productCounter_${selectorInput}`);
+  if (i) {
+    i.value > 1 ? i.value-- : i.value;
+  }
+
+}
+
+function productPlus(selectorInput) {
+  const i = document.getElementById(`productCounter_${selectorInput}`);
+  if (i) {
+    i.value++;
+  }
 }

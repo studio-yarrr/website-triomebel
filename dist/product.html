@@ -616,7 +616,8 @@
                     </li>
                   </ul>
   
-                  <a href="#tab_2" class="product-menu__characteristic-all" onclick="showTab(2)">Все характеристики</a>
+                  <a href="#tab_2" class="product-menu__characteristic-all" onclick="showTab(2)">Все
+                    характеристики</a>
   
                 </div>
   
@@ -950,8 +951,9 @@
                 <div class="specification-acc__btn">
                   <span>Правила</span>
                   <div class="specification-acc__icon">
-                    <span></span>
-                    <span></span>
+                    <svg>
+                      <use xlink:href="assets/images/sprite/sprite-icons.svg#iconPlus"></use>
+                    </svg>
                   </div>
                 </div>
   
@@ -1056,6 +1058,7 @@
   
               <div class="article-wrap">
   
+  
                 <div class="article-block">
                   <img src="assets/images/discount.jpg" alt="#">
                 </div>
@@ -1089,12 +1092,832 @@
       </div>
   
   
-      <div class="desc-product__sidebar"></div>
+      <div class="desc-product__sidebar">
+        <form class="pay-block " id="product_1">
+  
+          <button class="pay-block__favorite" onclick="addToFavorites('1')">
+            <svg>
+              <use xlink:href="assets/images/sprite/sprite-icons.svg#iconLike"></use>
+            </svg>
+          </button>
+          <p class="pay-block__price">11 000 ₽</p>
+          <p class="pay-block__base-price">Базовая цена: <span>14 000 </span>₽</p>
+          <button class="pay-block__basket" onclick="addToBasket('1')">Добавить в корзину</button>
+          <div class="pay-block__counter">
+            <button class="pay-block__counter-btn" onclick="productMinus('1')">
+              <svg>
+                <use xlink:href="assets/images/sprite/sprite-icons.svg#iconMinus"></use>
+              </svg>
+            </button>
+            <input id="productCounter_1" class="pay-block__counter-i" type="number" value="1">
+            <button class="pay-block__counter-btn" onclick="productPlus('1')">
+              <svg>
+                <use xlink:href="assets/images/sprite/sprite-icons.svg#iconPlus"></use>
+              </svg>
+            </button>
+          </div>
+  
+          <button class="pay-block__buy">Купить в 1 клик</button>
+  
+        </form>
+      </div>
   
   
   
   
   
+  
+    </section>
+  
+    <section class="section-products container">
+  
+      <div class="section-products__head">
+        <h2 class="section-products__head-title">С этим товаром часто покупают</h2>
+        <div class="swiper-navigation">
+  
+          <div class="btn-prev">
+            <svg>
+              <use xlink:href="assets/images/sprite/sprite-icons.svg#iconArrow"></use>
+            </svg>
+          </div>
+  
+          <div class="btn-next">
+            <svg>
+              <use xlink:href="assets/images/sprite/sprite-icons.svg#iconArrow"></use>
+            </svg>
+          </div>
+  
+        </div>
+  
+      </div>
+  
+      <div class="swiper-product">
+  
+        <div class="swiper-wrapper">
+  
+          <div class="swiper-slide">
+  
+            <div id="product_1" class="product">
+  
+              <div class="flag--red">Товар месяца</div>
+  
+              <div class="product__img">
+                <img src="assets/images/wardrobe.jpg" alt="#">
+              </div>
+  
+              <div class="product__wrap">
+                <div class="product__desc">
+                  <a href="#" class="product__title">
+                    <p>Двух спальная кровать</p>
+                    <p>Бланка</p>
+                  </a>
+  
+                  <div class="product__price">
+                    <p class="product__price-new">8 800 ₽</p>
+                    <p class="product__price-old">15 200 ₽</p>
+                  </div>
+  
+                  <div class="product__characteristics dropdown">
+                    <div class="product__characteristics-btn dropdown-btn">
+                      <p>Ш1250 х Г2030 х В850 </p>
+                      <svg>
+                        <use xlink:href="assets/images/sprite/sprite-icons.svg#iconArrow"></use>
+                      </svg>
+                    </div>
+  
+                    <div class="product__characteristics-panel dropdown-panel">
+                      <ul>
+                        <li><button>Ш1050 х Г1030 х В250 </button></li>
+                        <li><button>Ш1950 х Г3230 х В1050 </button></li>
+                        <li><button>Ш2250 х Г5030 х В9050 </button></li>
+                      </ul>
+                    </div>
+  
+                  </div>
+                </div>
+  
+                <div class="product__model">
+  
+                  <div class="product__model-img">
+                    <img src="assets/images/model/model-1.png" alt="#">
+                  </div>
+  
+                  <div class="product__model-img">
+                    <img src="assets/images/model/model-2.png" alt="#">
+                  </div>
+                </div>
+  
+              </div>
+  
+              <div class="product__btns">
+  
+                <button class="btn-black" onclick="addToBasket('1')">В корзину</button>
+  
+                <button class="btn-like" onclick="addToFavorites('1')">
+                  <svg>
+                    <use xlink:href="assets/images/sprite/sprite-icons.svg#iconLike"></use>
+                  </svg>
+                </button>
+  
+              </div>
+  
+            </div>
+  
+          </div>
+  
+          <div class="swiper-slide">
+  
+            <div id="product_2" class="product">
+  
+              <div class="flag--red">Товар месяца</div>
+  
+              <div class="product__img">
+                <img src="assets/images/wardrobe.jpg" alt="#">
+              </div>
+  
+              <div class="product__wrap">
+                <div class="product__desc">
+                  <a href="#" class="product__title">
+                    <p>Двух спальная кровать</p>
+                    <p>Бланка</p>
+                  </a>
+  
+                  <div class="product__price">
+                    <p class="product__price-new">8 800 ₽</p>
+                    <p class="product__price-old">15 200 ₽</p>
+                  </div>
+  
+                  <div class="product__characteristics dropdown">
+                    <div class="product__characteristics-btn dropdown-btn">
+                      <p>Ш1250 х Г2030 х В850 </p>
+                      <svg>
+                        <use xlink:href="assets/images/sprite/sprite-icons.svg#iconArrow"></use>
+                      </svg>
+                    </div>
+  
+                    <div class="product__characteristics-panel dropdown-panel">
+                      <ul>
+                        <li><button>Ш1050 х Г1030 х В250 </button></li>
+                        <li><button>Ш1950 х Г3230 х В1050 </button></li>
+                        <li><button>Ш2250 х Г5030 х В9050 </button></li>
+                      </ul>
+                    </div>
+  
+                  </div>
+                </div>
+  
+                <div class="product__model">
+  
+                  <div class="product__model-img">
+                    <img src="assets/images/model/model-1.png" alt="#">
+                  </div>
+  
+                  <div class="product__model-img">
+                    <img src="assets/images/model/model-2.png" alt="#">
+                  </div>
+                </div>
+  
+              </div>
+  
+              <div class="product__btns">
+  
+                <button class="btn-black" onclick="addToBasket('2')">В корзину</button>
+  
+                <button class="btn-like" onclick="addToFavorites('2')">
+                  <svg>
+                    <use xlink:href="assets/images/sprite/sprite-icons.svg#iconLike"></use>
+                  </svg>
+                </button>
+  
+              </div>
+  
+            </div>
+  
+          </div>
+  
+          <div class="swiper-slide">
+  
+            <div id="product_3" class="product">
+  
+              <div class="flag--red">Товар месяца</div>
+  
+              <div class="product__img">
+                <img src="assets/images/wardrobe.jpg" alt="#">
+              </div>
+  
+              <div class="product__wrap">
+                <div class="product__desc">
+                  <a href="#" class="product__title">
+                    <p>Двух спальная кровать</p>
+                    <p>Бланка</p>
+                  </a>
+  
+                  <div class="product__price">
+                    <p class="product__price-new">8 800 ₽</p>
+                    <p class="product__price-old">15 200 ₽</p>
+                  </div>
+  
+                  <div class="product__characteristics dropdown">
+                    <div class="product__characteristics-btn dropdown-btn">
+                      <p>Ш1250 х Г2030 х В850 </p>
+                      <svg>
+                        <use xlink:href="assets/images/sprite/sprite-icons.svg#iconArrow"></use>
+                      </svg>
+                    </div>
+  
+                    <div class="product__characteristics-panel dropdown-panel">
+                      <ul>
+                        <li><button>Ш1050 х Г1030 х В250 </button></li>
+                        <li><button>Ш1950 х Г3230 х В1050 </button></li>
+                        <li><button>Ш2250 х Г5030 х В9050 </button></li>
+                      </ul>
+                    </div>
+  
+                  </div>
+                </div>
+  
+                <div class="product__model">
+  
+                  <div class="product__model-img">
+                    <img src="assets/images/model/model-1.png" alt="#">
+                  </div>
+  
+                  <div class="product__model-img">
+                    <img src="assets/images/model/model-2.png" alt="#">
+                  </div>
+                </div>
+  
+              </div>
+  
+              <div class="product__btns">
+  
+                <button class="btn-black" onclick="addToBasket('3')">В корзину</button>
+  
+                <button class="btn-like" onclick="addToFavorites('3')">
+                  <svg>
+                    <use xlink:href="assets/images/sprite/sprite-icons.svg#iconLike"></use>
+                  </svg>
+                </button>
+  
+              </div>
+  
+            </div>
+  
+          </div>
+  
+          <div class="swiper-slide">
+  
+            <div id="product_4" class="product">
+  
+              <div class="flag--red">Товар месяца</div>
+  
+              <div class="product__img">
+                <img src="assets/images/wardrobe.jpg" alt="#">
+              </div>
+  
+              <div class="product__wrap">
+                <div class="product__desc">
+                  <a href="#" class="product__title">
+                    <p>Двух спальная кровать</p>
+                    <p>Бланка</p>
+                  </a>
+  
+                  <div class="product__price">
+                    <p class="product__price-new">8 800 ₽</p>
+                    <p class="product__price-old">15 200 ₽</p>
+                  </div>
+  
+                  <div class="product__characteristics dropdown">
+                    <div class="product__characteristics-btn dropdown-btn">
+                      <p>Ш1250 х Г2030 х В850 </p>
+                      <svg>
+                        <use xlink:href="assets/images/sprite/sprite-icons.svg#iconArrow"></use>
+                      </svg>
+                    </div>
+  
+                    <div class="product__characteristics-panel dropdown-panel">
+                      <ul>
+                        <li><button>Ш1050 х Г1030 х В250 </button></li>
+                        <li><button>Ш1950 х Г3230 х В1050 </button></li>
+                        <li><button>Ш2250 х Г5030 х В9050 </button></li>
+                      </ul>
+                    </div>
+  
+                  </div>
+                </div>
+  
+                <div class="product__model">
+  
+                  <div class="product__model-img">
+                    <img src="assets/images/model/model-1.png" alt="#">
+                  </div>
+  
+                  <div class="product__model-img">
+                    <img src="assets/images/model/model-2.png" alt="#">
+                  </div>
+                </div>
+  
+              </div>
+  
+              <div class="product__btns">
+  
+                <button class="btn-black" onclick="addToBasket('4')">В корзину</button>
+  
+                <button class="btn-like" onclick="addToFavorites('4')">
+                  <svg>
+                    <use xlink:href="assets/images/sprite/sprite-icons.svg#iconLike"></use>
+                  </svg>
+                </button>
+  
+              </div>
+  
+            </div>
+  
+          </div>
+  
+          <div class="swiper-slide">
+  
+            <div id="product_5" class="product">
+  
+              <div class="flag--red">Товар месяца</div>
+  
+              <div class="product__img">
+                <img src="assets/images/wardrobe.jpg" alt="#">
+              </div>
+  
+              <div class="product__wrap">
+                <div class="product__desc">
+                  <a href="#" class="product__title">
+                    <p>Двух спальная кровать</p>
+                    <p>Бланка</p>
+                  </a>
+  
+                  <div class="product__price">
+                    <p class="product__price-new">8 800 ₽</p>
+                    <p class="product__price-old">15 200 ₽</p>
+                  </div>
+  
+                  <div class="product__characteristics dropdown">
+                    <div class="product__characteristics-btn dropdown-btn">
+                      <p>Ш1250 х Г2030 х В850 </p>
+                      <svg>
+                        <use xlink:href="assets/images/sprite/sprite-icons.svg#iconArrow"></use>
+                      </svg>
+                    </div>
+  
+                    <div class="product__characteristics-panel dropdown-panel">
+                      <ul>
+                        <li><button>Ш1050 х Г1030 х В250 </button></li>
+                        <li><button>Ш1950 х Г3230 х В1050 </button></li>
+                        <li><button>Ш2250 х Г5030 х В9050 </button></li>
+                      </ul>
+                    </div>
+  
+                  </div>
+                </div>
+  
+                <div class="product__model">
+  
+                  <div class="product__model-img">
+                    <img src="assets/images/model/model-1.png" alt="#">
+                  </div>
+  
+                  <div class="product__model-img">
+                    <img src="assets/images/model/model-2.png" alt="#">
+                  </div>
+                </div>
+  
+              </div>
+  
+              <div class="product__btns">
+  
+                <button class="btn-black" onclick="addToBasket('5')">В корзину</button>
+  
+                <button class="btn-like" onclick="addToFavorites('5')">
+                  <svg>
+                    <use xlink:href="assets/images/sprite/sprite-icons.svg#iconLike"></use>
+                  </svg>
+                </button>
+  
+              </div>
+  
+            </div>
+  
+          </div>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+        </div>
+  
+  
+  
+  
+  
+      </div>
+  
+    </section>
+  
+    <section class="section-products container">
+  
+      <div class="section-products__head">
+        <h2 class="section-products__head-title">Похожие товары</h2>
+        <div class="swiper-navigation">
+  
+          <div class="btn-prev">
+            <svg>
+              <use xlink:href="assets/images/sprite/sprite-icons.svg#iconArrow"></use>
+            </svg>
+          </div>
+  
+          <div class="btn-next">
+            <svg>
+              <use xlink:href="assets/images/sprite/sprite-icons.svg#iconArrow"></use>
+            </svg>
+          </div>
+  
+        </div>
+  
+      </div>
+  
+      <div class="swiper-product">
+  
+        <div class="swiper-wrapper">
+  
+          <div class="swiper-slide">
+  
+            <div id="product_1t" class="product">
+  
+              <div class="flag--red">Товар месяца</div>
+  
+              <div class="product__img">
+                <img src="assets/images/wardrobe.jpg" alt="#">
+              </div>
+  
+              <div class="product__wrap">
+                <div class="product__desc">
+                  <a href="#" class="product__title">
+                    <p>Двух спальная кровать</p>
+                    <p>Бланка</p>
+                  </a>
+  
+                  <div class="product__price">
+                    <p class="product__price-new">8 800 ₽</p>
+                    <p class="product__price-old">15 200 ₽</p>
+                  </div>
+  
+                  <div class="product__characteristics dropdown">
+                    <div class="product__characteristics-btn dropdown-btn">
+                      <p>Ш1250 х Г2030 х В850 </p>
+                      <svg>
+                        <use xlink:href="assets/images/sprite/sprite-icons.svg#iconArrow"></use>
+                      </svg>
+                    </div>
+  
+                    <div class="product__characteristics-panel dropdown-panel">
+                      <ul>
+                        <li><button>Ш1050 х Г1030 х В250 </button></li>
+                        <li><button>Ш1950 х Г3230 х В1050 </button></li>
+                        <li><button>Ш2250 х Г5030 х В9050 </button></li>
+                      </ul>
+                    </div>
+  
+                  </div>
+                </div>
+  
+                <div class="product__model">
+  
+                  <div class="product__model-img">
+                    <img src="assets/images/model/model-1.png" alt="#">
+                  </div>
+  
+                  <div class="product__model-img">
+                    <img src="assets/images/model/model-2.png" alt="#">
+                  </div>
+                </div>
+  
+              </div>
+  
+              <div class="product__btns">
+  
+                <button class="btn-black" onclick="addToBasket('1t')">В корзину</button>
+  
+                <button class="btn-like" onclick="addToFavorites('1t')">
+                  <svg>
+                    <use xlink:href="assets/images/sprite/sprite-icons.svg#iconLike"></use>
+                  </svg>
+                </button>
+  
+              </div>
+  
+            </div>
+  
+          </div>
+  
+          <div class="swiper-slide">
+  
+            <div id="product_2t" class="product">
+  
+              <div class="flag--red">Товар месяца</div>
+  
+              <div class="product__img">
+                <img src="assets/images/wardrobe.jpg" alt="#">
+              </div>
+  
+              <div class="product__wrap">
+                <div class="product__desc">
+                  <a href="#" class="product__title">
+                    <p>Двух спальная кровать</p>
+                    <p>Бланка</p>
+                  </a>
+  
+                  <div class="product__price">
+                    <p class="product__price-new">8 800 ₽</p>
+                    <p class="product__price-old">15 200 ₽</p>
+                  </div>
+  
+                  <div class="product__characteristics dropdown">
+                    <div class="product__characteristics-btn dropdown-btn">
+                      <p>Ш1250 х Г2030 х В850 </p>
+                      <svg>
+                        <use xlink:href="assets/images/sprite/sprite-icons.svg#iconArrow"></use>
+                      </svg>
+                    </div>
+  
+                    <div class="product__characteristics-panel dropdown-panel">
+                      <ul>
+                        <li><button>Ш1050 х Г1030 х В250 </button></li>
+                        <li><button>Ш1950 х Г3230 х В1050 </button></li>
+                        <li><button>Ш2250 х Г5030 х В9050 </button></li>
+                      </ul>
+                    </div>
+  
+                  </div>
+                </div>
+  
+                <div class="product__model">
+  
+                  <div class="product__model-img">
+                    <img src="assets/images/model/model-1.png" alt="#">
+                  </div>
+  
+                  <div class="product__model-img">
+                    <img src="assets/images/model/model-2.png" alt="#">
+                  </div>
+                </div>
+  
+              </div>
+  
+              <div class="product__btns">
+  
+                <button class="btn-black" onclick="addToBasket('2t')">В корзину</button>
+  
+                <button class="btn-like" onclick="addToFavorites('2t')">
+                  <svg>
+                    <use xlink:href="assets/images/sprite/sprite-icons.svg#iconLike"></use>
+                  </svg>
+                </button>
+  
+              </div>
+  
+            </div>
+  
+          </div>
+  
+          <div class="swiper-slide">
+  
+            <div id="product_3t" class="product">
+  
+              <div class="flag--red">Товар месяца</div>
+  
+              <div class="product__img">
+                <img src="assets/images/wardrobe.jpg" alt="#">
+              </div>
+  
+              <div class="product__wrap">
+                <div class="product__desc">
+                  <a href="#" class="product__title">
+                    <p>Двух спальная кровать</p>
+                    <p>Бланка</p>
+                  </a>
+  
+                  <div class="product__price">
+                    <p class="product__price-new">8 800 ₽</p>
+                    <p class="product__price-old">15 200 ₽</p>
+                  </div>
+  
+                  <div class="product__characteristics dropdown">
+                    <div class="product__characteristics-btn dropdown-btn">
+                      <p>Ш1250 х Г2030 х В850 </p>
+                      <svg>
+                        <use xlink:href="assets/images/sprite/sprite-icons.svg#iconArrow"></use>
+                      </svg>
+                    </div>
+  
+                    <div class="product__characteristics-panel dropdown-panel">
+                      <ul>
+                        <li><button>Ш1050 х Г1030 х В250 </button></li>
+                        <li><button>Ш1950 х Г3230 х В1050 </button></li>
+                        <li><button>Ш2250 х Г5030 х В9050 </button></li>
+                      </ul>
+                    </div>
+  
+                  </div>
+                </div>
+  
+                <div class="product__model">
+  
+                  <div class="product__model-img">
+                    <img src="assets/images/model/model-1.png" alt="#">
+                  </div>
+  
+                  <div class="product__model-img">
+                    <img src="assets/images/model/model-2.png" alt="#">
+                  </div>
+                </div>
+  
+              </div>
+  
+              <div class="product__btns">
+  
+                <button class="btn-black" onclick="addToBasket('3t')">В корзину</button>
+  
+                <button class="btn-like" onclick="addToFavorites('3t')">
+                  <svg>
+                    <use xlink:href="assets/images/sprite/sprite-icons.svg#iconLike"></use>
+                  </svg>
+                </button>
+  
+              </div>
+  
+            </div>
+  
+          </div>
+  
+          <div class="swiper-slide">
+  
+            <div id="product_4t" class="product">
+  
+              <div class="flag--red">Товар месяца</div>
+  
+              <div class="product__img">
+                <img src="assets/images/wardrobe.jpg" alt="#">
+              </div>
+  
+              <div class="product__wrap">
+                <div class="product__desc">
+                  <a href="#" class="product__title">
+                    <p>Двух спальная кровать</p>
+                    <p>Бланка</p>
+                  </a>
+  
+                  <div class="product__price">
+                    <p class="product__price-new">8 800 ₽</p>
+                    <p class="product__price-old">15 200 ₽</p>
+                  </div>
+  
+                  <div class="product__characteristics dropdown">
+                    <div class="product__characteristics-btn dropdown-btn">
+                      <p>Ш1250 х Г2030 х В850 </p>
+                      <svg>
+                        <use xlink:href="assets/images/sprite/sprite-icons.svg#iconArrow"></use>
+                      </svg>
+                    </div>
+  
+                    <div class="product__characteristics-panel dropdown-panel">
+                      <ul>
+                        <li><button>Ш1050 х Г1030 х В250 </button></li>
+                        <li><button>Ш1950 х Г3230 х В1050 </button></li>
+                        <li><button>Ш2250 х Г5030 х В9050 </button></li>
+                      </ul>
+                    </div>
+  
+                  </div>
+                </div>
+  
+                <div class="product__model">
+  
+                  <div class="product__model-img">
+                    <img src="assets/images/model/model-1.png" alt="#">
+                  </div>
+  
+                  <div class="product__model-img">
+                    <img src="assets/images/model/model-2.png" alt="#">
+                  </div>
+                </div>
+  
+              </div>
+  
+              <div class="product__btns">
+  
+                <button class="btn-black" onclick="addToBasket('4t')">В корзину</button>
+  
+                <button class="btn-like" onclick="addToFavorites('4t')">
+                  <svg>
+                    <use xlink:href="assets/images/sprite/sprite-icons.svg#iconLike"></use>
+                  </svg>
+                </button>
+  
+              </div>
+  
+            </div>
+  
+          </div>
+  
+          <div class="swiper-slide">
+  
+            <div id="product_5t" class="product">
+  
+              <div class="flag--red">Товар месяца</div>
+  
+              <div class="product__img">
+                <img src="assets/images/wardrobe.jpg" alt="#">
+              </div>
+  
+              <div class="product__wrap">
+                <div class="product__desc">
+                  <a href="#" class="product__title">
+                    <p>Двух спальная кровать</p>
+                    <p>Бланка</p>
+                  </a>
+  
+                  <div class="product__price">
+                    <p class="product__price-new">8 800 ₽</p>
+                    <p class="product__price-old">15 200 ₽</p>
+                  </div>
+  
+                  <div class="product__characteristics dropdown">
+                    <div class="product__characteristics-btn dropdown-btn">
+                      <p>Ш1250 х Г2030 х В850 </p>
+                      <svg>
+                        <use xlink:href="assets/images/sprite/sprite-icons.svg#iconArrow"></use>
+                      </svg>
+                    </div>
+  
+                    <div class="product__characteristics-panel dropdown-panel">
+                      <ul>
+                        <li><button>Ш1050 х Г1030 х В250 </button></li>
+                        <li><button>Ш1950 х Г3230 х В1050 </button></li>
+                        <li><button>Ш2250 х Г5030 х В9050 </button></li>
+                      </ul>
+                    </div>
+  
+                  </div>
+                </div>
+  
+                <div class="product__model">
+  
+                  <div class="product__model-img">
+                    <img src="assets/images/model/model-1.png" alt="#">
+                  </div>
+  
+                  <div class="product__model-img">
+                    <img src="assets/images/model/model-2.png" alt="#">
+                  </div>
+                </div>
+  
+              </div>
+  
+              <div class="product__btns">
+  
+                <button class="btn-black" onclick="addToBasket('5t')">В корзину</button>
+  
+                <button class="btn-like" onclick="addToFavorites('5t')">
+                  <svg>
+                    <use xlink:href="assets/images/sprite/sprite-icons.svg#iconLike"></use>
+                  </svg>
+                </button>
+  
+              </div>
+  
+            </div>
+  
+          </div>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+        </div>
+  
+  
+  
+  
+  
+      </div>
   
     </section>
   
