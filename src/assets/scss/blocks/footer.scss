@@ -484,6 +484,20 @@
     font-weight: 500;
     line-height: 120%;
 
+    @include breakpoint($sm-bp) {
+      font-size: 1.4rem;
+    }
+
+    svg {
+      width: 1.2rem;
+      height: 1.2rem;
+
+      @include breakpoint($sm-bp) {
+        width: 1.5rem;
+        height: 1.5rem;
+      }
+    }
+
   }
 
   &__dropdown-panel {

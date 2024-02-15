@@ -3595,6 +3595,24 @@ h2 {
     line-height: 120%;
 }
 
+@media (max-width: 600px) {
+    .footer-sms__dropdown-btn {
+        font-size: 1.4rem;
+    }
+}
+
+.footer-sms__dropdown-btn svg {
+    width: 1.2rem;
+    height: 1.2rem;
+}
+
+@media (max-width: 600px) {
+    .footer-sms__dropdown-btn svg {
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+}
+
 .footer-sms__dropdown-panel {
     position: absolute;
     overflow: hidden;
