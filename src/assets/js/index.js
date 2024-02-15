@@ -423,10 +423,23 @@ document.addEventListener("DOMContentLoaded", function (event) {
 
   var swiper = new Swiper(".mySwiper", {
     loop: true,
-    spaceBetween: 10,
-    slidesPerView: 6,
+
     freeMode: true,
     watchSlidesProgress: true,
+
+    breakpoints: {
+      0: {
+        slidesPerView: 5,
+        spaceBetween: 0,
+      },
+
+
+      1025: {
+        spaceBetween: 10,
+        slidesPerView: 6,
+      },
+
+    },
   });
   var swiper2 = new Swiper(".mySwiper2", {
     loop: true,
@@ -682,6 +695,21 @@ function productPlus(selectorInput) {
   if (i) {
     i.value++;
   }
+}
+
+
+function share(select) {
+  /* Get the text field */
+  var copyText = document.getElementById(select);
+
+  /* Select the text field */
+  copyText.select();
+
+  /* Copy the text inside the text field */
+  document.execCommand("copy");
+
+  /* Alert the copied text */
+  alert("Ссылка скопирована в буфер обмен");
 }
 
 

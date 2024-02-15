@@ -507,7 +507,7 @@
           <div class="product-menu">
             <div class="product-menu__head">
               <h1 class="product-menu__title">Кухни комфорт</h1>
-              <button class="share">
+              <button class="share" onclick="showModal('modalShare')">
                 <svg>
                   <use xlink:href="assets/images/sprite/sprite-icons.svg#iconShare"></use>
                 </svg>
@@ -1129,10 +1129,10 @@
   
     </section>
   
-    <section class="section-products container">
+    <section class="section-products ">
   
-      <div class="section-products__head">
-        <h2 class="section-products__head-title">С этим товаром часто покупают</h2>
+      <div class="section-products__head container">
+        <h2 class="section-products__head-title ">С этим товаром часто покупают</h2>
         <div class="swiper-navigation">
   
           <div class="btn-prev">
@@ -1151,7 +1151,7 @@
   
       </div>
   
-      <div class="swiper-product">
+      <div class="swiper-product container">
   
         <div class="swiper-wrapper">
   
@@ -1525,9 +1525,9 @@
   
     </section>
   
-    <section class="section-products container">
+    <section class="section-products ">
   
-      <div class="section-products__head">
+      <div class="section-products__head container">
         <h2 class="section-products__head-title">Похожие товары</h2>
         <div class="swiper-navigation">
   
@@ -1547,7 +1547,7 @@
   
       </div>
   
-      <div class="swiper-product">
+      <div class="swiper-product container">
   
         <div class="swiper-wrapper">
   
@@ -2719,6 +2719,55 @@
           </p>
         </div>
       </form>
+  
+  
+    </div>
+  </div>
+  
+  
+  <div id="modalShare" class="modal-wrapper">
+    <div class="modal">
+      <button class="modal__close" onclick="closeModal()">
+        <svg>
+          <use xlink:href="assets/images/sprite/sprite-icons.svg#iconClose"></use>
+        </svg>
+      </button>
+      <p class="modal-title">Поделиться</p>
+      <p class="share-title">Поделится в социальных сетях</p>
+  
+      <div class="share-network-wrap">
+        <div class="share-network-wrap-vk">
+          <svg class="vk--color">
+            <use xlink:href="assets/images/sprite/sprite-icons.svg#iconVK"></use>
+          </svg>
+        </div>
+  
+        <div class="share-network-wrap-ok">
+          <svg class="vk--color">
+            <use xlink:href="assets/images/sprite/sprite-icons.svg#iconOK"></use>
+          </svg>
+        </div>
+      </div>
+      <p class="share-title">Скопировать ссылку</p>
+      <div class="share-link-wrap">
+  
+        <label for="share-link" class="share-link-placeholder">Ссылка</label>
+        <input id="share-link" class="share-link" type="text"
+          value="https://triomebel.com/catalog/modulnye_spalni/kollektsiya_milana_spalnya/"
+          data-link-orig="https://triomebel.com/catalog/modulnye_spalni/kollektsiya_milana_spalnya/">
+  
+        <button class="share-btn" onclick="share('share-link')">
+  
+          <svg>
+            <use xlink:href="assets/images/sprite/sprite-icons.svg#iconCopy"></use>
+          </svg>
+  
+        </button>
+  
+      </div>
+  
+  
+  
   
   
     </div>

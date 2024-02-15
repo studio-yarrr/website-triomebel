@@ -1,10 +1,27 @@
+.product-page {
+  .section-products {
+    overflow: hidden;
+
+    padding-bottom: 10rem;
+    margin-bottom: -10rem;
+  }
+}
+
 .product-foto {
 
   width: 55.3rem;
 
+  @include breakpoint($xl-bp) {
+    order: 2;
+    width: 44.8rem;
+  }
+
+  @include breakpoint($sm-bp) {
+    width: 100%;
+  }
+
   .swiper {
     width: 100%;
-    height: 100%;
   }
 
   .swiper-slide {
@@ -22,10 +39,7 @@
     object-fit: cover;
   }
 
-  body {
-    background: #000;
-    color: #000;
-  }
+
 
   .swiper {
     width: 100%;
@@ -42,6 +56,14 @@
   .mySwiper2 {
     height: 55.3rem;
     width: 100%;
+
+    @include breakpoint($xl-bp) {
+      height: 44.8rem;
+    }
+
+    @include breakpoint($sm-bp) {
+      height: 40rem;
+    }
 
     .swiper-slide {
       border-radius: 3rem;
@@ -61,17 +83,21 @@
   }
 
   .mySwiper {
-    height: 20%;
+
     box-sizing: border-box;
     padding: 1rem 0;
   }
 
   .mySwiper .swiper-slide {
-    width: 8rem;
-    height: 8rem;
     opacity: 0.4;
-    border-radius: 1.5rem;
-    overflow: hidden;
+
+    flex: none;
+    height: 8rem;
+    background: transparent;
+
+    @include breakpoint($sm-bp) {
+      height: 7.2rem;
+    }
   }
 
   .mySwiper .swiper-slide-thumb-active {
@@ -80,34 +106,79 @@
 
   .swiper-slide img {
     display: block;
-    width: 100%;
-    height: 100%;
+    width: 8rem;
+    height: 8rem;
     object-fit: cover;
+    flex: none;
+    border-radius: 1.5rem;
+
+    @include breakpoint($sm-bp) {
+      height: 7.2rem;
+      width: 7.2rem;
+    }
   }
 }
 
+@include breakpoint($xl-bp) {}
+
+@include breakpoint($sm-bp) {}
 
 .desc-product {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
 
+  @include breakpoint($xl-bp) {
+    position: relative;
+  }
+
+  @include breakpoint($sm-bp) {
+    justify-content: normal;
+    align-items: normal;
+    flex-direction: column;
+  }
+
   &__content {
     width: 94.3rem;
+
+    @include breakpoint($xl-bp) {
+      width: 100%;
+    }
+
+    @include breakpoint($sm-bp) {
+      display: contents;
+    }
   }
 
   &__wrap {
     display: flex;
     justify-content: space-between;
     margin-bottom: 6rem;
+
+    @include breakpoint($xl-bp) {
+      flex-direction: column;
+    }
+
+    @include breakpoint($sm-bp) {
+      margin-bottom: 4rem;
+    }
   }
 
 
 }
 
+@include breakpoint($xl-bp) {}
+
+@include breakpoint($sm-bp) {}
 
 .product-menu {
   width: 35rem;
+
+  @include breakpoint($xl-bp) {
+    display: contents;
+  }
+
+  @include breakpoint($sm-bp) {}
 
   &__head {
     width: 100%;
@@ -115,6 +186,12 @@
     flex-wrap: wrap;
     justify-content: space-between;
     margin-bottom: 3rem;
+
+    @include breakpoint($xl-bp) {
+      order: 1;
+    }
+
+    @include breakpoint($sm-bp) {}
   }
 
   &__title {}
@@ -146,6 +223,17 @@
     display: flex;
     flex-direction: column;
     gap: 3rem;
+
+    @include breakpoint($xl-bp) {
+      order: 3;
+
+
+      & .product-menu__el:last-child {
+        display: none;
+      }
+    }
+
+    @include breakpoint($sm-bp) {}
   }
 
   &__el {
@@ -287,6 +375,9 @@
   }
 }
 
+@include breakpoint($xl-bp) {}
+
+@include breakpoint($sm-bp) {}
 
 
 
@@ -294,6 +385,9 @@
 .product-tab {
   position: relative;
 
+  @include breakpoint($sm-bp) {
+    order: 4;
+  }
 
   &__btn {
 
@@ -321,6 +415,12 @@
     margin-top: 4rem;
     width: 70.9rem;
 
+    @include breakpoint($xl-bp) {}
+
+    @include breakpoint($sm-bp) {
+      width: 100%;
+      margin-top: 2rem;
+    }
 
     [data-prod-tab] {
 
@@ -345,6 +445,10 @@
   }
 }
 
+@include breakpoint($xl-bp) {}
+
+@include breakpoint($sm-bp) {}
+
 .product-tabs {
 
   &__btn {
@@ -354,6 +458,10 @@
     flex-wrap: wrap;
   }
 }
+
+@include breakpoint($xl-bp) {}
+
+@include breakpoint($sm-bp) {}
 
 .tab-desc {
   display: flex;
@@ -394,6 +502,10 @@
   }
 }
 
+@include breakpoint($xl-bp) {}
+
+@include breakpoint($sm-bp) {}
+
 .tab-char {
   ul {
     display: flex;
@@ -419,6 +531,10 @@
   }
 
 }
+
+@include breakpoint($xl-bp) {}
+
+@include breakpoint($sm-bp) {}
 
 .tab-comment {
   display: flex;
@@ -488,7 +604,9 @@
   }
 }
 
+@include breakpoint($xl-bp) {}
 
+@include breakpoint($sm-bp) {}
 
 .active {}
 
@@ -543,9 +661,9 @@
 
   &__block-title {
 
-    font-size: 2.4rem !important;
-    font-weight: 500 !important;
-    color: var(--black-1a) !important;
+    font-size: 2.4rem;
+    font-weight: 500;
+    color: var(--black-1a);
     margin-bottom: 2rem;
 
 
@@ -608,10 +726,15 @@
   }
 }
 
+@include breakpoint($xl-bp) {}
+
+@include breakpoint($sm-bp) {}
+
 .delivery {
   display: flex;
   flex-direction: column;
   gap: 4rem;
+  margin-top: -2rem;
 
   .tab-pay__block-title {
 
@@ -625,6 +748,13 @@
   &__wrap {
     display: flex;
     justify-content: space-between;
+
+    @include breakpoint($xl-bp) {}
+
+    @include breakpoint($sm-bp) {
+      flex-direction: column;
+      gap: 3rem;
+    }
 
     ul {
       width: 24rem;
@@ -713,6 +843,10 @@
     margin-top: -2rem;
   }
 }
+
+@include breakpoint($xl-bp) {}
+
+@include breakpoint($sm-bp) {}
 
 .specification-acc {
 
@@ -876,6 +1010,10 @@
   }
 }
 
+@include breakpoint($xl-bp) {}
+
+@include breakpoint($sm-bp) {}
+
 .guarant-block--blue {
 
   padding: 2rem;
@@ -897,8 +1035,17 @@
 .tab-article {
 
   height: 24rem !important;
-  // position: relative;
+
+  @include breakpoint($xl-bp) {
+    height: auto !important;
+  }
+
+  @include breakpoint($sm-bp) {}
 }
+
+@include breakpoint($xl-bp) {}
+
+@include breakpoint($sm-bp) {}
 
 .article-wrap {
   position: absolute;
@@ -910,10 +1057,21 @@
   overflow-x: auto;
   left: 0;
 
+  @include breakpoint($xl-bp) {
+    position: relative;
+    width: 100%;
+    height: auto;
+    flex-wrap: wrap;
+    overflow-x: hidden;
+  }
+
+  @include breakpoint($sm-bp) {}
+
   &::-webkit-scrollbar {
 
     height: 0.5rem;
     background-color: transparent;
+    transition: all 0.2s;
   }
 
 
@@ -927,6 +1085,15 @@
     background-color: #3f3f3f;
   }
 
+
+  &:hover {
+    &::-webkit-scrollbar {
+
+      height: 0.8rem;
+
+    }
+  }
+
 }
 
 .article-block {
@@ -936,6 +1103,15 @@
   border-radius: 2rem;
   flex: none;
 
+  @include breakpoint($xl-bp) {
+    width: 34.9rem;
+  }
+
+  @include breakpoint($sm-bp) {
+    width: 100%;
+    height: auto;
+  }
+
   img {
     width: 100%;
     height: 100%;
@@ -943,6 +1119,9 @@
   }
 }
 
+@include breakpoint($xl-bp) {}
+
+@include breakpoint($sm-bp) {}
 
 
 .desc-product__sidebar {
@@ -953,15 +1132,40 @@
   top: 2rem;
   height: 51rem;
 
+  @include breakpoint($xl-bp) {
+    position: absolute;
+    right: 2rem;
+    top: 9.4rem;
+    height: auto;
+    width: 33.6rem;
+  }
+
+  @include breakpoint($sm-bp) {
+    width: 100%;
+    position: relative;
+    right: auto;
+    top: auto;
+    margin-bottom: 4rem;
+  }
+
 }
+
+@include breakpoint($xl-bp) {}
+
+@include breakpoint($sm-bp) {}
 
 .pay-block {
   width: 100%;
-  padding: 2rem;
+  padding: 3rem;
   background: linear-gradient(259.43deg, #0057FF 2.5%, #5200FF 46.09%, #DB00FF 173.66%);
   position: relative;
   border-radius: 2rem;
 
+  @include breakpoint($xl-bp) {
+    padding: 2rem;
+  }
+
+  @include breakpoint($sm-bp) {}
 
   &.favorite &__favorite {
 
@@ -994,8 +1198,8 @@
 
   &__favorite {
     position: absolute;
-    top: 2rem;
-    right: 2rem;
+    top: 3rem;
+    right: 3rem;
 
     width: 4rem;
     height: 4rem;

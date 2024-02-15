@@ -1939,6 +1939,55 @@
   
     </div>
   </div>
+  
+  
+  <div id="modalShare" class="modal-wrapper">
+    <div class="modal">
+      <button class="modal__close" onclick="closeModal()">
+        <svg>
+          <use xlink:href="assets/images/sprite/sprite-icons.svg#iconClose"></use>
+        </svg>
+      </button>
+      <p class="modal-title">Поделиться</p>
+      <p class="share-title">Поделится в социальных сетях</p>
+  
+      <div class="share-network-wrap">
+        <div class="share-network-wrap-vk">
+          <svg class="vk--color">
+            <use xlink:href="assets/images/sprite/sprite-icons.svg#iconVK"></use>
+          </svg>
+        </div>
+  
+        <div class="share-network-wrap-ok">
+          <svg class="vk--color">
+            <use xlink:href="assets/images/sprite/sprite-icons.svg#iconOK"></use>
+          </svg>
+        </div>
+      </div>
+      <p class="share-title">Скопировать ссылку</p>
+      <div class="share-link-wrap">
+  
+        <label for="share-link" class="share-link-placeholder">Ссылка</label>
+        <input id="share-link" class="share-link" type="text"
+          value="https://triomebel.com/catalog/modulnye_spalni/kollektsiya_milana_spalnya/"
+          data-link-orig="https://triomebel.com/catalog/modulnye_spalni/kollektsiya_milana_spalnya/">
+  
+        <button class="share-btn" onclick="share('share-link')">
+  
+          <svg>
+            <use xlink:href="assets/images/sprite/sprite-icons.svg#iconCopy"></use>
+          </svg>
+  
+        </button>
+  
+      </div>
+  
+  
+  
+  
+  
+    </div>
+  </div>
   <!-- JS -->
   <!--jQuery-->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>

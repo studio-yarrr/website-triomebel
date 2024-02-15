@@ -33,6 +33,7 @@
   &.visibility-modal {
     .modal {
       transform: translateX(0);
+      transition: transform 0.3s ease-in-out;
     }
 
   }
@@ -45,7 +46,7 @@
 
     padding: 3.3rem 5rem 3.3rem 3.3rem;
     transform: translateX(100%);
-    transition: transform 0.3s ease-in-out;
+
 
     @include breakpoint($sm-bp) {
       padding: 1.5rem;
@@ -935,4 +936,200 @@
     height: 4.5rem;
 
   }
+}
+
+
+
+#modalShare {
+
+
+  align-items: center;
+  justify-content: center;
+
+  @include breakpoint($xl-bp) {
+
+    align-items: normal;
+  }
+
+  @include breakpoint($sm-bp) {}
+
+
+  &.visibility-modal .modal {
+
+    transform: translateY(0);
+    opacity: 1;
+
+    @include breakpoint($sm-bp) {
+      // transform: translateX(0);
+    }
+  }
+
+
+  .modal {
+    width: 41rem;
+    height: 30.4rem;
+    background-color: #fff;
+    border-radius: 2rem;
+    padding: 3rem;
+    position: relative;
+
+    transform: translateY(20%);
+    opacity: 0;
+    transition: transform 0.3s, opacity 0.2s;
+
+    @include breakpoint($xl-bp) {
+      margin-top: 10rem;
+    }
+
+    @include breakpoint($sm-bp) {
+      margin-top: 18rem;
+
+
+    }
+
+    &__close {
+      position: absolute;
+      right: -5.5rem;
+      top: 0;
+      background-color: #000;
+      width: 4.5rem;
+      height: 4.5rem;
+      border-radius: 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      @include breakpoint($sm-bp) {
+
+        right: 50%;
+
+        transform: translate(50%);
+
+        top: -7.5rem;
+      }
+
+      svg {
+        width: 2rem;
+        height: 2rem;
+        stroke: #fff;
+        stroke-width: 0.3rem;
+      }
+    }
+  }
+
+  .modal-title {
+    margin-bottom: 4rem;
+  }
+
+
+
+
+}
+
+
+
+
+
+.share-title {
+
+  font-size: 1.4rem;
+  font-weight: 500;
+
+  color: var(--black);
+  margin-bottom: 1rem;
+
+}
+
+.share-network-wrap {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 4rem;
+}
+
+.share-network-wrap-vk,
+.share-network-wrap-ok {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+
+  svg {
+    fill: #fff;
+
+  }
+
+
+}
+
+.share-network-wrap-vk {
+  background: #036CE8;
+
+  svg {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+}
+
+
+
+.share-network-wrap-ok {
+  background: #FF7700;
+
+  svg {
+    width: 2.5rem;
+    width: 2.5rem;
+  }
+}
+
+.share-link-wrap {
+  width: 100%;
+  height: 5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+  border-radius: 1rem;
+  border: 0.1rem solid #E6E6E6;
+  position: relative;
+
+
+}
+
+.share-link {
+  width: 25.6rem;
+  height: 1.5rem;
+
+
+  font-size: 1.4rem;
+  font-weight: 500;
+
+  color: var(--black-1a);
+  margin-bottom: -1rem;
+
+
+
+}
+
+.share-btn {
+  svg {
+    width: 2rem;
+    height: 2rem;
+    fill: transparent;
+  }
+}
+
+.share-link-placeholder {
+  position: absolute;
+  top: 0.9rem;
+  left: 2.2rem;
+
+
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--grey);
+
+
 }
