@@ -428,218 +428,317 @@
   
   </header>
   <!-- Main content -->
-  <div class="merchandising-page content">
+  <main class="merchandising-page content">
   
-    <section class="basket container">
+    <div class="merchandising-wrap container">
   
-      <div class="basket-content">
+      <div class="merchandising-content">
+        <section class="merchandising">
   
-        <div class="basket__head">
-          <h1 class="basket__title">Корзина</h1>
-          <p class="basket__counter-product"><span>3</span> товара</p>
-        </div>
   
-        <div class="basket__options">
   
-          <button class="choose-all__box" onclick="deleteAll()"></button>
-  
-          <button class="choose-all" onclick="chooseAll()">
-            <span>Выбрать все</span>
-          </button>
-  
-          <button class="delete-selected">Удалить выбранное</button>
-        </div>
-  
-        <div class="basket__table">
-          <div class="basket__table-head">
-  
-            <span>Фото</span>
-            <span>Наименование</span>
-            <span>Количество</span>
-            <span>Цена</span>
-            <span>Удалить товар</span>
+          <div class="basket__head">
+            <a href="#" class="basket__link-prev">Вернуться назад</a>
+            <h1 class="basket__title">Товары в заказе</h1>
   
           </div>
   
-          <div class="basket__table-wrap">
+          <div class="basket__table">
+            <div class="basket__table-head">
   
-            <div class="basket__product">
+              <span>Фото</span>
+              <span>Наименование</span>
+              <span>Количество</span>
+              <span>Цена</span>
+            </div>
   
-              <div class="basket__product-phote">
-                <input id="basketProduct_1" type="checkbox">
-                <label for="basketProduct_1">
-                  <svg>
-                    <use xlink:href="assets/images/sprite/sprite-icons.svg#iconСhecket"></use>
-                  </svg>
-                </label>
-                <div class="basket__product-img">
-                  <img src="assets/images/kitchen-2.jpg" alt="#">
+            <div class="basket__table-wrap">
+  
+              <div class="basket__product">
+  
+                <div class="basket__product-phote">
+                  <div class="basket__product-img">
+                    <img src="assets/images/kitchen-2.jpg" alt="#">
+                  </div>
                 </div>
-              </div>
   
-              <div class="basket__product-name">
-                <a href="#" class="basket__product-title">Кухня Барселона</a>
-                <div class="basket__product-feature">
-                  <p><span>Цвет:</span><span>Серый / Матера</span></p>
-                  <p><span>Размер: </span><span>1,5 метра</span></p>
+                <div class="basket__product-name">
+                  <a href="#" class="basket__product-title">Кухня Барселона</a>
+                  <div class="basket__product-feature">
+                    <p><span>Цвет:</span><span>Серый / Матера</span></p>
+                    <p><span>Размер: </span><span>1,5 метра</span></p>
+                  </div>
                 </div>
+  
+                <div class="basket__product-sum">
+  
+                  <p class="basket__product-amount">2 шт.</p>
+  
+                </div>
+  
+                <div class="basket__product-price">
+                  <p class="basket__product-price-new"><span>339 800 </span>₽</p>
+                  <p class="basket__product-price-old"><span>399 800 </span> ₽</p>
+                </div>
+  
+  
+  
+  
               </div>
   
-              <div class="basket__product-sum">
-                <button class="basket__counter-btn" onclick="productMinus('1')">
-                  <svg>
-                    <use xlink:href="assets/images/sprite/sprite-icons.svg#iconMinus"></use>
-                  </svg>
-                </button>
-                <input id="productCounter_1" class="basket__counter-i" type="number" value="1">
+              <div class="basket__product">
   
-                <button class="basket__counter-btn" onclick="productPlus('1')">
-                  <svg>
-                    <use xlink:href="assets/images/sprite/sprite-icons.svg#iconPlus"></use>
-                  </svg>
-                </button>
+                <div class="basket__product-phote">
+  
+                  <div class="basket__product-img">
+                    <img src="assets/images/kitchen-2.jpg" alt="#">
+                  </div>
+                </div>
+  
+                <div class="basket__product-name">
+                  <a href="#" class="basket__product-title">Кухня Барселона</a>
+                  <div class="basket__product-feature">
+                    <p><span>Цвет:</span><span>Серый / Матера</span></p>
+                    <p><span>Размер: </span><span>1,5 метра</span></p>
+                  </div>
+                </div>
+  
+                <div class="basket__product-sum">
+  
+                  <p class="basket__product-amount">2 шт.</p>
+  
+                </div>
+  
+                <div class="basket__product-price">
+                  <p class="basket__product-price-new"><span>339 800 </span>₽</p>
+                  <p class="basket__product-price-old"><span>399 800 </span> ₽</p>
+                </div>
+  
+  
+  
               </div>
   
-              <div class="basket__product-price">
-                <p class="basket__product-price-new"><span>339 800 </span>₽</p>
-                <p class="basket__product-price-old"><span>399 800 </span> ₽</p>
-              </div>
+              <div class="basket__product">
   
-              <button class="basket__product-delete"> <svg>
-                  <use xlink:href="assets/images/sprite/sprite-icons.svg#iconBin"></use>
-                </svg></button>
+                <div class="basket__product-phote">
+  
+                  <div class="basket__product-img">
+                    <img src="assets/images/kitchen-2.jpg" alt="#">
+                  </div>
+                </div>
+  
+                <div class="basket__product-name">
+                  <a href="#" class="basket__product-title">Кухня Барселона</a>
+                  <div class="basket__product-feature">
+                    <p><span>Цвет:</span><span>Серый / Матера</span></p>
+                    <p><span>Размер: </span><span>1,5 метра</span></p>
+                  </div>
+                </div>
+  
+                <div class="basket__product-sum">
+  
+                  <p class="basket__product-amount">2 шт.</p>
+  
+                </div>
+  
+                <div class="basket__product-price">
+                  <p class="basket__product-price-new"><span>339 800 </span>₽</p>
+                  <p class="basket__product-price-old"><span>399 800 </span> ₽</p>
+                </div>
+  
+  
+  
+  
+  
+  
+  
+              </div>
   
   
             </div>
-  
-            <div class="basket__product">
-  
-              <div class="basket__product-phote">
-                <input id="basketProduct_2" type="checkbox">
-                <label for="basketProduct_2">
-                  <svg>
-                    <use xlink:href="assets/images/sprite/sprite-icons.svg#iconСhecket"></use>
-                  </svg>
-                </label>
-                <div class="basket__product-img">
-                  <img src="assets/images/kitchen-2.jpg" alt="#">
-                </div>
-              </div>
-  
-              <div class="basket__product-name">
-                <a href="#" class="basket__product-title">Кухня Барселона</a>
-                <div class="basket__product-feature">
-                  <p><span>Цвет:</span><span>Серый / Матера</span></p>
-                  <p><span>Размер: </span><span>1,5 метра</span></p>
-                </div>
-              </div>
-  
-              <div class="basket__product-sum">
-                <button class="basket__counter-btn" onclick="productMinus('2')">
-                  <svg>
-                    <use xlink:href="assets/images/sprite/sprite-icons.svg#iconMinus"></use>
-                  </svg>
-                </button>
-                <input id="productCounter_2" class="basket__counter-i" type="number" value="1">
-  
-                <button class="basket__counter-btn" onclick="productPlus('2')">
-                  <svg>
-                    <use xlink:href="assets/images/sprite/sprite-icons.svg#iconPlus"></use>
-                  </svg>
-                </button>
-              </div>
-  
-              <div class="basket__product-price">
-                <p class="basket__product-price-new"><span>339 800 </span>₽</p>
-                <p class="basket__product-price-old"><span>399 800 </span> ₽</p>
-              </div>
-  
-              <button class="basket__product-delete"> <svg>
-                  <use xlink:href="assets/images/sprite/sprite-icons.svg#iconBin"></use>
-                </svg></button>
-  
-  
-            </div>
-  
-            <div class="basket__product">
-  
-              <div class="basket__product-phote">
-                <input id="basketProduct_3" type="checkbox">
-                <label for="basketProduct_3">
-                  <svg>
-                    <use xlink:href="assets/images/sprite/sprite-icons.svg#iconСhecket"></use>
-                  </svg>
-                </label>
-                <div class="basket__product-img">
-                  <img src="assets/images/kitchen-2.jpg" alt="#">
-                </div>
-              </div>
-  
-              <div class="basket__product-name">
-                <a href="#" class="basket__product-title">Кухня Барселона</a>
-                <div class="basket__product-feature">
-                  <p><span>Цвет:</span><span>Серый / Матера</span></p>
-                  <p><span>Размер: </span><span>1,5 метра</span></p>
-                </div>
-              </div>
-  
-              <div class="basket__product-sum">
-                <button class="basket__counter-btn" onclick="productMinus('3')">
-                  <svg>
-                    <use xlink:href="assets/images/sprite/sprite-icons.svg#iconMinus"></use>
-                  </svg>
-                </button>
-                <input id="productCounter_3" class="basket__counter-i" type="number" value="1">
-  
-                <button class="basket__counter-btn" onclick="productPlus('3')">
-                  <svg>
-                    <use xlink:href="assets/images/sprite/sprite-icons.svg#iconPlus"></use>
-                  </svg>
-                </button>
-              </div>
-  
-              <div class="basket__product-price">
-                <p class="basket__product-price-new"><span>339 800 </span>₽</p>
-                <p class="basket__product-price-old"><span>399 800 </span> ₽</p>
-              </div>
-  
-  
-  
-              <button class="basket__product-delete"> <svg>
-                  <use xlink:href="assets/images/sprite/sprite-icons.svg#iconBin"></use>
-                </svg></button>
-  
-  
-  
-            </div>
-  
-  
           </div>
-        </div>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+        </section>
+  
+        <section class="placing-order">
+  
+          <h2 class="placing-order__title">Оформление заказа</h2>
+  
+          <form action="#" class="order-form">
+  
+            <div class="order-form__el">
+              <p class="order-form__el-title">Регион доставки</p>
+  
+              <input class="order-form__el-i" type="text" placeholder="Введите название города">
+  
+              <p class="order-form__el-desc">Выберите свой город в списке. Если вы не нашли свой город, выберите "другое
+                местоположение", а город впишите в поле "Город"</p>
+            </div>
+  
+  
+            <div class="order-form__el">
+              <p class="order-form__el-title">Покупатель:</p>
+  
+              <input class="order-form__el-i" type="text" placeholder="ФИО*">
+  
+              <input class="order-form__el-i" type="email" placeholder="E-mail*">
+  
+              <input class="order-form__el-i" type="tel" placeholder="Телефон">
+  
+              <input class="order-form__el-i" type="text" placeholder="Адрес доставки">
+  
+              <textarea class="order-form__el-ta" name="" placeholder="Комментарий к заказу"></textarea>
+  
+  
+            </div>
+  
+            <div class="order-form__el">
+              <p class="order-form__el-title">Способ доставки</p>
+              <input id="delivery_1" type="radio" name="delivery">
+              <label for="delivery_1" class="order-form__el-r">
+  
+                <div class="order-form__el-r-box">
+                  <svg>
+                    <use xlink:href="assets/images/sprite/sprite-icons.svg#iconСhecket"></use>
+                  </svg>
+                </div>
+  
+                <div class="order-form__el-r-text">
+                  <p class="order-form__el-r-title">Бесплатная доставка</p>
+                  <p class="order-form__el-desc">Бесплатная доставка при онлайн заказе от 5000 руб.</p>
+                </div>
+              </label>
+              <input id="delivery_2" type="radio" name="delivery">
+              <label for="delivery_2" class="order-form__el-r">
+  
+                <div class="order-form__el-r-box">
+                  <svg>
+                    <use xlink:href="assets/images/sprite/sprite-icons.svg#iconСhecket"></use>
+                  </svg>
+                </div>
+  
+                <div class="order-form__el-r-text">
+                  <p class="order-form__el-r-title">Доставка курьером</p>
+                  <p class="order-form__el-desc">Доставка осуществляется в течение дня в удобное для вас время.
+                    Стоимость доставки 550 рублей</p>
+                </div>
+              </label>
+              <input id="delivery_3" type="radio" name="delivery">
+              <label for="delivery_3" class="order-form__el-r">
+  
+                <div class="order-form__el-r-box">
+                  <svg>
+                    <use xlink:href="assets/images/sprite/sprite-icons.svg#iconСhecket"></use>
+                  </svg>
+                </div>
+  
+                <div class="order-form__el-r-text">
+                  <p class="order-form__el-r-title">Самовывоз</p>
+                  <p class="order-form__el-desc">Вы можете самостоятельно забрать заказ из наших складов по адресам:
+                    г. Кинешма, ул. Соревнования, д.3 / г. Кинешма, ул. Вичугская, д, 13</p>
+                </div>
+              </label>
+  
+  
+            </div>
+  
+  
+  
+            <div class="order-form__el">
+              <p class="order-form__el-title">Способ оплаты</p>
+              <input id="pay_1" type="radio" name="pay">
+              <label for="pay_1" class="order-form__el-r">
+  
+                <div class="order-form__el-r-box">
+                  <svg>
+                    <use xlink:href="assets/images/sprite/sprite-icons.svg#iconСhecket"></use>
+                  </svg>
+                </div>
+  
+                <div class="order-form__el-r-text">
+                  <p class="order-form__el-r-title">Наличными курьеру</p>
+                  <p class="order-form__el-desc">Оплата производится наличными деньгами, в момент получения заказа.
+                    Подтверждением вашей оплаты является фискальный кассовый чек, вручаемый во время получения и оплаты
+                    заказа.</p>
+                </div>
+              </label>
+  
+              <input id="pay_2" type="radio" name="pay">
+              <label for="pay_2" class="order-form__el-r">
+  
+                <div class="order-form__el-r-box">
+                  <svg>
+                    <use xlink:href="assets/images/sprite/sprite-icons.svg#iconСhecket"></use>
+                  </svg>
+                </div>
+  
+                <div class="order-form__el-r-text">
+                  <p class="order-form__el-r-title">Банковской картой</p>
+  
+                  <p class="order-form__el-desc">Оплата производится наличными деньгами, в момент получения заказа.
+                    Подтверждением вашей оплаты является фискальный кассовый чек, вручаемый во время получения и оплаты
+                    заказа.</p>
+  
+                  <div class="order-form__el-r-cards">
+                    <img src="assets/images/card-bank/mir.png" alt="#">
+  
+                    <img src="assets/images/card-bank/visa.png" alt="#">
+  
+                    <img src="assets/images/card-bank/master.png" alt="#">
+  
+  
+                  </div>
+                </div>
+              </label>
+  
+  
+  
+  
+            </div>
+  
+            <button type="submit" class="order-form__submit btn-black">Оформить заказ</button>
+  
+  
+          </form>
+        </section>
   
       </div>
   
+      <div class="merchandising-sidebar">
   
+        <p class="merchandising-sidebar__title">Ваш заказ</p>
   
+        <div class="merchandising-sidebar__el">
   
-  
-      <div class="basket-sidebar">
-  
-        <p class="basket-sidebar__title">Ваша корзина</p>
-  
-        <div class="basket-sidebar__price">
-  
-          <span>Товары (2)</span>
+          <span>Товары на</span>
           <span>473 800 ₽</span>
   
         </div>
   
-        <div class="basket-sidebar__discount">
-          <span>Скидка</span>
-          <span>– 89 000 ₽</span>
+        <div class="merchandising-sidebar__el">
+  
+          <span>Общий вес</span>
+          <span>215 кг</span>
+  
         </div>
   
-        <div class="basket-sidebar__total">
+  
+        <div class="merchandising-sidebar__el">
+  
+          <span>Доставка</span>
+          <span>4 800 ₽</span>
+  
+        </div>
+  
+        <div class="merchandising-sidebar__total">
   
           <span>Итого</span>
           <span>384 800 ₽</span>
@@ -647,16 +746,33 @@
         </div>
   
   
-        <a href="#" class="basket-sidebar__continue">Продолжить оформление</a>
+        <div class="promo">
+          <input class="promo__i" type="text" placeholder="Промокод">
+          <button class="promo__btn">
+            <svg width="25" height="25" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M4.16406 10H15.8307" stroke="#F6F4F1" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M10 4.16675L15.8333 10.0001L10 15.8334" stroke="#F6F4F1" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
+  
+          </button>
+        </div>
+  
+  
   
   
   
       </div>
   
   
-    </section>
   
-  </div>
+  
+  
+    </div>
+  
+  
+  
+  </main>
 
   <!-- Footer -->
   <footer class="footer">
