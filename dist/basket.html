@@ -504,7 +504,7 @@
                 <p class="basket__product-price-old"><span>399 800 </span> ₽</p>
               </div>
   
-              <button class="basket__product-delete"> <svg>
+              <button class="basket__product-delete" onclick="showModal('modalDelete')"> <svg>
                   <use xlink:href="assets/images/sprite/sprite-icons.svg#iconBin"></use>
                 </svg></button>
   
@@ -553,7 +553,7 @@
                 <p class="basket__product-price-old"><span>399 800 </span> ₽</p>
               </div>
   
-              <button class="basket__product-delete"> <svg>
+              <button class="basket__product-delete" onclick="showModal('modalDelete')"> <svg>
                   <use xlink:href="assets/images/sprite/sprite-icons.svg#iconBin"></use>
                 </svg></button>
   
@@ -604,7 +604,7 @@
   
   
   
-              <button class="basket__product-delete"> <svg>
+              <button class="basket__product-delete" onclick="showModal('modalDelete')"> <svg>
                   <use xlink:href="assets/images/sprite/sprite-icons.svg#iconBin"></use>
                 </svg></button>
   
@@ -1897,6 +1897,31 @@
   
         </button>
   
+      </div>
+  
+  
+  
+  
+  
+    </div>
+  </div>
+  
+  
+  <div id="modalDelete" class="modal-wrapper">
+    <div class="modal">
+      <button class="modal__close" onclick="closeModal()">
+        <svg>
+          <use xlink:href="assets/images/sprite/sprite-icons.svg#iconClose"></use>
+        </svg>
+      </button>
+      <p class="modal-title">Удалить товар?</p>
+  
+  
+      <p class="modal-delete-text">Вы точно хотите удалить выбранный товар? Отменить данное действие будет невозможно.</p>
+  
+      <div class="modal-delete-btns">
+        <button class="modal-delete-cance btn " onclick="closeModal()">Отменить</button>
+        <button class="modal-delete-del btn-black" onclick="closeModal()">Удалить</button>
       </div>
   
   

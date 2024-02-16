@@ -3113,6 +3113,109 @@ h2 {
     opacity: 1;
 }
 
+#modalDelete {
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+@media (max-width: 1024px) {
+    #modalDelete {
+        -ms-flex-align: normal;
+        align-items: normal;
+    }
+}
+
+#modalDelete.visibility-modal .modal {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+}
+
+#modalDelete .modal {
+    width: 41rem;
+    height: 23.9rem;
+    background-color: #fff;
+    border-radius: 2rem;
+    padding: 3rem;
+    position: relative;
+    -webkit-transform: translateY(20%);
+    transform: translateY(20%);
+    opacity: 0;
+    transition: opacity 0.2s, -webkit-transform 0.3s;
+    transition: transform 0.3s, opacity 0.2s;
+    transition: transform 0.3s, opacity 0.2s, -webkit-transform 0.3s;
+}
+
+@media (max-width: 1024px) {
+    #modalDelete .modal {
+        margin-top: 10rem;
+    }
+}
+
+@media (max-width: 600px) {
+    #modalDelete .modal {
+        margin-top: 18rem;
+    }
+}
+
+#modalDelete .modal__close {
+    position: absolute;
+    right: -5.5rem;
+    top: 0;
+    background-color: #000;
+    width: 4.5rem;
+    height: 4.5rem;
+    border-radius: 1rem;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+@media (max-width: 600px) {
+    #modalDelete .modal__close {
+        right: 50%;
+        -webkit-transform: translate(50%);
+        transform: translate(50%);
+        top: -7.5rem;
+    }
+}
+
+#modalDelete .modal__close svg {
+    width: 2rem;
+    height: 2rem;
+    stroke: #fff;
+    stroke-width: 0.3rem;
+}
+
+#modalDelete .modal-title {
+    margin-bottom: 4rem;
+}
+
+.modal-delete-text {
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.5rem;
+    margin-bottom: 4rem;
+}
+
+.modal-delete-btns {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.modal-delete-cance,
+.modal-delete-del {
+    padding: 1.5rem;
+    width: 16.7rem;
+}
+
 .footer {
     margin-top: 10rem;
     border-top: 0.1rem solid #E6E6E6;

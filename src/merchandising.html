@@ -1,0 +1,229 @@
+<div class="merchandising-page content">
+
+  <section class="basket container">
+
+    <div class="basket-content">
+
+      <div class="basket__head">
+        <h1 class="basket__title">Корзина</h1>
+        <p class="basket__counter-product"><span>3</span> товара</p>
+      </div>
+
+      <div class="basket__options">
+
+        <button class="choose-all__box" onclick="deleteAll()"></button>
+
+        <button class="choose-all" onclick="chooseAll()">
+          <span>Выбрать все</span>
+        </button>
+
+        <button class="delete-selected">Удалить выбранное</button>
+      </div>
+
+      <div class="basket__table">
+        <div class="basket__table-head">
+
+          <span>Фото</span>
+          <span>Наименование</span>
+          <span>Количество</span>
+          <span>Цена</span>
+          <span>Удалить товар</span>
+
+        </div>
+
+        <div class="basket__table-wrap">
+
+          <div class="basket__product">
+
+            <div class="basket__product-phote">
+              <input id="basketProduct_1" type="checkbox">
+              <label for="basketProduct_1">
+                <svg>
+                  <use xlink:href="assets/images/sprite/sprite-icons.svg#iconСhecket"></use>
+                </svg>
+              </label>
+              <div class="basket__product-img">
+                <img src="assets/images/kitchen-2.jpg" alt="#">
+              </div>
+            </div>
+
+            <div class="basket__product-name">
+              <a href="#" class="basket__product-title">Кухня Барселона</a>
+              <div class="basket__product-feature">
+                <p><span>Цвет:</span><span>Серый / Матера</span></p>
+                <p><span>Размер: </span><span>1,5 метра</span></p>
+              </div>
+            </div>
+
+            <div class="basket__product-sum">
+              <button class="basket__counter-btn" onclick="productMinus('1')">
+                <svg>
+                  <use xlink:href="assets/images/sprite/sprite-icons.svg#iconMinus"></use>
+                </svg>
+              </button>
+              <input id="productCounter_1" class="basket__counter-i" type="number" value="1">
+
+              <button class="basket__counter-btn" onclick="productPlus('1')">
+                <svg>
+                  <use xlink:href="assets/images/sprite/sprite-icons.svg#iconPlus"></use>
+                </svg>
+              </button>
+            </div>
+
+            <div class="basket__product-price">
+              <p class="basket__product-price-new"><span>339 800 </span>₽</p>
+              <p class="basket__product-price-old"><span>399 800 </span> ₽</p>
+            </div>
+
+            <button class="basket__product-delete"> <svg>
+                <use xlink:href="assets/images/sprite/sprite-icons.svg#iconBin"></use>
+              </svg></button>
+
+
+          </div>
+
+          <div class="basket__product">
+
+            <div class="basket__product-phote">
+              <input id="basketProduct_2" type="checkbox">
+              <label for="basketProduct_2">
+                <svg>
+                  <use xlink:href="assets/images/sprite/sprite-icons.svg#iconСhecket"></use>
+                </svg>
+              </label>
+              <div class="basket__product-img">
+                <img src="assets/images/kitchen-2.jpg" alt="#">
+              </div>
+            </div>
+
+            <div class="basket__product-name">
+              <a href="#" class="basket__product-title">Кухня Барселона</a>
+              <div class="basket__product-feature">
+                <p><span>Цвет:</span><span>Серый / Матера</span></p>
+                <p><span>Размер: </span><span>1,5 метра</span></p>
+              </div>
+            </div>
+
+            <div class="basket__product-sum">
+              <button class="basket__counter-btn" onclick="productMinus('2')">
+                <svg>
+                  <use xlink:href="assets/images/sprite/sprite-icons.svg#iconMinus"></use>
+                </svg>
+              </button>
+              <input id="productCounter_2" class="basket__counter-i" type="number" value="1">
+
+              <button class="basket__counter-btn" onclick="productPlus('2')">
+                <svg>
+                  <use xlink:href="assets/images/sprite/sprite-icons.svg#iconPlus"></use>
+                </svg>
+              </button>
+            </div>
+
+            <div class="basket__product-price">
+              <p class="basket__product-price-new"><span>339 800 </span>₽</p>
+              <p class="basket__product-price-old"><span>399 800 </span> ₽</p>
+            </div>
+
+            <button class="basket__product-delete"> <svg>
+                <use xlink:href="assets/images/sprite/sprite-icons.svg#iconBin"></use>
+              </svg></button>
+
+
+          </div>
+
+          <div class="basket__product">
+
+            <div class="basket__product-phote">
+              <input id="basketProduct_3" type="checkbox">
+              <label for="basketProduct_3">
+                <svg>
+                  <use xlink:href="assets/images/sprite/sprite-icons.svg#iconСhecket"></use>
+                </svg>
+              </label>
+              <div class="basket__product-img">
+                <img src="assets/images/kitchen-2.jpg" alt="#">
+              </div>
+            </div>
+
+            <div class="basket__product-name">
+              <a href="#" class="basket__product-title">Кухня Барселона</a>
+              <div class="basket__product-feature">
+                <p><span>Цвет:</span><span>Серый / Матера</span></p>
+                <p><span>Размер: </span><span>1,5 метра</span></p>
+              </div>
+            </div>
+
+            <div class="basket__product-sum">
+              <button class="basket__counter-btn" onclick="productMinus('3')">
+                <svg>
+                  <use xlink:href="assets/images/sprite/sprite-icons.svg#iconMinus"></use>
+                </svg>
+              </button>
+              <input id="productCounter_3" class="basket__counter-i" type="number" value="1">
+
+              <button class="basket__counter-btn" onclick="productPlus('3')">
+                <svg>
+                  <use xlink:href="assets/images/sprite/sprite-icons.svg#iconPlus"></use>
+                </svg>
+              </button>
+            </div>
+
+            <div class="basket__product-price">
+              <p class="basket__product-price-new"><span>339 800 </span>₽</p>
+              <p class="basket__product-price-old"><span>399 800 </span> ₽</p>
+            </div>
+
+
+
+            <button class="basket__product-delete"> <svg>
+                <use xlink:href="assets/images/sprite/sprite-icons.svg#iconBin"></use>
+              </svg></button>
+
+
+
+          </div>
+
+
+        </div>
+      </div>
+
+    </div>
+
+
+
+
+
+    <div class="basket-sidebar">
+
+      <p class="basket-sidebar__title">Ваша корзина</p>
+
+      <div class="basket-sidebar__price">
+
+        <span>Товары (2)</span>
+        <span>473 800 ₽</span>
+
+      </div>
+
+      <div class="basket-sidebar__discount">
+        <span>Скидка</span>
+        <span>– 89 000 ₽</span>
+      </div>
+
+      <div class="basket-sidebar__total">
+
+        <span>Итого</span>
+        <span>384 800 ₽</span>
+
+      </div>
+
+
+      <a href="#" class="basket-sidebar__continue">Продолжить оформление</a>
+
+
+
+    </div>
+
+
+  </section>
+
+</div>

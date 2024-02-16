@@ -1171,3 +1171,112 @@
   visibility: visible;
   opacity: 1;
 }
+
+
+#modalDelete {
+  align-items: center;
+  justify-content: center;
+
+  @include breakpoint($xl-bp) {
+
+    align-items: normal;
+  }
+
+  @include breakpoint($sm-bp) {}
+
+
+  &.visibility-modal .modal {
+
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+
+  .modal {
+    width: 41rem;
+    height: 23.9rem;
+    background-color: #fff;
+    border-radius: 2rem;
+    padding: 3rem;
+    position: relative;
+
+    transform: translateY(20%);
+    opacity: 0;
+    transition: transform 0.3s, opacity 0.2s;
+
+    @include breakpoint($xl-bp) {
+      margin-top: 10rem;
+    }
+
+    @include breakpoint($sm-bp) {
+      margin-top: 18rem;
+
+
+    }
+
+    &__close {
+      position: absolute;
+      right: -5.5rem;
+      top: 0;
+      background-color: #000;
+      width: 4.5rem;
+      height: 4.5rem;
+      border-radius: 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      @include breakpoint($sm-bp) {
+
+        right: 50%;
+
+        transform: translate(50%);
+
+        top: -7.5rem;
+      }
+
+      svg {
+        width: 2rem;
+        height: 2rem;
+        stroke: #fff;
+        stroke-width: 0.3rem;
+      }
+    }
+  }
+
+  .modal-title {
+    margin-bottom: 4rem;
+  }
+
+}
+
+
+
+
+
+.modal-delete-text {
+
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 1.5rem;
+  margin-bottom: 4rem;
+
+}
+
+.modal-delete-btns {
+  display: flex;
+  justify-content: space-between;
+}
+
+.modal-delete-cance,
+.modal-delete-del {
+  padding: 1.5rem;
+
+  width: 16.7rem;
+
+
+}
+
+.modal-delete-cance {}
+
+.modal-delete-del {}
