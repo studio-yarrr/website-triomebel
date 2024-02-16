@@ -1,0 +1,58 @@
+.news-section {
+
+  &__title {
+    margin-bottom: 4rem;
+  }
+
+  &__wrap {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 4rem;
+  }
+
+  .pagination {
+    @include breakpoint($xl-bp) {
+      width: 45rem;
+    }
+
+    @include breakpoint($sm-bp) {
+      width: 100%;
+    }
+  }
+
+  .show-more {
+    @include breakpoint($sm-bp) {
+      width: 33.5rem
+    }
+  }
+}
+
+.container {}
+
+.news--mask {}
+
+.flag--yellow {}
+
+.pagination {
+
+  &__num {}
+}
+
+.btn {}
+
+.show-more {}
+
+.pagination-prev {}
+
+.disabled {}
+
+.pagination-button {}
+
+.active {}
+
+.pagination--hidden {}
+
+.pagination-points {}
+
+.pagination-next {}

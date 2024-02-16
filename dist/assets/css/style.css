@@ -7400,3 +7400,34 @@ input[type=radio]:checked + .order-form__el-r .order-form__el-r-box svg {
     display: inline-block;
     padding: 1.5rem 2rem;
 }
+
+.news-section__title {
+    margin-bottom: 4rem;
+}
+
+.news-section__wrap {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 4rem;
+}
+
+@media (max-width: 1024px) {
+    .news-section .pagination {
+        width: 45rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .news-section .pagination {
+        width: 100%;
+    }
+}
+
+@media (max-width: 600px) {
+    .news-section .show-more {
+        width: 33.5rem;
+    }
+}
