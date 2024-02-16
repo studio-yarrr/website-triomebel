@@ -5456,6 +5456,9 @@ h2 {
     gap: 1.5rem;
     font-size: 1.6rem;
     font-weight: 400;
+    line-height: 1.8rem;
+    letter-spacing: 0em;
+    text-align: left;
     color: var(--black);
 }
 
@@ -5563,6 +5566,9 @@ h2 {
 .tab-comment__el-text {
     font-size: 1.4rem;
     font-weight: 400;
+    line-height: 1.5rem;
+    letter-spacing: 0em;
+    text-align: left;
     color: var(--black-1a);
 }
 
@@ -5600,6 +5606,7 @@ h2 {
     gap: 2rem;
     font-size: 1.6rem;
     font-weight: 400;
+    line-height: 1.8rem;
     color: var(--black-1a);
 }
 
@@ -5636,6 +5643,7 @@ h2 {
 .tab-pay > ol li {
     counter-increment: my-counter;
     font-size: 1.6rem;
+    line-height: 1.8rem;
     font-weight: 400;
     display: -ms-flexbox;
     display: flex;
@@ -5646,7 +5654,7 @@ h2 {
 }
 
 .tab-pay > ol li::before {
-    content: counter(my-counter) ". ";
+    content: counter(my-counter);
     color: var(--black-1a);
     position: absolute;
     left: 0rem;
@@ -5734,8 +5742,11 @@ h2 {
 }
 
 .delivery > p:last-of-type {
-    font-size: 16px;
+    font-size: 1.6rem;
     font-weight: 400;
+    line-height: 1.8rem;
+    letter-spacing: 0em;
+    text-align: left;
     color: var(--grey);
 }
 
@@ -5773,6 +5784,10 @@ h2 {
 }
 
 .delivery a:last-of-type {
+    margin-top: -2rem;
+}
+
+.specification-acc {
     margin-top: -2rem;
 }
 
@@ -5825,6 +5840,7 @@ h2 {
     flex-direction: column;
     gap: 1.5rem;
     font-size: 1.6rem;
+    line-height: 1.8rem;
     font-weight: 400;
     color: var(--grey);
 }
@@ -5843,6 +5859,7 @@ h2 {
 .tab-guarant > p {
     font-size: 1.8rem;
     font-weight: 400;
+    line-height: 2rem;
     color: var(--black-1a);
 }
 
@@ -5866,6 +5883,7 @@ h2 {
 .tab-guarant > ol li {
     counter-increment: my-counter;
     font-size: 1.6rem;
+    line-height: 1.8rem;
     font-weight: 400;
     display: -ms-flexbox;
     display: flex;
@@ -5876,7 +5894,7 @@ h2 {
 }
 
 .tab-guarant > ol li::before {
-    content: counter(my-counter) ". ";
+    content: counter(my-counter);
     color: var(--black-1a);
     position: absolute;
     left: 0rem;
@@ -5919,6 +5937,7 @@ h2 {
 
 .tab-guarant > p:last-of-type {
     font-size: 1.6rem;
+    line-height: 1.8rem;
     font-weight: 500;
 }
 

@@ -658,7 +658,7 @@
 
     &:hover {
       color: #0039aa;
-      ;
+
 
       @include breakpoint($xl-bp) {
         color: var(--black);

@@ -468,8 +468,13 @@
   flex-direction: column;
   gap: 1.5rem;
 
+
   font-size: 1.6rem;
   font-weight: 400;
+  line-height: 1.8rem;
+  letter-spacing: 0em;
+  text-align: left;
+
   color: var(--black);
 
   p {}
@@ -596,8 +601,13 @@
 
   &__el-text {
 
+
     font-size: 1.4rem;
     font-weight: 400;
+    line-height: 1.5rem;
+    letter-spacing: 0em;
+    text-align: left;
+
 
     color: var(--black-1a);
 
@@ -647,8 +657,12 @@
           left: -1.7rem;
         }
 
+
         font-size: 1.6rem;
         font-weight: 400;
+        line-height: 1.8rem;
+
+
         color: var(--black-1a);
 
 
@@ -690,6 +704,7 @@
     li {
       counter-increment: my-counter;
       font-size: 1.6rem;
+      line-height: 1.8rem;
       font-weight: 400;
       display: flex;
       flex-direction: column;
@@ -699,7 +714,7 @@
 
 
       &::before {
-        content: counter(my-counter) ". ";
+        content: counter(my-counter);
         color: var(--black-1a);
         position: absolute;
         left: 0rem;
@@ -799,8 +814,13 @@
 
   &>p:last-of-type {
 
-    font-size: 16px;
+
+    font-size: 1.6rem;
     font-weight: 400;
+    line-height: 1.8rem;
+    letter-spacing: 0em;
+    text-align: left;
+
     color: var(--grey);
 
   }
@@ -849,6 +869,8 @@
 @include breakpoint($sm-bp) {}
 
 .specification-acc {
+  margin-top: -2rem;
+
 
   &__btn {
     display: flex;
@@ -902,6 +924,7 @@
 
 
     font-size: 1.6rem;
+    line-height: 1.8rem;
     font-weight: 400;
     color: var(--grey);
 
@@ -920,8 +943,12 @@
 
   &>p {
 
+
     font-size: 1.8rem;
     font-weight: 400;
+    line-height: 2rem;
+
+
 
     color: var(--black-1a);
 
@@ -947,6 +974,7 @@
     li {
       counter-increment: my-counter;
       font-size: 1.6rem;
+      line-height: 1.8rem;
       font-weight: 400;
       display: flex;
       flex-direction: column;
@@ -956,7 +984,7 @@
 
 
       &::before {
-        content: counter(my-counter) ". ";
+        content: counter(my-counter);
         color: var(--black-1a);
         position: absolute;
         left: 0rem;
@@ -1005,6 +1033,7 @@
   &>p:last-of-type {
 
     font-size: 1.6rem;
+    line-height: 1.8rem;
     font-weight: 500;
 
   }
