@@ -1,0 +1,567 @@
+.basket-page {
+  overflow: hidden;
+  padding-bottom: 10rem;
+  margin-bottom: -10rem;
+}
+
+@include breakpoint($xl-bp) {}
+
+@include breakpoint($sm-bp) {}
+
+.basket-content {
+  width: 100rem;
+  background: #fff;
+  padding: 3rem;
+  border-radius: 2rem;
+
+  @include breakpoint($xl-bp) {
+    width: 100%;
+  }
+}
+
+@include breakpoint($xl-bp) {}
+
+@include breakpoint($sm-bp) {}
+
+.basket {
+  display: flex;
+  justify-content: space-between;
+
+  align-items: flex-start;
+
+  @include breakpoint($xl-bp) {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  @include breakpoint($sm-bp) {}
+
+  &__head {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+
+  &__title {
+    @include breakpoint($xl-bp) {
+      font-size: 2.4rem;
+      font-weight: 500;
+      line-height: 2.4rem;
+
+    }
+
+    @include breakpoint($sm-bp) {
+      font-size: 2.2rem;
+      font-weight: 500;
+
+    }
+
+
+  }
+
+  &__counter-product {
+
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: var(--grey);
+
+  }
+
+  &__options {
+    display: flex;
+    gap: 4rem;
+    align-items: center;
+    margin-bottom: 4rem;
+  }
+
+  &__table {}
+
+  &__table-head {
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+    margin-bottom: 3rem;
+
+    @include breakpoint($xl-bp) {
+      gap: 2rem;
+    }
+
+    @include breakpoint($sm-bp) {
+      display: none;
+    }
+
+    span {
+
+      font-size: 1.2rem;
+      font-weight: 500;
+      color: var(--grey);
+      padding: 0.5rem 0;
+
+
+    }
+
+    & span:nth-child(1) {
+      margin-right: -2rem;
+      width: 10rem;
+      text-align: center;
+
+      @include breakpoint($xl-bp) {
+        margin-right: 0;
+      }
+
+      @include breakpoint($sm-bp) {}
+    }
+
+    & span:nth-child(2) {
+      width: 24rem;
+
+      @include breakpoint($xl-bp) {
+        width: 20rem;
+      }
+
+      @include breakpoint($sm-bp) {}
+    }
+
+    & span:nth-child(3) {
+      width: 20rem;
+
+      @include breakpoint($xl-bp) {
+        width: 13.5rem;
+      }
+
+      @include breakpoint($sm-bp) {}
+    }
+
+    & span:nth-child(4) {
+      width: 17.6rem;
+
+      @include breakpoint($xl-bp) {
+        width: 13.2rem;
+      }
+
+      @include breakpoint($sm-bp) {}
+    }
+
+    & span:nth-child(5) {}
+  }
+
+  &__table-wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 6rem;
+
+    @include breakpoint($xl-bp) {
+      gap: 4rem;
+    }
+
+    @include breakpoint($sm-bp) {
+      gap: 3rem;
+    }
+  }
+
+  &__product {
+    display: flex;
+    align-items: flex-start;
+    gap: 4rem;
+
+    @include breakpoint($xl-bp) {
+      gap: 2rem;
+    }
+
+    @include breakpoint($sm-bp) {
+      flex-direction: column;
+      gap: 2rem;
+      position: relative;
+    }
+  }
+
+  &__product-phote {
+    width: 10rem;
+    flex: none;
+    margin-right: -2rem;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    position: relative;
+
+    @include breakpoint($xl-bp) {
+      margin-right: 0;
+    }
+
+    @include breakpoint($sm-bp) {
+      width: 100%;
+      order: 1;
+    }
+
+    input {
+      position: absolute;
+      visibility: hidden;
+      z-index: -10;
+    }
+
+    label {
+      cursor: pointer;
+      width: 1.6rem;
+      height: 1.6rem;
+      border: 0.1rem solid #000;
+      border-radius: 0.3rem;
+      transition: all 0.2s;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      svg {
+        width: 1.2rem;
+        height: 1.2rem;
+        fill: transparent;
+        transform: translateY(1rem);
+        opacity: 0;
+        transition: all 0.2s;
+      }
+    }
+
+    input:checked+label {
+      background: #000;
+
+      svg {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+  }
+
+  &__product-img {
+    width: 6.4rem;
+    height: 6.4rem;
+    overflow: hidden;
+    border-radius: 1rem;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__product-name {
+    width: 24rem;
+    flex: none;
+
+    @include breakpoint($xl-bp) {
+      width: 20rem;
+    }
+
+    @include breakpoint($sm-bp) {
+      width: 100%;
+      padding-left: 3.6rem;
+      order: 2;
+    }
+  }
+
+  &__product-title {
+    display: inline-block;
+    width: 100%;
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: var(--black);
+    margin-bottom: 1rem;
+    transition: all 0.2s;
+
+    &:hover {
+      color: #0039aa;
+
+      @include breakpoint($xl-bp) {
+        color: var(--black);
+      }
+    }
+  }
+
+  &__product-feature {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+
+    p {
+
+      font-size: 1.2rem;
+      font-weight: 500;
+      color: var(--black-1a);
+      display: flex;
+
+      gap: 0.5rem;
+
+      & span:first-child {
+        color: var(--grey);
+      }
+
+    }
+  }
+
+  &__product-sum {
+    width: 20rem;
+    flex: none;
+    display: flex;
+    gap: 1rem;
+
+    @include breakpoint($xl-bp) {
+      width: 13.5rem;
+    }
+
+    @include breakpoint($sm-bp) {
+      padding-left: 3.6rem;
+      width: 100%;
+      gap: 0.5rem;
+      order: 4;
+    }
+  }
+
+  &__counter-btn {
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--background);
+    border-radius: 0.5rem;
+    flex: none;
+
+    @include breakpoint($sm-bp) {
+      width: 4rem;
+      height: 4rem;
+    }
+
+    svg {
+      width: 1rem;
+      height: 1rem;
+      stroke-width: 0.3rem;
+    }
+  }
+
+  &__counter-i {
+    width: 3rem;
+    height: 3rem;
+
+    font-size: 1.4rem;
+    font-weight: 500;
+
+    text-align: center;
+
+    @include breakpoint($sm-bp) {
+      width: 4rem;
+      height: 4rem;
+    }
+
+  }
+
+  &__product-price {
+    width: 17.6rem;
+    flex: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+
+    @include breakpoint($xl-bp) {
+      width: 13.2rem;
+    }
+
+    @include breakpoint($sm-bp) {
+      margin-left: 3.6rem;
+      width: 100%;
+      flex-direction: row;
+      align-items: center;
+      gap: 2rem;
+      order: 3;
+    }
+
+  }
+
+  &__product-price-new {
+    font-size: 1.8rem;
+    font-weight: 700;
+
+    color: var(--black-1a);
+
+    @include breakpoint($sm-bp) {
+      font-size: 1.6rem;
+    }
+  }
+
+  &__product-price-old {
+    font-size: 1.6rem;
+    font-weight: 500;
+    text-decoration: line-through;
+    color: var(--grey);
+
+    @include breakpoint($sm-bp) {
+      font-size: 1.4rem;
+    }
+  }
+
+  &__product-delete {
+    width: 2rem;
+    height: 2rem;
+    margin-left: auto;
+
+    @include breakpoint($sm-bp) {
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+
+    &:hover {
+      svg {
+        fill: rgb(255, 119, 119);
+
+        @include breakpoint($xl-bp) {
+          fill: transparent;
+        }
+
+      }
+    }
+
+
+
+    svg {
+      width: 2rem;
+      height: 2rem;
+      fill: transparent;
+      transition: all 0.2s;
+    }
+  }
+}
+
+@include breakpoint($xl-bp) {}
+
+@include breakpoint($sm-bp) {}
+
+.choose-all {
+
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: var(--black);
+  display: flex;
+  align-items: center;
+  gap: 2.4rem;
+
+
+  &__box {
+    width: 1.6rem;
+    height: 1.6rem;
+    background: #000;
+    border-radius: 0.3rem;
+    position: relative;
+    margin-right: -2rem;
+
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 0.7rem;
+      height: 0.2rem;
+      border-radius: 0.2rem;
+      background: #fff;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+}
+
+.delete-selected {
+
+  font-size: 1.4rem;
+  font-weight: 500;
+
+  color: var(--grey);
+
+}
+
+@include breakpoint($xl-bp) {}
+
+@include breakpoint($sm-bp) {}
+
+.basket-sidebar {
+
+  width: 32.7rem;
+  padding: 3rem;
+  border-radius: 2rem;
+  background: linear-gradient(259.43deg, #0057FF 2.5%, #5200FF 46.09%, #DB00FF 173.66%);
+
+  @include breakpoint($xl-bp) {
+    width: 100%;
+  }
+
+  @include breakpoint($sm-bp) {}
+
+
+  &__title {
+
+    font-size: 2.4rem;
+    font-weight: 500;
+    color: var(--white);
+    margin-bottom: 4rem;
+
+    @include breakpoint($sm-bp) {
+      font-size: 2.2rem;
+    }
+  }
+
+  &__price,
+  &__discount {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    font-size: 1.6rem;
+    font-weight: 500;
+
+    color: var(--background);
+    padding-bottom: 2rem;
+    border-bottom: 0.1rem solid #f5f3ef33;
+
+    margin-bottom: 2rem;
+
+    & span:last-child {
+      font-weight: 700;
+    }
+
+
+
+  }
+
+
+
+  &__total {
+
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--background);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+  }
+
+  &__continue {
+
+    width: 100%;
+    padding: 1.7rem;
+    background: #fff;
+    border-radius: 1rem;
+    margin-top: 10.6rem;
+    display: inline-block;
+
+
+
+
+
+    font-size: 1.4rem;
+    font-weight: 500;
+
+    text-align: center;
+    color: var(--black-1a);
+
+  }
+}

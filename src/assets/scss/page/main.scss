@@ -321,7 +321,15 @@
     min-height: 5.4rem;
     margin-bottom: 4rem;
 
-    @include breakpoint($xl-bp) {}
+    &:hover {
+      color: #0039aa;
+
+      @include breakpoint($xl-bp) {
+        color: var(--black);
+      }
+    }
+
+
 
     @include breakpoint($sm-bp) {}
 

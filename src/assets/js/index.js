@@ -714,4 +714,26 @@ function outFunc() {
   tooltip.innerHTML = "Скопировать";
 }
 
+function chooseAll() {
+  const check = document.querySelectorAll('input[type=checkbox]');
+
+
+
+  if (check.length > 0) {
+    check.forEach(c => {
+      c.checked = true;
+    })
+  }
+}
+
+function deleteAll() {
+  const check = document.querySelectorAll('input[type=checkbox]');
+  if (check.length > 0) {
+    check.forEach(c => {
+      c.checked = false;
+    })
+  }
+
+}
+
 

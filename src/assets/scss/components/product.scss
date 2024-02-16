@@ -53,7 +53,8 @@
     transition: color 0.2s;
 
     &:hover {
-      color: var(--grey);
+      color: #0039aa;
+      ;
 
       @include breakpoint($xl-bp) {
         color: var(--black);
@@ -369,7 +370,7 @@
     display: block;
 
     &:hover {
-      color: var(--grey);
+      color: #0039aa;
 
       @include breakpoint($xl-bp) {
         color: var(--black);
@@ -656,7 +657,8 @@
     transition: color 0.2s;
 
     &:hover {
-      color: var(--grey);
+      color: #0039aa;
+      ;
 
       @include breakpoint($xl-bp) {
         color: var(--black);
