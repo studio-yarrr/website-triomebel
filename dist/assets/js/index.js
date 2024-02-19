@@ -630,7 +630,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
         myMap.geoObjects.add(myPlacemark);
       })
 
-      if (windowWidth > 500) {
+      if (windowWidth > 600) {
         if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
           myMap.behaviors.disable('drag');
           myMap.controls.remove('zoomControl');
