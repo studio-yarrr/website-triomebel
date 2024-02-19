@@ -579,7 +579,41 @@ document.addEventListener("DOMContentLoaded", function (event) {
 
 
 
+  ymaps.ready(function () {
+    const myMap = new ymaps.Map(
+      'YMapsID',
+      { center: [57.000353, 40.973930], zoom: 9, }
+    );
 
+    const card = document.querySelectorAll(".shop__card");
+
+
+    card.forEach((c, id) => {
+
+      let modal = c.querySelector('.shop__info');
+      let btn = c.querySelector('.shop__card-location');
+      let coord = JSON.parse(btn.dataset.coordinate);
+
+      btn.onclick = function () {
+        myMap.setCenter(coord, 15);
+        showTab('map')
+      };
+
+
+      let myPlacemark = new ymaps.Placemark(coord, {
+        balloonContentBody: modal.outerHTML,
+      });
+
+      myMap.geoObjects.add(myPlacemark);
+    })
+
+    myMap.controls.remove('rulerControl');
+    myMap.controls.remove('geolocationControl');
+    myMap.controls.remove('zoomControl');
+    myMap.controls.remove('trafficControl');
+    myMap.controls.remove('typeSelector');
+
+  });
 
 
 
@@ -741,44 +775,4 @@ function deleteAll() {
     })
   }
 
-}
-
-
-function openMap(center, z) {
-
-  ymaps.ready(function () {
-    var myMap = new ymaps.Map(
-      'YMapsID',
-      { center: center, zoom: z, }
-    );
-
-
-
-    let dataCoor = document.querySelectorAll("[data-coordinate]");
-
-
-    dataCoor.forEach((c, id) => {
-
-      let modal = c.querySelector('.shop__info');
-
-
-
-      var myPlacemark = new ymaps.Placemark(JSON.parse(c.dataset.coordinate), {
-        balloonContentBody: modal.outerHTML,
-        iconLayout: 'default#image',
-        iconImageHref: '../images/icon/email.png',
-        iconImageSize: [30, 42],
-        iconImageOffset: [-5, -38],
-        id: id,
-      });
-      myMap.geoObjects.add(myPlacemark);
-    })
-
-    myMap.controls.remove('rulerControl');
-    myMap.controls.remove('geolocationControl');
-    myMap.controls.remove('zoomControl');
-    myMap.controls.remove('trafficControl');
-    myMap.controls.remove('typeSelector');
-
-  });
 }
