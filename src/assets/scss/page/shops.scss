@@ -7,6 +7,15 @@
   z-index: -10;
   opacity: 0;
 
+  @include breakpoint($xl-bp) {
+    width: 79.4rem;
+  }
+
+  @include breakpoint($sm-bp) {
+    width: 40rem;
+    height: 40rem;
+  }
+
   &.active {
     visibility: visible;
     position: relative;
@@ -26,6 +35,9 @@
     align-items: center;
     margin-bottom: 4rem;
 
+    @include breakpoint($xl-bp) {}
+
+    @include breakpoint($sm-bp) {}
   }
 
   &__title {}
@@ -34,6 +46,10 @@
     display: flex;
     gap: 4rem;
     align-items: center;
+
+    @include breakpoint($xl-bp) {}
+
+    @include breakpoint($sm-bp) {}
   }
 
   &__tab {
@@ -45,6 +61,10 @@
     font-weight: 500;
     color: var(--grey);
     transition: all 0.2s;
+
+    @include breakpoint($xl-bp) {}
+
+    @include breakpoint($sm-bp) {}
 
     svg {
       width: 1.6rem;
@@ -75,6 +95,10 @@
     flex-wrap: wrap;
     gap: 1rem;
 
+    @include breakpoint($xl-bp) {}
+
+    @include breakpoint($sm-bp) {}
+
     &.active {
       visibility: visible;
       position: relative;
@@ -92,6 +116,14 @@
     background: #fff;
     width: 44rem;
     min-height: 37.4rem;
+
+    @include breakpoint($xl-bp) {
+      width: 39.2rem;
+    }
+
+    @include breakpoint($sm-bp) {
+      width: 100%;
+    }
   }
 
   &__card-title {
@@ -100,6 +132,10 @@
     font-weight: 700;
     color: var(--black);
     width: 31.9rem;
+
+    @include breakpoint($xl-bp) {}
+
+    @include breakpoint($sm-bp) {}
   }
 
   &__card-el {
@@ -107,11 +143,19 @@
     flex-direction: column;
     gap: 0.5rem;
 
+    @include breakpoint($xl-bp) {}
+
+    @include breakpoint($sm-bp) {}
+
     p {
 
       font-size: 1.4rem;
       font-weight: 500;
       line-height: 1.5rem;
+
+      @include breakpoint($xl-bp) {}
+
+      @include breakpoint($sm-bp) {}
 
       color: var(--black);
     }
@@ -125,6 +169,10 @@
     display: flex;
     flex-direction: column;
     gap: 2rem;
+
+    @include breakpoint($xl-bp) {}
+
+    @include breakpoint($sm-bp) {}
   }
 
   &__card-location {
@@ -138,6 +186,10 @@
     overflow: hidden;
     margin-top: auto;
 
+    @include breakpoint($xl-bp) {}
+
+    @include breakpoint($sm-bp) {}
+
     span {
       font-size: 1.4rem;
       font-weight: 500;
@@ -147,12 +199,20 @@
       background-clip: text;
       text-fill-color: transparent;
       position: relative;
+
+      @include breakpoint($xl-bp) {}
+
+      @include breakpoint($sm-bp) {}
     }
 
     img {
       width: 1.6rem;
       height: 1.6rem;
       position: relative;
+
+      @include breakpoint($xl-bp) {}
+
+      @include breakpoint($sm-bp) {}
 
     }
 
@@ -178,7 +238,48 @@
 }
 
 
+.ymaps-2-1-79-balloon {
+
+  box-shadow: -1.2rem 1.7rem 1.5rem -0.7rem rgba(0, 0, 0, .5) !important;
+  border-radius: 1rem;
+}
+
 .ymaps-2-1-79-balloon__content {
-  padding: 1.5rem !important;
-  border-radius: 1rem !important;
+  font-family: "HelveticaNeueCyr", sans-serif !important;
+}
+
+.ymaps-2-1-79-balloon__layout {
+  width: 24rem;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  padding-right: 9.5rem;
+
+  @include breakpoint($sm-bp) {
+    width: 20rem;
+  }
+}
+
+.ymaps-2-1-79-balloon__close {
+  margin-right: -8.5rem;
+
+}
+
+.ymaps-2-1-79-balloon__tail {
+  display: none !important;
+}
+
+.ymaps-2-1-79-balloon__close-button {
+  opacity: 1 !important;
+}
+
+.map {
+
+  .shop__info {
+    width: 100%;
+  }
+}
+
+
+.ymaps-2-1-79-map .ymaps {
+  width: auto;
 }

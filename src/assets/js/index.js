@@ -578,42 +578,69 @@ document.addEventListener("DOMContentLoaded", function (event) {
   }
 
 
+  const map = document.getElementById('YMapsID');
 
-  ymaps.ready(function () {
-    const myMap = new ymaps.Map(
-      'YMapsID',
-      { center: [57.000353, 40.973930], zoom: 9, }
-    );
+  if (map) {
+    ymaps.ready(function () {
+      const myMap = new ymaps.Map(
+        'YMapsID',
+        { center: [57.000353, 40.973930], zoom: 9, }
+      );
 
-    const card = document.querySelectorAll(".shop__card");
-
-
-    card.forEach((c, id) => {
-
-      let modal = c.querySelector('.shop__info');
-      let btn = c.querySelector('.shop__card-location');
-      let coord = JSON.parse(btn.dataset.coordinate);
-
-      btn.onclick = function () {
-        myMap.setCenter(coord, 15);
-        showTab('map')
-      };
+      const card = document.querySelectorAll(".shop__card");
 
 
-      let myPlacemark = new ymaps.Placemark(coord, {
-        balloonContentBody: modal.outerHTML,
-      });
+      card.forEach((c, id) => {
 
-      myMap.geoObjects.add(myPlacemark);
-    })
+        let modal = c.querySelector('.shop__info');
+        let btn = c.querySelector('.shop__card-location');
+        let coord = JSON.parse(btn.dataset.coordinate);
 
-    myMap.controls.remove('rulerControl');
-    myMap.controls.remove('geolocationControl');
-    myMap.controls.remove('zoomControl');
-    myMap.controls.remove('trafficControl');
-    myMap.controls.remove('typeSelector');
+        btn.onclick = function () {
+          myMap.setCenter(coord, 15);
+          showTab('map');
 
-  });
+          window.scrollTo({
+            top: 100,
+            left: 0,
+            behavior: 'smooth'
+          });
+
+        };
+
+
+        let myPlacemark = new ymaps.Placemark(coord,
+          {
+            balloonContentBody: modal.outerHTML
+          },
+          {
+            iconLayout: 'default#image',
+            iconImageHref: 'assets/images/icon/marker.svg',
+            iconImageSize: [30, 30],
+          });
+
+        myMap.geoObjects.add(myPlacemark);
+      })
+
+
+
+      if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+        myMap.behaviors.disable('drag');
+        myMap.controls.remove('zoomControl');
+      }
+
+      myMap.controls.remove('rulerControl');
+      myMap.controls.remove('geolocationControl');
+      myMap.controls.remove('zoomControl');
+      myMap.controls.remove('trafficControl');
+      myMap.controls.remove('typeSelector');
+
+    });
+  }
+
+
+
+
 
 
 
