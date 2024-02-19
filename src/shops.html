@@ -1,0 +1,178 @@
+<main class="shops-page">
+
+
+  <div class="breadcrumb container">
+    <a href="#">Назад</a>
+    /
+    <a href="#">Главная</a>
+    /
+    <span>Магазины</span>
+  </div>
+
+
+  <section class="shop container">
+
+    <div class="shop__head">
+
+      <h1 class="shop__title">Магазины</h1>
+
+      <div class="shop__tab-wrap">
+        <button class="shop__tab active" data-tab="1" onclick="showTab(1)">
+          <svg>
+            <use xlink:href="assets/images/sprite/sprite-icons.svg#iconList"></use>
+          </svg>
+          <span>Списком</span>
+        </button>
+
+        <button class="shop__tab" data-tab="2" onclick="showTab(2);openMap([57.000352, 40.973854], 9)">
+          <svg>
+            <use xlink:href="assets/images/sprite/sprite-icons.svg#iconLocation"></use>
+          </svg>
+          <span>На карте</span>
+        </button>
+      </div>
+
+    </div>
+
+
+    <div data-prod-tab="1" class="shop__wrap active">
+
+      <div class="shop__card" data-coordinate="[56.965923, 41.018989]">
+
+        <p class="shop__card-title">Торгово-выставочный центр "Трио мебель"</p>
+        <div class="shop__info">
+          <div class="shop__card-el">
+            <p>Адрес:</p>
+            <p>ул. Куконковых д. 104 ТЦ "Планета" </p>
+          </div>
+
+          <div class="shop__card-el">
+            <p>Телефон:</p>
+            <p>+7 (49331) 5-40-15,</p>
+            <p>+7 (920) 349-89-62</p>
+          </div>
+
+          <div class="shop__card-el">
+            <p>Режим работы:</p>
+            <p>ежедн. 10:00-21:00</p>
+          </div>
+        </div>
+
+
+        <button class="shop__card-location" onclick="showTab(2);openMap([56.983019, 40.982149], 15)">
+          <img src="assets/images/icon/map-pin.svg" alt="#">
+
+
+          <span>Показать на карте</span>
+        </button>
+
+      </div>
+
+      <div class="shop__card" data-coordinate="[56.983019, 40.982149]">
+
+        <p class="shop__card-title">Торгово-выставочный центр "Трио мебель"</p>
+        <div class="shop__info">
+          <div class="shop__card-el">
+            <p>Адрес:</p>
+            <p>ул. Лежневская, д. 55</p>
+          </div>
+
+          <div class="shop__card-el">
+            <p>Телефон:</p>
+            <p>+7 (49331) 5-40-15,</p>
+            <p>+7 (920) 349-89-62</p>
+          </div>
+
+          <div class="shop__card-el">
+            <p>Режим работы:</p>
+            <p>ежедн. 10:00-21:00</p>
+          </div>
+        </div>
+
+
+        <button class="shop__card-location" onclick="showTab(2)">
+          <img src="assets/images/icon/map-pin.svg" alt="#">
+
+          <span>Показать на карте</span>
+        </button>
+
+      </div>
+
+      <div class="shop__card" data-coordinate="[56.960068, 40.981098]">
+
+        <p class="shop__card-title">Торгово-выставочный центр "Трио мебель"</p>
+        <div class="shop__info">
+          <div class="shop__card-el">
+            <p>Адрес:</p>
+            <p>проспект Текстильщиков, д. 80</p>
+          </div>
+
+          <div class="shop__card-el">
+            <p>Телефон:</p>
+            <p>+7 (49331) 5-40-15,</p>
+            <p>+7 (920) 349-89-62</p>
+          </div>
+
+          <div class="shop__card-el">
+            <p>Режим работы:</p>
+            <p>ежедн. 10:00-21:00</p>
+          </div>
+
+        </div>
+
+
+        <button class="shop__card-location" onclick="showTab(2)">
+          <img src="assets/images/icon/map-pin.svg" alt="#">
+
+          <span>Показать на карте</span>
+        </button>
+
+      </div>
+
+      <div class="shop__card" data-coordinate="[57.442574, 42.171887]">
+
+        <p class="shop__card-title">Торгово-выставочный центр "Трио мебель"</p>
+
+        <div class="shop__info">
+          <div class="shop__card-el">
+            <p>Адрес:</p>
+            <p>ул. им М Горького д.3</p>
+          </div>
+
+          <div class="shop__card-el">
+            <p>Телефон:</p>
+            <p>+7 (49331) 5-40-15,</p>
+            <p>+7 (920) 349-89-62</p>
+          </div>
+
+          <div class="shop__card-el">
+            <p>Режим работы:</p>
+            <p>ежедн. 10:00-21:00</p>
+          </div>
+        </div>
+
+
+
+        <button class="shop__card-location" onclick="showTab(2)">
+          <img src="assets/images/icon/map-pin.svg" alt="#">
+
+          <span>Показать на карте</span>
+        </button>
+
+      </div>
+
+
+
+    </div>
+
+
+    <div data-prod-tab="2" class='wrapper-map'>
+      <div class="map" id="YMapsID" style="width:100%;height:100%;"></div>
+    </div>
+
+  </section>
+
+
+
+
+</main>

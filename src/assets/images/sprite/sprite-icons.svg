@@ -157,9 +157,6 @@
   </symbol>
 
 
-
-
-
   <symbol id="iconBin"  viewBox="0 0 20 20">
       <g>
           <path d="M2.5 5H4.16667H17.5" stroke="#1A1A1A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -171,13 +168,24 @@
 
 
 
+  <symbol id="iconList"  viewBox="0 0 16 16">
+      <g>
+          <path d="M5 2H3C2.44772 2 2 2.44772 2 3V5C2 5.55228 2.44772 6 3 6H5C5.55228 6 6 5.55228 6 5V3C6 2.44772 5.55228 2 5 2Z" 
+           stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M13 2H11C10.4477 2 10 2.44772 10 3V5C10 5.55228 10.4477 6 11 6H13C13.5523 6 14 5.55228 14 5V3C14 2.44772 13.5523 2 13 2Z"    stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M13 10H11C10.4477 10 10 10.4477 10 11V13C10 13.5523 10.4477 14 11 14H13C13.5523 14 14 13.5523 14 13V11C14 10.4477 13.5523 10 13 10Z"   stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M5 10H3C2.44772 10 2 10.4477 2 11V13C2 13.5523 2.44772 14 3 14H5C5.55228 14 6 13.5523 6 13V11C6 10.4477 5.55228 10 5 10Z"     stroke-linecap="round" stroke-linejoin="round"/>
+      </g>
+  </symbol>
 
 
 
-
-
-
-
+  <symbol id="iconLocation" fill="none"  viewBox="0 0 16 16">
+      <g>
+          <path d="M14 6.66675C14 11.3334 8 15.3334 8 15.3334C8 15.3334 2 11.3334 2 6.66675C2 5.07545 2.63214 3.54933 3.75736 2.42411C4.88258 1.29889 6.4087 0.666748 8 0.666748C9.5913 0.666748 11.1174 1.29889 12.2426 2.42411C13.3679 3.54933 14 5.07545 14 6.66675Z"   stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M8 8.66675C9.10457 8.66675 10 7.77132 10 6.66675C10 5.56218 9.10457 4.66675 8 4.66675C6.89543 4.66675 6 5.56218 6 6.66675C6 7.77132 6.89543 8.66675 8 8.66675Z"   stroke-linecap="round" stroke-linejoin="round"/>
+      </g>
+  </symbol>
 
 
 
