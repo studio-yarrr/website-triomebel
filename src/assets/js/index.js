@@ -630,12 +630,14 @@ document.addEventListener("DOMContentLoaded", function (event) {
         myMap.geoObjects.add(myPlacemark);
       })
 
-
-
-      if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
-        myMap.behaviors.disable('drag');
-        myMap.controls.remove('zoomControl');
+      if (windowWidth > 500) {
+        if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+          myMap.behaviors.disable('drag');
+          myMap.controls.remove('zoomControl');
+        }
       }
+
+
 
       myMap.controls.remove('rulerControl');
       myMap.controls.remove('geolocationControl');
