@@ -635,13 +635,14 @@ document.addEventListener("DOMContentLoaded", function (event) {
           myMap.behaviors.disable('drag');
           myMap.controls.remove('zoomControl');
         }
+        myMap.controls.remove('zoomControl');
       }
 
 
 
       myMap.controls.remove('rulerControl');
       myMap.controls.remove('geolocationControl');
-      myMap.controls.remove('zoomControl');
+
       myMap.controls.remove('trafficControl');
       myMap.controls.remove('typeSelector');
 
