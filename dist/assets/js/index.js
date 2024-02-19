@@ -589,6 +589,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
 
       const card = document.querySelectorAll(".shop__card");
 
+      let mapY = map.getBoundingClientRect();
 
       card.forEach((c, id) => {
 
@@ -596,15 +597,22 @@ document.addEventListener("DOMContentLoaded", function (event) {
         let btn = c.querySelector('.shop__card-location');
         let coord = JSON.parse(btn.dataset.coordinate);
 
+
         btn.onclick = function () {
-          myMap.setCenter(coord, 15);
+          myMap.setCenter(coord, 15, {
+            duration: 400
+          });
           showTab('map');
 
+
           window.scrollTo({
-            top: 100,
+            top: mapY.top,
             left: 0,
             behavior: 'smooth'
           });
+
+
+
 
         };
 
@@ -742,11 +750,11 @@ function showComment(modalSelect, commentSelect) {
 }
 
 function showTab(data) {
-  document.querySelector("[data-prod-tab].active") ? document.querySelector("[data-prod-tab].active").classList.remove('active') : '';
-  document.querySelector(`[data-prod-tab='${data}']`).classList.add('active');
+  document.querySelector("[data-prod-tab].active") ? document.querySelector("[data-prod-tab].active").classList.remove('active') : " ";
+  document.querySelector(`[data-prod-tab='${data}']`) ? document.querySelector(`[data-prod-tab='${data}']`).classList.add('active') : " ";
 
-  document.querySelector("[data-tab].active") ? document.querySelector("[data-tab].active").classList.remove('active') : '';
-  document.querySelector(`[data-tab='${data}']`).classList.add('active');
+  document.querySelector("[data-tab].active") ? document.querySelector("[data-tab].active").classList.remove('active') : " ";
+  document.querySelector(`[data-tab='${data}']`) ? document.querySelector(`[data-tab='${data}']`).classList.add('active') : " ";;
 }
 
 function productMinus(selectorInput) {

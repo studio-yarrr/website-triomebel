@@ -1,41 +1,74 @@
-<main class="shops-page">
-
+<main class="contacts-page">
 
   <div class="breadcrumb container">
     <a href="#">Назад</a>
     /
     <a href="#">Главная</a>
     /
-    <span>Магазины</span>
+    <span>Контакты</span>
   </div>
 
+  <h1 class="contacts__title container">Контакты</h1>
 
-  <section class="shop container">
+  <section class="contacts container">
 
-    <div class="shop__head">
 
-      <h1 class="shop__title">Магазины</h1>
 
-      <div class="shop__tab-wrap">
-        <button class="shop__tab active" data-tab="list" onclick="showTab('list')">
-          <svg>
-            <use xlink:href="assets/images/sprite/sprite-icons.svg#iconList"></use>
-          </svg>
-          <span>Списком</span>
-        </button>
+    <div class="contacts__wrap">
 
-        <button class="shop__tab" data-tab="map" onclick="showTab('map')">
-          <svg>
-            <use xlink:href="assets/images/sprite/sprite-icons.svg#iconLocation"></use>
-          </svg>
-          <span>На карте</span>
-        </button>
+      <div class="contacts__el">
+        <p>Телефон:</p>
+        <a href="tel:809303544419">+7 (930) 354-44-19</a>
+      </div>
+
+
+      <div class="contacts__el">
+        <p>Наименование организации</p>
+        <p>ИП Мальцев И.Р.</p>
+      </div>
+
+      <div class="contacts__el">
+        <p>ОГРНИП</p>
+        <p>319370200027691</p>
+      </div>
+
+      <div class="contacts__el">
+        <p>Электронная почта:</p>
+        <a href="#">buh1@triomebel.com</a>
+      </div>
+
+      <div class="contacts__el">
+        <p>ИНН</p>
+        <p>370301314290</p>
+      </div>
+
+      <div class="contacts__el">
+        <p>Юридический адрес:</p>
+        <p>155800, Ивановская область, г. Кинешма,
+          ул. Ломоносова, д. 21/10, кв. 7</p>
+      </div>
+
+      <div class="contacts__el">
+        <p>Адрес:</p>
+        <p>Фактический адрес: 155800,
+          Ивановская область, г. Кинешма,
+          ул. Ломоносова, д. 21/10, кв. 7</p>
       </div>
 
     </div>
 
+    <button class="btn-black" onclick="showModal('modalCall')">Оставить заявку</button>
+  </section>
 
-    <div data-prod-tab="list" class="shop__wrap active">
+
+  <section class="contacts-map container">
+
+    <div class='wrapper-map active'>
+      <div class="map" id="YMapsID" style="width:100%;height:100%;"></div>
+    </div>
+
+
+    <div class="shop__wrap active">
 
       <div class="shop__card">
 
@@ -228,12 +261,7 @@
     </div>
 
 
-    <div data-prod-tab="map" class='wrapper-map'>
-      <div class="map" id="YMapsID" style="width:100%;height:100%;"></div>
-    </div>
-
   </section>
-
 
 
 

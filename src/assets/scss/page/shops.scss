@@ -4,6 +4,7 @@
   // display: none;
   visibility: hidden;
   position: absolute;
+  top: 0;
   z-index: -10;
   opacity: 0;
 
@@ -27,6 +28,7 @@
 .shops-page {}
 
 .shop {
+  position: relative;
 
   &__head {
 
@@ -147,11 +149,13 @@
 
     @include breakpoint($sm-bp) {}
 
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.5rem;
+
     p {
 
-      font-size: 1.4rem;
-      font-weight: 500;
-      line-height: 1.5rem;
+
 
       @include breakpoint($xl-bp) {}
 
@@ -162,6 +166,19 @@
 
     & p:first-child {
       color: var(--grey);
+    }
+
+    a {
+      color: var(--black);
+
+      &:hover {
+        color: var(--grey);
+
+        @include breakpoint($xl-bp) {
+          color: var(--black);
+        }
+
+      }
     }
   }
 

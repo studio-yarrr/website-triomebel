@@ -1,0 +1,130 @@
+.contacts {
+  padding: 3rem;
+  border-radius: 2rem;
+  background: #fff;
+  margin-bottom: 1rem;
+
+  &__title {
+    margin-bottom: 4rem;
+  }
+
+  &__wrap {
+    width: 100%;
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-bottom: 16rem;
+
+    & .contacts__el:last-child {
+      width: 29.6rem;
+    }
+
+
+    @include breakpoint($xl-bp) {
+      margin-bottom: 8rem;
+
+      & .contacts__el:nth-child(1) {
+        width: 100%;
+        order: 1;
+      }
+
+      & .contacts__el:nth-child(2) {
+        width: 32.6rem;
+        order: 4;
+      }
+
+      & .contacts__el:nth-child(3) {
+        order: 5;
+      }
+
+      & .contacts__el:nth-child(4) {
+        width: 100%;
+        order: 2;
+      }
+
+      & .contacts__el:nth-child(5) {
+        width: 32.6rem;
+        order: 6;
+      }
+
+      & .contacts__el:nth-child(6) {
+        order: 7;
+
+        @include breakpoint($sm-bp) {
+          width: 25.6rem;
+        }
+      }
+
+      & .contacts__el:nth-child(7) {
+        width: 56%;
+        order: 3;
+
+        @include breakpoint($sm-bp) {
+          width: 29.6rem;
+        }
+      }
+    }
+
+  }
+
+  &__el {
+    width: 36.6rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 2rem;
+
+    @include breakpoint($xl-bp) {}
+
+    & p:first-child {
+
+      font-size: 1.4rem;
+      font-weight: 500;
+      line-height: 1.5rem;
+
+      color: var(--grey);
+
+    }
+
+
+    & p:last-child {
+
+      color: var(--black-1a);
+
+
+    }
+
+    a {
+      color: var(--black-1a);
+
+      &:hover {
+        color: var(--grey);
+
+        @include breakpoint($xl-bp) {
+          color: var(--black-1a);
+        }
+      }
+    }
+
+
+
+
+  }
+
+  .btn-black {
+    padding: 1.5rem 2rem;
+  }
+}
+
+.contacts-map {
+
+  .wrapper-map {
+    margin-bottom: 1rem;
+    position: relative;
+
+  }
+}
