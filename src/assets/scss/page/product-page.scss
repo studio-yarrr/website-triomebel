@@ -961,6 +961,10 @@
     font-weight: 500;
     color: var(--black);
 
+    @include breakpoint($sm-bp) {
+      font-size: 2rem;
+    }
+
 
   }
 

@@ -1,0 +1,14 @@
+.guarantee-page__title {
+  margin-bottom: 4rem;
+}
+
+.guarantee-page {
+
+  .tab-guarant {
+    width: 77.8rem;
+
+    @include breakpoint($xl-bp) {
+      width: 100%;
+    }
+  }
+}

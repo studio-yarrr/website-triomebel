@@ -5973,6 +5973,12 @@ h2 {
     color: var(--black);
 }
 
+@media (max-width: 600px) {
+    .tab-guarant h3 {
+        font-size: 2rem;
+    }
+}
+
 .tab-guarant > ol {
     counter-reset: my-counter;
     display: -ms-flexbox;
@@ -7858,4 +7864,18 @@ input[type=radio]:checked + .order-form__el-r .order-form__el-r-box svg {
 
 .delivery-page__title {
     margin-bottom: 4rem;
+}
+
+.guarantee-page__title {
+    margin-bottom: 4rem;
+}
+
+.guarantee-page .tab-guarant {
+    width: 77.8rem;
+}
+
+@media (max-width: 1024px) {
+    .guarantee-page .tab-guarant {
+        width: 100%;
+    }
 }
