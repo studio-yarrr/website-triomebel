@@ -3216,6 +3216,208 @@ h2 {
     width: 16.7rem;
 }
 
+#modalMenu {
+    -ms-flex-pack: center;
+    justify-content: center;
+    background-color: transparent;
+}
+
+@media (max-width: 600px) {
+    #modalMenu.visibility-modal .modal {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+}
+
+#modalMenu .modal {
+    overflow-y: auto;
+    background: #000;
+    max-height: 100%;
+    border-radius: 2rem;
+    padding: 4rem;
+    width: 100%;
+    margin: 0 5rem;
+    margin-top: 12rem;
+    position: relative;
+    -webkit-transform: translateY(10%);
+    transform: translateY(10%);
+    opacity: 0;
+    transition: opacity 0.2s, -webkit-transform 0.3s;
+    transition: transform 0.3s, opacity 0.2s;
+    transition: transform 0.3s, opacity 0.2s, -webkit-transform 0.3s;
+}
+
+#modalMenu .modal::-webkit-scrollbar {
+    width: 0rem;
+    height: 0rem;
+    background-color: transparent;
+}
+
+#modalMenu .modal::-webkit-scrollbar-thumb {
+    background-color: #000000;
+    border-radius: 0.5rem;
+}
+
+#modalMenu .modal::-webkit-scrollbar-thumb:hover {
+    background-color: #3f3f3f;
+}
+
+@media (max-width: 600px) {
+    #modalMenu .modal {
+        margin: 0;
+        max-height: 100%;
+        border-radius: 0;
+        padding: 1.5rem;
+        padding-bottom: 20rem;
+        -webkit-transform: translateX(100%);
+        transform: translateX(100%);
+        opacity: 1;
+    }
+}
+
+#modalMenu .modal__close {
+    position: absolute;
+    right: 2rem;
+    top: 6rem;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.8rem;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    gap: 1rem;
+    color: var(--white);
+}
+
+#modalMenu .modal__close svg {
+    width: 2rem;
+    height: 2rem;
+    stroke: #fff;
+    stroke-width: 0.2rem;
+}
+
+#modalMenu .modal-catalog__content {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    gap: 8rem;
+    row-gap: 8rem;
+    overflow: hidden;
+    overflow-y: auto;
+    height: 100%;
+}
+
+@media (max-width: 1024px) {
+    #modalMenu .modal-catalog__content {
+        display: block;
+        gap: 0;
+        row-gap: 0;
+        -webkit-columns: 3;
+        -moz-columns: 3;
+        columns: 3;
+        -webkit-column-gap: 7.1rem;
+        -moz-column-gap: 7.1rem;
+        column-gap: 7.1rem;
+    }
+}
+
+@media (max-width: 600px) {
+    #modalMenu .modal-catalog__content {
+        -webkit-columns: 2;
+        -moz-columns: 2;
+        columns: 2;
+        margin-top: 4.6rem;
+        -webkit-column-gap: 5.8rem;
+        -moz-column-gap: 5.8rem;
+        column-gap: 5.8rem;
+    }
+}
+
+#modalMenu .modal-catalog__content::-webkit-scrollbar {
+    width: 0.3rem;
+    height: 0.3rem;
+    background-color: transparent;
+}
+
+#modalMenu .modal-catalog__content::-webkit-scrollbar-thumb {
+    background-color: #000000;
+    border-radius: 0.5rem;
+}
+
+#modalMenu .modal-catalog__content::-webkit-scrollbar-thumb:hover {
+    background-color: #3f3f3f;
+}
+
+#modalMenu .modal-catalog__el {
+    -webkit-column-break-inside: avoid;
+    -moz-column-break-inside: avoid;
+    break-inside: avoid;
+    width: 18.6rem;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    gap: 2rem;
+    height: auto;
+    margin-bottom: 4rem;
+}
+
+#modalMenu .modal-catalog__el > a {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--black);
+}
+
+#modalMenu .modal-catalog__el ul {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+#modalMenu .modal-catalog__el ul li a {
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: var(--grey);
+}
+
+#modalMenu .modal-catalog__el ul li a:hover {
+    color: var(--black);
+    transition: color 0.2s;
+}
+
+@media (max-width: 1024px) {
+    #modalMenu .modal-catalog__el ul li a:hover {
+        color: var(--grey);
+    }
+}
+
+.modal-menu-content {
+    padding: 12.2rem 1.5rem;
+}
+
+.modal-menu-content ul {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.modal-menu-content ul .list--hidden {
+    display: block;
+}
+
+.modal-menu-content ul li a {
+    font-size: 3rem;
+    font-weight: 500;
+    line-height: 3rem;
+    color: var(--white);
+}
+
 .footer {
     margin-top: 10rem;
     border-top: 0.1rem solid #E6E6E6;

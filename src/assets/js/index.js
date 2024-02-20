@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function (event) {
 
   const windowWidth = window.innerWidth;
-  console.log("разрешение", windowWidth);
+
 
   Fancybox.bind("[data-fancybox]", {
     // Your custom options
@@ -650,7 +650,18 @@ document.addEventListener("DOMContentLoaded", function (event) {
   }
 
 
+  const menu_header = document.querySelector('.header-top__nav ul');
 
+  const menu_modal = document.querySelector('.modal-menu-content ul');
+
+  if (menu_header && menu_modal) {
+
+    if (windowWidth <= 600) {
+      menu_modal.innerHTML = menu_header.innerHTML
+    }
+
+
+  }
 
 
 
