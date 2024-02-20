@@ -5901,7 +5901,7 @@ h2 {
     justify-content: space-between;
     -ms-flex-align: center;
     align-items: center;
-    font-size: 20px;
+    font-size: 2rem;
     font-weight: 700;
     color: var(--black);
     cursor: pointer;
@@ -6256,7 +6256,7 @@ h2 {
 }
 
 .pay-block__counter-i {
-    font-size: 14px;
+    font-size: 1.4rem;
     font-weight: 500;
     text-align: center;
     color: var(--black-1a);
@@ -6266,7 +6266,7 @@ h2 {
     width: 100%;
     display: block;
     padding: 1.7rem;
-    font-size: 14px;
+    font-size: 1.4rem;
     font-weight: 500;
     text-align: center;
     color: var(--black-1a);
@@ -6281,7 +6281,7 @@ h2 {
     display: block;
     padding: 1.7rem;
     border-radius: 1rem;
-    font-size: 14px;
+    font-size: 1.4rem;
     font-weight: 500;
     text-align: center;
     color: var(--white);
@@ -7433,7 +7433,7 @@ input[type=radio]:checked + .order-form__el-r .order-form__el-r-box svg {
 }
 
 .wrapper-map {
-    width: 134rem;
+    width: 100%;
     height: 80rem;
     visibility: hidden;
     position: absolute;
@@ -7442,15 +7442,8 @@ input[type=radio]:checked + .order-form__el-r .order-form__el-r-box svg {
     opacity: 0;
 }
 
-@media (max-width: 1024px) {
-    .wrapper-map {
-        width: 79.4rem;
-    }
-}
-
 @media (max-width: 600px) {
     .wrapper-map {
-        width: 40rem;
         height: 40rem;
     }
 }
@@ -7819,4 +7812,50 @@ input[type=radio]:checked + .order-form__el-r .order-form__el-r-box svg {
 .contacts-map .wrapper-map {
     margin-bottom: 1rem;
     position: relative;
+}
+
+.delivery-section {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    -ms-flex-direction: row-reverse;
+    flex-direction: row-reverse;
+    gap: 1rem;
+}
+
+@media (max-width: 1024px) {
+    .delivery-section {
+        -ms-flex-direction: column;
+        flex-direction: column;
+        gap: 8rem;
+    }
+}
+
+.delivery-section > .tab-pay__block {
+    position: sticky;
+    top: 1rem;
+    width: 55.2rem;
+    -ms-flex: none;
+    flex: none;
+}
+
+@media (max-width: 1024px) {
+    .delivery-section > .tab-pay__block {
+        position: relative;
+        top: 0;
+        width: 100%;
+    }
+}
+
+.delivery-section .tab-pay {
+    position: relative;
+    top: 0;
+    opacity: 1;
+}
+
+.delivery-page__title {
+    margin-bottom: 4rem;
 }

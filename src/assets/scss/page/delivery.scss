@@ -1,0 +1,52 @@
+.delivery-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: row-reverse;
+  gap: 1rem;
+
+  @include breakpoint($xl-bp) {
+    flex-direction: column;
+    gap: 8rem;
+  }
+
+  @include breakpoint($sm-bp) {}
+
+  &>.tab-pay__block {
+    position: sticky;
+    top: 1rem;
+    width: 55.2rem;
+    flex: none;
+
+    @include breakpoint($xl-bp) {
+      position: relative;
+      top: 0;
+      width: 100%;
+
+    }
+
+    @include breakpoint($sm-bp) {}
+  }
+
+  .tab-pay {
+    position: relative;
+    top: 0;
+    opacity: 1;
+
+    @include breakpoint($xl-bp) {}
+
+    @include breakpoint($sm-bp) {}
+  }
+
+
+
+}
+
+
+.delivery-page__title {
+  margin-bottom: 4rem;
+
+  @include breakpoint($xl-bp) {}
+
+  @include breakpoint($sm-bp) {}
+}

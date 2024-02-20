@@ -1,5 +1,5 @@
 .wrapper-map {
-  width: 134rem;
+  width: 100%;
   height: 80rem;
   // display: none;
   visibility: hidden;
@@ -9,11 +9,11 @@
   opacity: 0;
 
   @include breakpoint($xl-bp) {
-    width: 79.4rem;
+    // width: 79.4rem;
   }
 
   @include breakpoint($sm-bp) {
-    width: 40rem;
+    // width: 40rem;
     height: 40rem;
   }
 
