@@ -23,7 +23,6 @@ html {
   }
 }
 
-
 html::-webkit-scrollbar {
   width: 0.6rem;
   height: 0.3rem;
@@ -198,3 +197,5 @@ a {}
 @import './page/delivery.scss';
 
 @import './page/guarantee.scss';
+
+@import './page/about.scss';
