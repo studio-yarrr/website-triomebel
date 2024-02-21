@@ -705,12 +705,12 @@ function disableScroll() {
     window.scrollTo(scrollLeft, scrollTop);
   };
 }
+
 function enableScroll() {
   document.documentElement.style.setProperty('scroll-behavior', null);
   document.documentElement.classList.remove('scroll-lock');
   window.onscroll = function () { };
 }
-
 
 function addToBasket(id) {
   // let quantityProduct = document.getElementById('quantity_' + id);
@@ -786,9 +786,6 @@ function productPlus(selectorInput) {
     i.value++;
   }
 }
-
-
-
 
 function share(select) {
   let copyText = document.getElementById(select);
