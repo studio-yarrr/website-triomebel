@@ -8340,7 +8340,7 @@ input[type=radio]:checked + .order-form__el-r .order-form__el-r-box svg {
 }
 
 .error {
-    width: 31.1rem;
+    width: 50rem;
     margin-top: 21rem;
 }
 
@@ -8349,6 +8349,7 @@ input[type=radio]:checked + .order-form__el-r .order-form__el-r-box svg {
     font-weight: 500;
     line-height: 2.8rem;
     margin-bottom: 4rem;
+    text-align: center;
 }
 
 .error .btn {
