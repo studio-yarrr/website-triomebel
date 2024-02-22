@@ -72,7 +72,7 @@
 
 
   &__logo {
-    padding: 1.7rem;
+    padding: 1rem;
     padding-left: 0;
     display: flex;
     align-items: center;
@@ -81,19 +81,28 @@
     flex: none;
     border-right: 0.1rem solid #e6e6e6;
 
+
+
     @include breakpoint($xl-bp) {
       padding-right: 2rem;
     }
 
     @include breakpoint($sm-bp) {
+      padding: 1.3rem 0;
       padding-right: 1.5rem;
     }
 
 
 
-    img {
-      width: 7.6rem;
-      // height: 100%;
+    svg {
+      width: 11rem;
+      height: 4.5rem;
+
+      @include breakpoint($sm-bp) {
+        width: 8rem;
+        height: 4rem;
+      }
+
 
     }
   }
