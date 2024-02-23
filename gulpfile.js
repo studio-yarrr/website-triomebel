@@ -36,7 +36,7 @@ const path = {
   src: {
     html: srcPath + "*.html",
     php: srcPath + "*.php", // Добавлено
-    js: srcPath + "assets/js/*.js",
+    js: srcPath + "assets/js/**/*.js",
     css: srcPath + "assets/scss/*.scss",
     images:
       srcPath +

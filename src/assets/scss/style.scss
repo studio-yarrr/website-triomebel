@@ -158,6 +158,10 @@ a {}
 
 }
 
+// lib
+@import './lib/rangeslider.scss';
+@import './lib/swiper.scss';
+@import './lib/fancybox.scss';
 
 /*---------components------------*/
 @import './components/btns.scss';

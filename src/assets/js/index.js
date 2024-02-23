@@ -2,10 +2,15 @@ document.addEventListener("DOMContentLoaded", function (event) {
 
   const windowWidth = window.innerWidth;
 
+  const fancy = document.querySelector('[data-fancybox]');
 
-  Fancybox.bind("[data-fancybox]", {
-    // Your custom options
-  });
+  if (fancy) {
+    Fancybox.bind("[data-fancybox]", {
+      // Your custom options
+    });
+  }
+
+
 
 
 
@@ -562,6 +567,9 @@ document.addEventListener("DOMContentLoaded", function (event) {
 
       },
     });
+
+
+
   }
 
 
