@@ -8644,6 +8644,7 @@ html.with-fancybox body.hide-scrollbar {
     background: #5200FF;
     border-radius: 50%;
     top: 0;
+    cursor: pointer;
 }
 
 .irs--flat .irs-handle i {
