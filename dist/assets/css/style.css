@@ -11502,6 +11502,21 @@ input[type=radio]:checked + .order-form__el-r .order-form__el-r-box svg {
     overflow: hidden;
 }
 
+.about-page .info__video-wrap {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+@media (max-width: 600px) {
+    .about-page .info__video {
+        display: block;
+        width: 100%;
+        height: 28rem;
+    }
+}
+
 .about {
     margin-top: -6rem;
 }
@@ -11622,6 +11637,12 @@ input[type=radio]:checked + .order-form__el-r .order-form__el-r-box svg {
     background: #fff;
 }
 
+@media (max-width: 600px) {
+    .about-map__wrap {
+        padding: 2rem;
+    }
+}
+
 .about-map__title {
     font-size: 2.4rem;
     font-weight: 500;
@@ -11630,12 +11651,25 @@ input[type=radio]:checked + .order-form__el-r .order-form__el-r-box svg {
     margin-bottom: 2rem;
 }
 
+@media (max-width: 600px) {
+    .about-map__title {
+        font-size: 2.2rem;
+    }
+}
+
 .about-map__subtitle {
     font-size: 1.8rem;
     font-weight: 400;
     line-height: 2rem;
     color: var(--black-1a);
     margin-bottom: 4rem;
+}
+
+@media (max-width: 600px) {
+    .about-map__subtitle {
+        font-size: 1.6rem;
+        line-height: 1.8rem;
+    }
 }
 
 .about-map .wrapper-map {
@@ -11648,12 +11682,26 @@ input[type=radio]:checked + .order-form__el-r .order-form__el-r-box svg {
     }
 }
 
+@media (max-width: 600px) {
+    .about-map .wrapper-map {
+        height: 24rem;
+    }
+}
+
 .advantage__title {
     font-size: 2.6rem;
     font-weight: 500;
     line-height: 2.6rem;
     color: var(--black);
     margin-bottom: 4rem;
+}
+
+@media (max-width: 600px) {
+    .advantage__title {
+        font-size: 2.2rem;
+        line-height: normal;
+        margin-bottom: 2rem;
+    }
 }
 
 .advantage__wrap {
@@ -11702,6 +11750,13 @@ input[type=radio]:checked + .order-form__el-r .order-form__el-r-box svg {
     margin-bottom: 4rem;
 }
 
+@media (max-width: 600px) {
+    .team__title {
+        width: 29rem;
+        margin-bottom: 2rem;
+    }
+}
+
 .team__wrap {
     display: -ms-flexbox;
     display: flex;
@@ -11713,6 +11768,12 @@ input[type=radio]:checked + .order-form__el-r .order-form__el-r-box svg {
 
 .team__card {
     width: 21.5rem;
+}
+
+@media (max-width: 600px) {
+    .team__card {
+        width: 19.5rem;
+    }
 }
 
 .team__card-img {
