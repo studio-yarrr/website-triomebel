@@ -502,6 +502,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
     const closeText = modalSelectionCity.querySelector('.city-form__close-text');
     const label = modalSelectionCity.querySelector('.city-form__label');
     const result = modalSelectionCity.querySelector('.selection-city-res');
+    const cityBtn = result.querySelectorAll('a');
 
     input.addEventListener('input', (ev) => {
 
@@ -514,7 +515,13 @@ document.addEventListener("DOMContentLoaded", function (event) {
         result.classList.remove('active');
         label.classList.remove('active');
       }
+    })
 
+    cityBtn.forEach(b => {
+      b.addEventListener('click', () => {
+        result.classList.remove('active');
+        input.value = b.textContent;
+      })
     })
   }
 
