@@ -2,8 +2,12 @@
   overflow: hidden;
 
   .info__video-wrap {
-    display: flex;
-    flex-direction: column;
+
+    @include breakpoint($sm-bp) {
+      display: flex;
+      flex-direction: column;
+    }
+
   }
 
   .info__video {
