@@ -518,7 +518,8 @@ document.addEventListener("DOMContentLoaded", function (event) {
     })
 
     cityBtn.forEach(b => {
-      b.addEventListener('click', () => {
+      b.addEventListener('click', (ev) => {
+        ev.preventDefault();
         result.classList.remove('active');
         input.value = b.textContent;
       })
