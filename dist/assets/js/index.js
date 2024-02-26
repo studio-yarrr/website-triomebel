@@ -496,6 +496,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
   }
 
   const modalSelectionCity = document.getElementById('modalSelectionCity');
+  const choiceBtn = document.querySelector('.header__choice-btn');
 
   if (modalSelectionCity) {
     const input = modalSelectionCity.querySelector('#cityFormInput');
@@ -503,6 +504,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
     const label = modalSelectionCity.querySelector('.city-form__label');
     const result = modalSelectionCity.querySelector('.selection-city-res');
     const cityBtn = result.querySelectorAll('a');
+
 
     input.addEventListener('input', (ev) => {
 
@@ -522,8 +524,19 @@ document.addEventListener("DOMContentLoaded", function (event) {
         ev.preventDefault();
         result.classList.remove('active');
         input.value = b.textContent;
+        choiceBtn.textContent = b.textContent.split(' ')[0];
+        modalSelectionCity.classList.remove('visibility-modal');
+        localStorage.setItem('city', b.textContent.split(' ')[0]);
+
       })
     })
+
+
+
+  }
+
+  if (localStorage.getItem('city')) {
+    choiceBtn.textContent = localStorage.getItem('city');
   }
 
 
