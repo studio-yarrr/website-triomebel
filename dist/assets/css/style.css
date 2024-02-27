@@ -12022,3 +12022,50 @@ input[type=radio]:checked + .order-form__el-r .order-form__el-r-box svg {
         line-height: 1.8rem;
     }
 }
+
+.search {
+    margin-top: 4rem;
+}
+
+.search__form {
+    padding: 0.5rem 1rem;
+    border: 0.1rem solid #E6E6E6;
+    width: 35rem;
+    border-radius: 1rem;
+    background: #fff;
+    margin-bottom: 6rem;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -ms-flex-align: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.search__form .btn-black {
+    padding: 1rem;
+    -ms-flex: none;
+    flex: none;
+}
+
+.search__form-i {
+    width: 100%;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.4rem;
+    color: var(--black);
+}
+
+.search__title {
+    margin-bottom: 4rem;
+}
+
+.search__res-wrap {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+    row-gap: 2rem;
+}

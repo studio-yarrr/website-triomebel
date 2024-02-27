@@ -12,8 +12,6 @@ document.addEventListener("DOMContentLoaded", function (event) {
 
 
 
-
-
   class DropDownList {
 
     constructor(dropDown, setting) {

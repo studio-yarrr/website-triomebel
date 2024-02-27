@@ -1,0 +1,51 @@
+.search {
+
+  margin-top: 4rem;
+
+  &__form {
+
+    padding: 0.5rem 1rem;
+    border: 0.1rem solid #E6E6E6;
+    width: 35rem;
+    border-radius: 1rem;
+    background: #fff;
+    margin-bottom: 6rem;
+
+
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+
+    .btn-black {
+      padding: 1rem;
+      flex: none;
+    }
+  }
+
+  &__form-i {
+
+
+    width: 100%;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.4rem;
+    color: var(--black);
+
+
+  }
+
+  &__title {
+    margin-bottom: 4rem;
+  }
+
+  &__res-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+    row-gap: 2rem;
+  }
+
+
+}
