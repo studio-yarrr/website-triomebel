@@ -11847,6 +11847,10 @@ input[type=radio]:checked + .order-form__el-r .order-form__el-r-box svg {
     margin: 0 auto;
 }
 
+.error .search__form {
+    width: 100%;
+}
+
 .ctock-page {
     overflow: hidden;
 }
