@@ -4294,6 +4294,7 @@ html.with-fancybox body.hide-scrollbar {
     font-weight: 500;
     color: var(--black);
     display: block;
+    min-height: 4.2rem;
 }
 
 .product__title:hover {
@@ -12072,4 +12073,9 @@ input[type=radio]:checked + .order-form__el-r .order-form__el-r-box svg {
     flex-wrap: wrap;
     gap: 0.8rem;
     row-gap: 2rem;
+}
+
+.search .btn {
+    width: 100%;
+    margin-top: 4rem;
 }
