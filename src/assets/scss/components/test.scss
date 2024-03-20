@@ -1,0 +1,94 @@
+.drop-product {
+  position: relative;
+  cursor: pointer;
+
+  .product-item-scu-item-list {
+
+    overflow: hidden;
+    position: absolute;
+    top: 1.8rem;
+    padding: 2rem 0.8rem;
+    background-color: #fff;
+    box-shadow: 0 0.8rem 1rem 0 #797979;
+    border-radius: 1rem;
+    transform: translateY(5rem);
+    opacity: 0;
+    transition: all 0.3s;
+    width: 30rem;
+    z-index: -100;
+  }
+
+  .sku_name {
+    display: inline-block;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      background-image: url(../images/icon/arrow.svg);
+      background-size: cover;
+      background-position: 50%;
+      top: -0.1rem;
+      right: -2.7rem;
+      width: 2rem;
+      height: 2rem;
+      transform: rotate(90deg);
+      transition: all 0.3s;
+    }
+  }
+
+  &:hover {
+    .product-item-scu-item-list {
+      transform: translateY(0);
+      opacity: 1;
+      z-index: 10;
+    }
+
+    .sku_name{
+      &::before {
+
+        transform: rotate(-90deg);
+      }
+    }
+
+  }
+}
+
+
+.sku_container {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.5rem;
+}
+
+.sku_container .sku_name {
+  font-size: 1.4rem;
+  line-height: 1.5rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.product-item-scu-item-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.product-item-scu-item-list .product-item-scu-item-text-container.selected {
+  background: #000;
+  color: #fff;
+}
+
+.product-item-scu-item-list .product-item-scu-item-text-container {
+  cursor: pointer;
+  border-radius: 0.8rem;
+  border: 0.1rem solid #000;
+  font-size: 1.2rem;
+  line-height: 1.4rem;
+  font-weight: 500;
+  padding: 0.55rem 1rem;
+  color: #000;
+  transition: all .2s;
+}

@@ -722,3 +722,41 @@
   font-optical-sizing: auto;
   line-height: initial // text-transform: uppercase;
 }
+
+
+.stars-mask {
+  width: 8rem;
+  height: 1.2rem;
+  position: relative;
+  overflow: hidden;
+
+  img {
+    width: 100%;
+    height: 100%;
+     position: relative;
+    object-fit: cover;
+ 
+    z-index: 3;
+  }
+
+  &__grey,
+  &__yellow {
+    position: absolute;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+
+  &__grey {
+    width: 100%;
+    background: #999999;
+    z-index: 1;
+  }
+
+  &__yellow {
+    background: #FFC700;
+    z-index: 2;
+  }
+}

@@ -1486,8 +1486,7 @@
   
         <label for="share-link" class="share-link-placeholder">Ссылка</label>
         <input id="share-link" class="share-link" type="text"
-          value="https://triomebel.com/catalog/modulnye_spalni/kollektsiya_milana_spalnya/"
-          data-link-orig="https://triomebel.com/catalog/modulnye_spalni/kollektsiya_milana_spalnya/">
+          value="">
   
         <button class="share-btn" onclick="share('share-link')">
           <span class="tooltiptext" id="myTooltip">Скопировать </span>
@@ -1498,11 +1497,6 @@
         </button>
   
       </div>
-  
-  
-  
-  
-  
     </div>
   </div>
   
@@ -1549,6 +1543,26 @@
   
   
     </div>
+  </div>
+  
+  <div id="modalAddToBasket" class="modal-notification">
+    <p>Товар добавлен в корзину</p>
+    <button class="modal-notification__close" onclick="closeModal()">
+      <svg>
+        <use xlink:href="assets/images/sprite/sprite-icons.svg#iconClose"></use>
+      </svg>
+    </button>
+  
+  </div>
+  
+  <div id="modalAddToFavorit" class="modal-notification">
+    <p>Товар добавлен в избранные</p>
+    <button class="modal-notification__close" onclick="closeModal()">
+      <svg>
+        <use xlink:href="assets/images/sprite/sprite-icons.svg#iconClose"></use>
+      </svg>
+    </button>
+  
   </div>
 
   <!--Plugin JavaScript file-->

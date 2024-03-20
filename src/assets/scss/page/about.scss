@@ -250,7 +250,7 @@
     width: 2.4rem;
     height: 2.4rem;
 
-    svg {
+    img {
       width: 2.4rem;
       height: 2.4rem;
     }
@@ -260,7 +260,7 @@
 
   }
 
-  &__card-title {
+  & p{
 
     font-size: 1.6rem;
     font-weight: 500;
@@ -270,12 +270,13 @@
 
   }
 
-  &__card-desc {
+  & p:last-child {
 
     font-size: 1.2rem;
     font-weight: 400;
     line-height: 1.4rem;
     color: var(--grey);
+    margin-bottom: 0;
 
   }
 }

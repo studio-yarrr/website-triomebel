@@ -16,14 +16,11 @@
   visibility: visible;
 }
 
-
-
 .modal {
   background-color: #fff;
 
 
 }
-
 
 
 #modalLike {
@@ -1500,5 +1497,69 @@
 
       }
     }
+  }
+}
+
+
+
+
+.modal-notification {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  background: #fff;
+  padding: 1.2rem 1.5rem;
+  border-radius: 1rem;
+  position: fixed;
+  right: 5rem;
+  z-index: -5;
+  visibility: hidden;
+  transform: translate(30rem);
+  transition: transform 0.3s;
+
+  p {
+
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.5rem;
+
+  }
+
+  &__close {
+    width: 2rem;
+    height: 2rem;
+
+    svg {
+      stroke: #000000;
+      width: 2rem;
+      height: 2rem;
+      stroke-width: 0.3rem;
+    }
+
+  }
+
+}
+
+#modalAddToBasket {
+  bottom: 9rem;
+
+
+
+  &.visibility-modal {
+    z-index: 5;
+    visibility: visible;
+    transform: translate(0);
+  }
+}
+
+#modalAddToFavorit {
+  bottom: 4rem;
+
+
+
+  &.visibility-modal {
+    z-index: 5;
+    visibility: visible;
+    transform: translate(0);
   }
 }

@@ -708,6 +708,20 @@ function showModal(modalSelect) {
   }
 }
 
+function showModalShare(modalSelect, link) {
+  const modal = document.getElementById(modalSelect);
+  if (modal) {
+    document.querySelector('.visibility-modal') ? document.querySelector('.visibility-modal').classList.remove('visibility-modal') : '';
+    modal.classList.add('visibility-modal');
+    disableScroll();
+  }
+
+  if (link) {
+    const input = modal.querySelector('#share-link');
+    input.value = link;
+  }
+}
+
 function clearText(inputSelect) {
   const input = document.getElementById(inputSelect);
   if (input) {
@@ -764,6 +778,19 @@ function addToBasket(id) {
   // });
   productClassToggle.classList.toggle('active');
   // request.send(params);
+
+  if (productClassToggle.classList.contains('active')) {
+    addBasketNotification();
+  }
+}
+
+function addBasketNotification() {
+  const modal = document.getElementById('modalAddToBasket');
+  if (modal) {
+    // document.querySelector('.visibility-modal') ? document.querySelector('.visibility-modal').classList.remove('visibility-modal') : '';
+    modal.classList.add('visibility-modal');
+  }
+
 }
 
 function addToFavorites(id) {
@@ -772,6 +799,18 @@ function addToFavorites(id) {
 
 
   productClassToggle.classList.toggle('favorite');
+  if (productClassToggle.classList.contains('favorite')) {
+    addFavoriteNotification();
+  }
+
+}
+
+function addFavoriteNotification() {
+  const modal = document.getElementById('modalAddToFavorit');
+  if (modal) {
+    // document.querySelector('.visibility-modal') ? document.querySelector('.visibility-modal').classList.remove('visibility-modal') : '';
+    modal.classList.add('visibility-modal');
+  }
 
 }
 
@@ -818,7 +857,6 @@ function share(select) {
   let copyText = document.getElementById(select);
   copyText.select();
   document.execCommand("copy");
-
   let tooltip = document.getElementById("myTooltip");
   tooltip.innerHTML = "Готово";
 }

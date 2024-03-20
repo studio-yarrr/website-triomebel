@@ -503,7 +503,7 @@
           <div class="product-menu">
             <div class="product-menu__head">
               <h1 class="product-menu__title">Кухни комфорт</h1>
-              <button class="share" onclick="showModal('modalShare')">
+              <button class="share" data-link="https://triomebel.com/catalog/modulnye_spalni/kollektsiya_milana_spalnya/" onclick="showModalShare('modalShare' , 'https://triomebel.com/catalog/modulnye_spalni/kollektsiya_milana_spalnya/')">
                 <svg>
                   <use xlink:href="assets/images/sprite/sprite-icons.svg#iconShare"></use>
                 </svg>
@@ -2742,8 +2742,7 @@
   
         <label for="share-link" class="share-link-placeholder">Ссылка</label>
         <input id="share-link" class="share-link" type="text"
-          value="https://triomebel.com/catalog/modulnye_spalni/kollektsiya_milana_spalnya/"
-          data-link-orig="https://triomebel.com/catalog/modulnye_spalni/kollektsiya_milana_spalnya/">
+          value="">
   
         <button class="share-btn" onclick="share('share-link')">
           <span class="tooltiptext" id="myTooltip">Скопировать </span>
@@ -2754,11 +2753,6 @@
         </button>
   
       </div>
-  
-  
-  
-  
-  
     </div>
   </div>
   
@@ -2805,6 +2799,26 @@
   
   
     </div>
+  </div>
+  
+  <div id="modalAddToBasket" class="modal-notification">
+    <p>Товар добавлен в корзину</p>
+    <button class="modal-notification__close" onclick="closeModal()">
+      <svg>
+        <use xlink:href="assets/images/sprite/sprite-icons.svg#iconClose"></use>
+      </svg>
+    </button>
+  
+  </div>
+  
+  <div id="modalAddToFavorit" class="modal-notification">
+    <p>Товар добавлен в избранные</p>
+    <button class="modal-notification__close" onclick="closeModal()">
+      <svg>
+        <use xlink:href="assets/images/sprite/sprite-icons.svg#iconClose"></use>
+      </svg>
+    </button>
+  
   </div>
 
   <!--Plugin JavaScript file-->
